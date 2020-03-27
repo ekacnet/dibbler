@@ -144,5 +144,8 @@
   - Balaji Punnuru <balaji_punnuru(at)cable(dot)comcast(dot)com>
     2020-02: Fixed vulnerabilities with time checking
 
+  - Francis Dupont
+    2020-03: bison fixes
+
   Dibbler uses poslib library to communicate with DNS servers (DNS Update mechanism).
   Poslib is written by Meilof Veeningen <meilof@users.sourceforge.net>
