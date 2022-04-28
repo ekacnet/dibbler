@@ -133,8 +133,16 @@ if test "x$enable_gtest" = "xyes" ; then
         if test "${GTEST_FOUND}" != "true"; then
             GTEST_FOUND="false"
             for dir in $GTEST_PATHS; do
+                # add uname
                 if test -f "$dir/include/gtest/gtest.h"; then
-                    if ! test -f "$dir/lib/libgtests.a"; then
+                    libdir="$dir/lib"
+                    for d in $libdir $libdir/$build_cpu-linux-gnu; do
+                      if test -e $d/libgtest.a ; then
+                        libdir=$d
+                        break
+                      fi
+                    done
+                    if ! test -f "$libdir/libgtest.a"; then
                         AC_MSG_WARN([Found Google Test include but not the library in $dir.])
                         continue
                     fi
