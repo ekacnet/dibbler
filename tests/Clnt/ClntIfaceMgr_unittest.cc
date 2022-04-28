@@ -39,9 +39,9 @@ TEST(ClntIfaceMgr, bits) {
 //
 // We have delegated prefix of 2001:db8:1234::/48 that's going to
 // be split into 3 subprefixes:
-// 2001:db8:1234:100::
-// 2001:db8:1234:200::
-// 2001:db8:1234:300::
+// 2001:db8:1234:400::
+// 2001:db8:1234:800::
+// 2001:db8:1234:C00::
 TEST(ClntIfaceMgr, calculateSubprefixFullByte) {
     string xmlFile = "ClntIfaceMgr.xml";
     EXPECT_NO_THROW(TClntIfaceMgr::instanceCreate(xmlFile));
@@ -53,19 +53,19 @@ TEST(ClntIfaceMgr, calculateSubprefixFullByte) {
     EXPECT_NO_THROW(subprefix = TClntIfaceMgr::instance()
                     .calculateSubprefix(delegated, 48, 3, 1, subprefixLen));
 
-    EXPECT_EQ("2001:db8:1234:100::", string(subprefix->getPlain()));
+    EXPECT_EQ("2001:db8:1234:4000::", string(subprefix->getPlain()));
     EXPECT_EQ(64, subprefixLen);
 
     EXPECT_NO_THROW(subprefix = TClntIfaceMgr::instance()
                     .calculateSubprefix(delegated, 48, 3, 2, subprefixLen));
 
-    EXPECT_EQ("2001:db8:1234:200::", string(subprefix->getPlain()));
+    EXPECT_EQ("2001:db8:1234:8000::", string(subprefix->getPlain()));
     EXPECT_EQ(64, subprefixLen);
 
     EXPECT_NO_THROW(subprefix = TClntIfaceMgr::instance()
                     .calculateSubprefix(delegated, 48, 3, 3, subprefixLen));
 
-    EXPECT_EQ("2001:db8:1234:300::", string(subprefix->getPlain()));
+    EXPECT_EQ("2001:db8:1234:c000::", string(subprefix->getPlain()));
     EXPECT_EQ(64, subprefixLen);
 }
 
