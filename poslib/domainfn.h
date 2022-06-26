@@ -23,8 +23,9 @@
 
 class domainname;
 
-#include "sysstl.h"
 #include "dnsmessage.h"
+#include "sysstl.h"
+#include "types.h"
 
 /*! \file poslib/domainfn.h
  * \brief domain-name manipulation
@@ -62,7 +63,7 @@ class domainname;
  * human-readable strings and the binary format used in DNS messages.
  */
 class domainname {
-  public:
+public:
   /*!
    * \brief default constructor
    *
@@ -79,7 +80,7 @@ class domainname {
    * \param text Human-readable domain name
    * \param origin Origin to which relative domain names are relative
    */
-  domainname(const char *text, const domainname& origin);
+  domainname(const char *text, const domainname &origin);
 
   /*!
    * \brief constructor from human-readable text
@@ -93,7 +94,7 @@ class domainname {
    * \param origin Origin, in binary format, to which relative domain names are
    *               relative
    */
-  domainname(const char *text, _cdomain origin = (unsigned char*)"");
+  domainname(const char *text, _cdomain origin = (unsigned char *)"");
 
   /*!
    * \brief constructor from data in a DNS message
@@ -116,7 +117,7 @@ class domainname {
    * \param is_binary Ignored
    * \param dom The binary domain name
    */
-  domainname(bool is_binary, const unsigned char* dom);
+  domainname(bool is_binary, const unsigned char *dom);
 
   /*!
    * \brief copy constructor
@@ -124,7 +125,7 @@ class domainname {
    * This constructor just copies the given domainname structore.
    * \param nam The domain name
    */
-  domainname(const domainname& nam);
+  domainname(const domainname &nam);
 
   /*!
    * \brief equality test
@@ -134,7 +135,7 @@ class domainname {
    * \param nam Domain name to compare with
    * \return True if the domain names are the same
    */
-  bool operator==(const domainname& nam) const;
+  bool operator==(const domainname &nam) const;
 
   /*!
    * \brief negatice equality test
@@ -144,7 +145,7 @@ class domainname {
    * \param nam Domain name to compare with
    * \return True if the domain names are not the same
    */
-  bool operator!=(const domainname& nam) const;
+  bool operator!=(const domainname &nam) const;
 
   /*!
    * \brief assignment
@@ -153,7 +154,7 @@ class domainname {
    * \param nam The domain name to assign
    * \return The assigned domain name
    */
-  domainname& operator=(const domainname& nam);
+  domainname &operator=(const domainname &nam);
 
   /*!
    * \brief assignment from human-readable text
@@ -163,7 +164,7 @@ class domainname {
    * \param buff The domain name in human-readable text
    * \return The assigned domain name
    */
-  domainname& operator=(const char *buff);
+  domainname &operator=(const char *buff);
 
   /*!
    * \brief concatenation using +=
@@ -176,7 +177,7 @@ class domainname {
    * \return The resulting domain name
    * \sa #operator+
    */
-  domainname& operator+=(const domainname& dom);
+  domainname &operator+=(const domainname &dom);
   /*!
    * \brief concatenation using +
    *
@@ -185,7 +186,7 @@ class domainname {
    * \param dom The domain name to append
    * \return The result of the concaternation.
    */
-  domainname& operator+(const domainname& dom);
+  domainname &operator+(const domainname &dom);
 
   /*!
    * \brief parent-child test
@@ -196,7 +197,7 @@ class domainname {
    * \return True if we are the parent
    * \sa operator>
    */
-  bool operator>=(const domainname& dom) const;
+  bool operator>=(const domainname &dom) const;
 
   /*!
    * \brief parent-child test
@@ -207,7 +208,7 @@ class domainname {
    * \return True if we are the parent
    * \sa operator>=
    */
-  bool operator>(const domainname& dom) const;
+  bool operator>(const domainname &dom) const;
 
   /*!
    * \brief destructor
@@ -309,7 +310,7 @@ class domainname {
    * \sa tostring()
    */
   stl_string torelstring(const domainname &root) const;
-  
+
   /*!
    * \brief RFC 2345 canonical form
    *
@@ -318,7 +319,7 @@ class domainname {
    * checksummming domain names.
    * \return The Canonical form of the RR
    */
-  stl_string canonical () const;
+  stl_string canonical() const;
 
   /*!
    * \brief check label match count
@@ -331,8 +332,8 @@ class domainname {
    * \sa nlabels()
    */
   int ncommon(const domainname &dom) const;
-   
-  private:
+
+private:
   unsigned char *domain;
 };
 
@@ -382,12 +383,13 @@ _domain dom_uncompress(message_buff &buff, int ix);
  * Internal structure for domain name compression
  */
 struct dom_compr_info {
- public:
-  dom_compr_info(_cdomain _dom, int _ix, int _nl, int _nul); /**< Constructor. */
-  _cdomain dom;                     /**< Pointer to binary domain. */
-  int ix;                                /**< Index in message. */
-  int nl;                                /**< Total number of labels. */
-  int nul;                               /**< Number of uncompressed labels. */
+public:
+  dom_compr_info(_cdomain _dom, int _ix, int _nl,
+                 int _nul); /**< Constructor. */
+  _cdomain dom;             /**< Pointer to binary domain. */
+  int ix;                   /**< Index in message. */
+  int nl;                   /**< Total number of labels. */
+  int nul;                  /**< Number of uncompressed labels. */
 };
 
 /*!
@@ -397,9 +399,11 @@ struct dom_compr_info {
  * it if possible.
  * \param ret A (partial) DNS message
  * \param dom Domain name to write
- * \param compr List of earlier compressed domain names, or NULL if no compression
+ * \param compr List of earlier compressed domain names, or NULL if no
+ * compression
  */
-void dom_write(stl_string &ret, _cdomain dom, stl_slist(dom_compr_info)* compr);
+void dom_write(stl_string &ret, _cdomain dom,
+               stl_slist(dom_compr_info) * compr);
 
 /* traditional domain-name functions */
 
@@ -531,11 +535,9 @@ stl_string dom_label(_cdomain dom, int label);
 /*!
  * \brief label of domain name
  *
- * Returns a label of the domain name as a pointer to the position in the domain.
- * \param dom The domain name
- * \param label Label index (0 < label < dom_nlabels(dom))
- * \return The label
- * \sa dom_nlabels()
+ * Returns a label of the domain name as a pointer to the position in the
+ * domain. \param dom The domain name \param label Label index (0 < label <
+ * dom_nlabels(dom)) \return The label \sa dom_nlabels()
  */
 _domain dom_plabel(_cdomain dom, int label);
 

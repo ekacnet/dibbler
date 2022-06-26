@@ -15,10 +15,9 @@
    along with this program; if not, write to the Free Software
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.  */
 
-
+#include "files.h"
 #include <ctype.h>
 #include <stdio.h>
-#include "files.h"
 
 /*
  *	VMS version of getargs(): Uses DCL command parsing
@@ -29,15 +28,14 @@ int definesflag;
 int debugflag;
 int nolinesflag;
 extern int fixed_outfiles;
-extern char * version_string;
+extern char *version_string;
 
 /* Allocate storgate and initialize, since bison uses them elsewhere.  */
 char *spec_name_prefix;
 char *spec_file_prefix;
 
-getargs(argc,argv)
-     int argc;
-     char *argv[];
+getargs(argc, argv) int argc;
+char *argv[];
 {
   register char *cp;
   static char Input_File[256];
@@ -65,7 +63,7 @@ getargs(argc,argv)
   /*
    *	Check for /VERSION qualifier
    */
-  if (cli_present("BISON$VERSION")) printf("%s",version_string);
+  if (cli_present("BISON$VERSION")) printf("%s", version_string);
   /*
    *	Check for /NOLINES qualifier
    */
@@ -82,44 +80,35 @@ getargs(argc,argv)
    *	Lowercaseify the input filename
    */
   cp = Input_File;
-  while(*cp)
-    {
-      if (isupper(*cp)) *cp = tolower(*cp);
-      cp++;
-    }
+  while (*cp) {
+    if (isupper(*cp)) *cp = tolower(*cp);
+    cp++;
+  }
   infile = Input_File;
   /*
    *	Get the output file
    */
-  if (cli_present("BISON$OUTPUT"))
-    {
-      cli_get_value("BISON$OUTPUT", output_spec, sizeof(output_spec));
-      for (cp = spec_outfile = output_spec; *cp; cp++)
-	if (isupper(*cp))
-	  *cp = tolower(*cp);
-    }
+  if (cli_present("BISON$OUTPUT")) {
+    cli_get_value("BISON$OUTPUT", output_spec, sizeof(output_spec));
+    for (cp = spec_outfile = output_spec; *cp; cp++)
+      if (isupper(*cp)) *cp = tolower(*cp);
+  }
   /*
    *	Get the output file
    */
-  if (cli_present("BISON$FILE_PREFIX"))
-    {
-      cli_get_value("BISON$FILE_PREFIX", file_prefix_spec, 
-		     sizeof(file_prefix_spec));
-      for (cp = spec_file_prefix = file_prefix_spec; *cp; cp++)
-	if (isupper(*cp))
-	  *cp = tolower(*cp);
-    }
+  if (cli_present("BISON$FILE_PREFIX")) {
+    cli_get_value("BISON$FILE_PREFIX", file_prefix_spec, sizeof(file_prefix_spec));
+    for (cp = spec_file_prefix = file_prefix_spec; *cp; cp++)
+      if (isupper(*cp)) *cp = tolower(*cp);
+  }
   /*
    *	Get the output file
    */
-  if (cli_present("BISON$NAME_PREFIX"))
-    {
-      cli_get_value("BISON$NAME_PREFIX", name_prefix_spec, 
-		     sizeof(name_prefix_spec));
-      for (cp = spec_name_prefix = name_prefix_spec; *cp; cp++)
-	if (isupper(*cp))
-	  *cp = tolower(*cp);
-    }
+  if (cli_present("BISON$NAME_PREFIX")) {
+    cli_get_value("BISON$NAME_PREFIX", name_prefix_spec, sizeof(name_prefix_spec));
+    for (cp = spec_name_prefix = name_prefix_spec; *cp; cp++)
+      if (isupper(*cp)) *cp = tolower(*cp);
+  }
 }
 
 /************		DCL PARSING ROUTINES		**********/
@@ -127,35 +116,39 @@ getargs(argc,argv)
 /*
  *	See if "NAME" is present
  */
-int
-cli_present(Name)
-     char *Name;
+int cli_present(Name)
+char *Name;
 {
-  struct {int Size; char *Ptr;} Descr;
+  struct {
+    int Size;
+    char *Ptr;
+  } Descr;
 
   Descr.Ptr = Name;
   Descr.Size = strlen(Name);
-  return((cli$present(&Descr) & 1) ? 1 : 0);
+  return ((cli$present(&Descr) & 1) ? 1 : 0);
 }
 
 /*
  *	Get value of "NAME"
  */
-int
-cli_get_value(Name,Buffer,Size)
-     char *Name;
-     char *Buffer;
-     int Size;
+int cli_get_value(Name, Buffer, Size)
+char *Name;
+char *Buffer;
+int Size;
 {
-  struct {int Size; char *Ptr;} Descr1,Descr2;
+  struct {
+    int Size;
+    char *Ptr;
+  } Descr1, Descr2;
 
   Descr1.Ptr = Name;
   Descr1.Size = strlen(Name);
   Descr2.Ptr = Buffer;
-  Descr2.Size = Size-1;
-  if (cli$get_value(&Descr1,&Descr2,&Descr2.Size) & 1) {
+  Descr2.Size = Size - 1;
+  if (cli$get_value(&Descr1, &Descr2, &Descr2.Size) & 1) {
     Buffer[Descr2.Size] = 0;
-    return(1);
+    return (1);
   }
-  return(0);
+  return (0);
 }
