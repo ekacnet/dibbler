@@ -650,33 +650,28 @@ SPtr<TIPv6Addr> TClntIfaceMgr::calculateSubprefix(const SPtr<TIPv6Addr> &prefix,
 
   subprefixLen = prefixLen + bit_shift;
   int offset = prefixLen / 8;
-  if (prefixLen % 8 == 0) {
-    // that's easy, just put ID in the next octet
-    buf[offset] = i;
-  } else {
-    // here's fun
-    uint16_t existing = readUint16(buf + offset);
-    uint16_t bitmask = 0xff00;
-    // Here is the idea if we had only 1 bit shift, i should be left most bit (and
-    // coul have only 2 values 0 or 1) of the 16 bit integer,
-    // if we had 2 bit shift shift, i should be the second to the left
-    // and so on and so forth.
-    // The left shift value is 16 - bit_shift
-    uint16_t infixmask = ((uint8_t)i) << (16 - bit_shift);
+  // here's fun
+  uint16_t existing = readUint16(buf + offset);
+  uint16_t bitmask = 0xff00;
+  // Here is the idea if we had only 1 bit shift, i should be left most bit (and
+  // could have only 2 values 0 or 1) of the 16 bit integer,
+  // if we had 2 bit shift shift, i should be the second to the left
+  // and so on and so forth.
+  // The left shift value is 16 - bit_shift
+  uint16_t infixmask = ((uint8_t)i) << (16 - bit_shift);
 
-    // We also need to account for the last bits of the netmask (if the prefix is not a multiple of
-    // 8) We would need to shift right this value by prefixLen % 8 (aka the number of fixed bits in
-    // the remaining incomplete byte) and create a mask that would prevent those bits from being set
-    // / cleared
-    bitmask = bitmask >> (prefixLen % 8) | 0xff;
-    infixmask = infixmask >> (prefixLen % 8);
-    existing = existing & (~bitmask);
-    existing = existing | (bitmask & infixmask);
+  // We also need to account for the last bits of the netmask (if the prefix is not a multiple of
+  // 8) We would need to shift right this value by prefixLen % 8 (aka the number of fixed bits in
+  // the remaining incomplete byte) and create a mask that would prevent those bits from being set
+  // / cleared
+  bitmask = bitmask >> (prefixLen % 8) | 0xff;
+  infixmask = infixmask >> (prefixLen % 8);
+  existing = existing & (~bitmask);
+  existing = existing | (bitmask & infixmask);
 
-    // Clean remaing bytes
-    memset(buf + offset + 1, 0, 16 - offset);
-    writeUint16(buf + offset, existing);
-  }
+  // Clean remaing bytes
+  memset(buf + offset + 1, 0, 16 - offset);
+  writeUint16(buf + offset, existing);
 
   // Ok, some users are unhappy if they get prefixes larger than /64,
   // so trim down downlink prefixes to /64 if we get something larger.
