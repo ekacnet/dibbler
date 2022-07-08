@@ -139,6 +139,7 @@ dibbler_relay_LDADD += -L$(top_builddir)/Messages -lMessages
 dibbler_relay_LDADD += -L$(top_builddir)/Options -lOptions
 dibbler_relay_LDADD += -L$(top_builddir)/@PORT_SUBDIR@ -lLowLevel
 dibbler_relay_LDADD += -L$(top_builddir)/Misc -lMisc
+dibbler_relay_LDADD += -lpthread
 
 requestor: common-libs requestor-libs
 	$(MAKE) dibbler-requestor

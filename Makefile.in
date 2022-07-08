@@ -485,7 +485,7 @@ dibbler_client_LDADD = -L$(top_builddir)/ClntTransMgr -lClntTransMgr \
 	-L$(top_builddir)/Options -lOptions -L$(top_builddir)/Messages \
 	-lMessages -lOptions -lMessages \
 	-L$(top_builddir)/@PORT_SUBDIR@ -lLowLevel \
-	-L$(top_builddir)/Misc -lMisc -lClntOptions -lOptions
+	-L$(top_builddir)/Misc -lMisc -lClntOptions -lOptions -lpthread
 dibbler_server_SOURCES =  \
 	$(top_srcdir)/@PORT_SUBDIR@/dibbler-server.cpp \
 	$(top_srcdir)/Misc/DHCPServer.cpp \
