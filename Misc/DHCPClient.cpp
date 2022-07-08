@@ -157,6 +157,7 @@ void TDHCPClient::run() {
 
     unsigned int timeout = ClntTransMgr().getTimeout();
 
+    Log(Debug) << "Got timeout " << timeout << " second(s)." << LogEnd;
     if (timeout == 0) timeout = 1;
 
     Log(Debug) << "Sleeping for " << timeout << " second(s)." << LogEnd;
