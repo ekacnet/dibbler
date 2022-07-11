@@ -86,7 +86,6 @@ void TClntMsgConfirm::addrsAccepted() {
   this->firstOption();
   SPtr<TAddrAddr> ptrAddrAddr;
   while (ptrOpt = this->getOption()) {
-    unsigned long ts;
     if (ptrOpt->getOptType() != OPTION_IA_NA) continue;
 
     SPtr<TClntOptIA_NA> ptrOptIA = SPtr_cast<TClntOptIA_NA>(ptrOpt);
@@ -103,10 +102,7 @@ void TClntMsgConfirm::addrsAccepted() {
     // CONFIRM exchange is complete
     ptrIA->setState(STATE_CONFIGURED);
 
-    // Once confirmed, this triggers the
     ptrIA->setTimestamp();
-    ts = ptrIA->getTimestamp();
-    ptrIA->setTimestamp(ts - ptrIA->getT1());
 
     SPtr<TIfaceIface> ptrIface = ClntIfaceMgr().getIfaceByID(ptrIA->getIfindex());
     if (!ptrIface) continue;

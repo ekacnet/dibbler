@@ -233,7 +233,7 @@ unsigned long TAddrIA::getT1Timeout() {
     // which is not changed wvwn when the NTP updates the latest time.
     x = (unsigned long)clockts.tv_sec;
   }
-  this->setTimestamp(ts);
+  this->setTimestamp(ts - T1);
   if (ts > x)
     return ts - x;
   else
@@ -254,7 +254,7 @@ unsigned long TAddrIA::getT2Timeout() {
     // which is not changed wvwn when the NTP updates the latest time.
     x = (unsigned long)clockts.tv_sec;
   }
-  this->setTimestamp(ts);
+  this->setTimestamp(ts - T2);
   if (ts > x)
     return ts - x;
   else
