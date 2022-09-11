@@ -469,7 +469,7 @@ void add_radvd_conf(const char* ifname, const char* prefixPlain, int prefixLengt
   fclose(f);
 }
 
-void delete_radvd_conf(const char* ifname, const char* prefixPlain, int prefixLen) {
+void delete_radvd_conf(const char* ifname) {
 
   FILE *f, *f2;
   struct stat st;
@@ -524,8 +524,11 @@ int prefix_add(const char* ifname, int ifindex, const char* prefixPlain, int pre
   int result;
   char buf[128];
   int numargs = 0;
-  /* char buf2[128]; */
 
+  /* not needed in theory but in practice it happens that there is
+   * already interfaces definition and it drives radvd crazy
+   */
+  delete_radvd_conf(ifname);
   add_radvd_conf(ifname, prefixPlain, prefixLength, preferred, valid);
 
   snprintf(buf, 127, "%s/%d", prefixPlain, prefixLength);
@@ -556,7 +559,7 @@ int prefix_update(const char* ifname, int ifindex, const char* prefixPlain, int 
   int result;
   char buf[128];
 
-  delete_radvd_conf(ifname, prefixPlain, prefixLength);
+  delete_radvd_conf(ifname);
   add_radvd_conf(ifname, prefixPlain, prefixLength, prefered, valid);
 
   snprintf(buf, 127, "%s/%d", prefixPlain, prefixLength);
@@ -585,7 +588,7 @@ int prefix_del(const char* ifname, int ifindex, const char* prefixPlain, int pre
   char* argv[3];
   char buf[512];
 
-  delete_radvd_conf(ifname, prefixPlain, prefixLength);
+  delete_radvd_conf(ifname);
 
   snprintf(buf, 127, "%s/%d", prefixPlain, prefixLength);
   argv[0] = buf;
