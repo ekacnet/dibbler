@@ -418,7 +418,16 @@ int ipaddr_add_or_del(const char *addr, const char *ifacename, int prefixLen,
     rtnl_close(&rth);
     return LOWLEVEL_ERROR_UNSPEC;
   }
-  rtnl_talk(&rth, &req.n, 0, 0, NULL, NULL, NULL);
+  if (rtnl_talk(&rth, &req.n, 0, 0, NULL, NULL, NULL) != 0) {
+    rtnl_close(&rth);
+    if (mode == ADDROPER_ADD && errno == EEXIST) {
+      fflush(stdout);
+      return LOWLEVEL_ERROR_FILE_EXISTS;
+    }
+    else {
+      return LOWLEVEL_ERROR_UNSPEC;
+    }
+  }
   fflush(stdout);
   rtnl_close(&rth);
   return LOWLEVEL_NO_ERROR;

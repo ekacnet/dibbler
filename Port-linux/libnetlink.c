@@ -183,7 +183,6 @@ int rtnl_dump_filter(struct rtnl_handle *rth, rtnl_filter_t filter, void *arg1, 
           fprintf(stderr, "ERROR truncated\n");
         } else {
           errno = -err->error;
-          perror("RTNETLINK answers");
         }
         return -1;
       }
@@ -288,7 +287,6 @@ int rtnl_talk(struct rtnl_handle *rtnl, struct nlmsghdr *n, pid_t peer, unsigned
             if (answer) memcpy(answer, h, h->nlmsg_len);
             return 0;
           }
-          perror("RTNETLINK answers");
         }
         return -1;
       }

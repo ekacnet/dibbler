@@ -178,7 +178,8 @@ bool TIfaceIface::addAddr(SPtr<TIPv6Addr> addr, long pref, long valid, int prefi
               << " interface." << LogEnd;
 
   int status = ipaddr_add(this->Name, this->ID, addr->getPlain(), pref, valid, prefixLen);
-  return (status == LOWLEVEL_NO_ERROR);
+  Log(Debug) << "ipaddr_add returned " << status << LogEnd;
+  return (status == LOWLEVEL_NO_ERROR || status == LOWLEVEL_ERROR_FILE_EXISTS);
 }
 
 /**

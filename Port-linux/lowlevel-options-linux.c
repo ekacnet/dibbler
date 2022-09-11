@@ -549,7 +549,11 @@ int prefix_add(const char* ifname, int ifindex, const char* prefixPlain, int pre
     return LOWLEVEL_NO_ERROR;
   else {
     sprintf(error_message(), "Unable to add prefix: %s", strerror(errno));
-    return LOWLEVEL_ERROR_UNSPEC;
+    if (errno == EEXIST) {
+      return LOWLEVEL_ERROR_FILE_EXISTS;
+    } else {
+      return LOWLEVEL_ERROR_UNSPEC;
+    }
   }
 }
 

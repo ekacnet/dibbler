@@ -256,6 +256,7 @@ struct link_state_notify_t
 #define LOWLEVEL_ERROR_FILE             -10
 #define LOWLEVEL_ERROR_SOCKET           -11
 #define LOWLEVEL_ERROR_NOT_IMPLEMENTED  -12
+#define LOWLEVEL_ERROR_FILE_EXISTS      -13
 
 #define LOWLEVEL_TENTATIVE_YES 1
 #define LOWLEVEL_TENTATIVE_NO  0

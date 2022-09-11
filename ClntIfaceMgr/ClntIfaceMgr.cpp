@@ -600,7 +600,20 @@ bool TClntIfaceMgr::modifyPrefix(int iface, SPtr<TIPv6Addr> prefix, int prefixLe
       conf++;
     } else {
       string tmp = error_message();
-      Log(Error) << "Prefix error encountered during " << action << " operation: " << tmp << LogEnd;
+      if (status == LOWLEVEL_ERROR_FILE_EXISTS) {
+        Log(Debug) << "Retrying to set the address on the interface, after getting error: " << tmp << LogEnd;
+        prefix_del((*i)->getName(), (*i)->getID(), subprefix->getPlain(), subprefixLen);
+        status = prefix_add((*i)->getName(), (*i)->getID(), subprefix->getPlain(), subprefixLen,
+                            pref, valid);
+        if (status == LOWLEVEL_NO_ERROR) {
+          conf++;
+        } else {
+          tmp = error_message();
+          Log(Error) << "Prefix error encountered, after retry, during " << action << " operation: " << tmp << LogEnd;
+        }
+      } else {
+        Log(Error) << "Prefix error encountered during " << action << " operation: " << tmp << LogEnd;
+      }
     }
 
     infix++;

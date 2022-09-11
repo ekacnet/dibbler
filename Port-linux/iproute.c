@@ -1175,7 +1175,10 @@ int iproute_get(int argc, char **argv) {
 
   if (req.r.rtm_family == AF_UNSPEC) req.r.rtm_family = AF_INET;
 
-  if (rtnl_talk(&rth, &req.n, 0, 0, &req.n, NULL, NULL) < 0) exit(2);
+  if (rtnl_talk(&rth, &req.n, 0, 0, &req.n, NULL, NULL) < 0) {
+    fprintf(stderr, "Can't talk properly to netlink, exiting\n");
+    exit(2);
+  }
 
   if (connected && !from_ok) {
     struct rtmsg *r = NLMSG_DATA(&req.n);
@@ -1212,7 +1215,10 @@ int iproute_get(int argc, char **argv) {
     req.n.nlmsg_flags = NLM_F_REQUEST;
     req.n.nlmsg_type = RTM_GETROUTE;
 
-    if (rtnl_talk(&rth, &req.n, 0, 0, &req.n, NULL, NULL) < 0) exit(2);
+    if (rtnl_talk(&rth, &req.n, 0, 0, &req.n, NULL, NULL) < 0) {
+      fprintf(stderr, "Can't talk properly to netlink, exiting\n");
+      exit(2);
+    }
   }
 
   if (print_route(NULL, &req.n, (void *)stdout) < 0) {
