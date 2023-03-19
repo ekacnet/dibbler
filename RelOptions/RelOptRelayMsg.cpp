@@ -14,8 +14,8 @@
  *
  */
 
-#include "RelOptRelayMsg.h"
-#include "OptGeneric.h"
+#include <RelOptions/RelOptRelayMsg.h>
+#include <Options/OptGeneric.h>
 
 TRelOptRelayMsg::TRelOptRelayMsg(char *buf, int bufsize, TMsg *parent)
     : TOptGeneric(OPTION_RELAY_MSG, buf, bufsize, parent) {}

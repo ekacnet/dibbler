@@ -7,9 +7,9 @@
  *
  */
 
-#include "RelCfgIface.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
+#include <RelCfgMgr/RelCfgIface.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
 #include <sstream>
 
 using namespace std;

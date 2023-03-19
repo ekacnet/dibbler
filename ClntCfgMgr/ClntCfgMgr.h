@@ -17,18 +17,18 @@ class ClntParser;
 #ifndef CLNTCFGMGR_H
 #define CLNTCFGMGR_H
 
-#include "CfgMgr.h"
-#include "ClntCfgIA.h"
-#include "ClntCfgIface.h"
-#include "ClntCfgPD.h"
-#include "ClntIfaceMgr.h"
-#include "Container.h"
-#include "SmartPtr.h"
+#include <CfgMgr/CfgMgr.h>
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <ClntCfgMgr/ClntCfgIface.h>
+#include <ClntCfgMgr/ClntCfgPD.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <Misc/Container.h>
+#include <Misc/SmartPtr.h>
 #include <string>
 #include <vector>
 
 #ifndef MOD_DISABLE_AUTH
-#include "KeyList.h"
+#include <Misc/KeyList.h>
 #endif
 
 #define ClntCfgMgr() (TClntCfgMgr::instance())

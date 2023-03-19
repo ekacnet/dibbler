@@ -17,15 +17,15 @@ class TSrvCfgAddrClass;
 #include <iostream>
 #include <string>
 
-#include "DHCPConst.h"
-#include "DHCPDefaults.h"
-#include "DUID.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
-#include "SrvAddrMgr.h"
-#include "SrvCfgClientClass.h"
-#include "SrvOptAddrParams.h"
-#include "SrvParsGlobalOpt.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/DUID.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <SrvCfgMgr/SrvCfgClientClass.h>
+#include <SrvOptions/SrvOptAddrParams.h>
+#include <SrvCfgMgr/SrvParsGlobalOpt.h>
 
 class TSrvCfgAddrClass {
   friend std::ostream &operator<<(std::ostream &out, TSrvCfgAddrClass &iface);

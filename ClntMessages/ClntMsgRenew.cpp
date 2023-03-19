@@ -12,15 +12,15 @@
  *
  */
 
-#include "ClntMsgRenew.h"
-#include "ClntIfaceMgr.h"
-#include "ClntOptIA_NA.h"
-#include "ClntOptIA_PD.h"
-#include "ClntTransMgr.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "OptOptionRequest.h"
+#include <ClntMessages/ClntMsgRenew.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <ClntOptions/ClntOptIA_PD.h>
+#include <ClntTransMgr/ClntTransMgr.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Options/OptOptionRequest.h>
 #include <cmath>
 
 TClntMsgRenew::TClntMsgRenew(List(TAddrIA) IALst, List(TAddrIA) PDLst)

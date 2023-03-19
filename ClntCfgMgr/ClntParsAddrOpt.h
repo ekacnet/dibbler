@@ -14,7 +14,7 @@
 #ifndef CLNTPARSADDROPT_H
 #define CLNTPARSADDROPT_H
 
-#include "DHCPConst.h"
+#include <Misc/DHCPConst.h>
 
 class TClntParsAddrOpt {
 public:

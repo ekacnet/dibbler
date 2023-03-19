@@ -7,9 +7,9 @@
  *
  */
 
-#include "ScriptParams.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Misc/ScriptParams.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <sstream>
 #include <stdio.h>
 #include <string.h>

@@ -11,8 +11,8 @@
 #ifndef CLNTCFGTA_H
 #define CLNTCFGTA_H
 
-#include "ClntParsGlobalOpt.h"
-#include "DHCPConst.h"
+#include <ClntCfgMgr/ClntParsGlobalOpt.h>
+#include <Misc/DHCPConst.h>
 #include <iomanip>
 #include <iostream>
 

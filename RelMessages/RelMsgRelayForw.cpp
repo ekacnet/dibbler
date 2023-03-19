@@ -8,9 +8,9 @@
  *
  */
 
-#include "RelMsgRelayForw.h"
-#include "Logger.h"
-#include "RelMsg.h"
+#include <RelMessages/RelMsgRelayForw.h>
+#include <Misc/Logger.h>
+#include <RelMessages/RelMsg.h>
 
 // --- options ---
 

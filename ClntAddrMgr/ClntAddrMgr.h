@@ -11,13 +11,13 @@
 #ifndef CLNTADDRMGR_H
 #define CLNTADDRMGR_H
 
-#include "AddrIA.h"
-#include "AddrMgr.h"
-#include "Container.h"
-#include "IPv6Addr.h"
-#include "Portable.h"
-#include "ScriptParams.h"
-#include "SmartPtr.h"
+#include <AddrMgr/AddrIA.h>
+#include <AddrMgr/AddrMgr.h>
+#include <Misc/Container.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/Portable.h>
+#include <Misc/ScriptParams.h>
+#include <Misc/SmartPtr.h>
 
 #define ClntAddrMgr() (TClntAddrMgr::instance())
 

@@ -7,9 +7,9 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "HostRange.h"
-#include "DHCPConst.h"
-#include "Logger.h"
+#include <CfgMgr/HostRange.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
 
 THostRange::THostRange(SPtr<TDUID> duidl, SPtr<TDUID> duidr)
     : isAddrRange_(false), DUIDL_(duidl), DUIDR_(duidr), PrefixLength_(-1) {}

@@ -11,8 +11,8 @@
 #ifndef RELMSGRELAYFORW_H
 #define RELMSGRELAYFORW_H
 
-#include "IPv6Addr.h"
-#include "RelMsg.h"
+#include <Misc/IPv6Addr.h>
+#include <RelMessages/RelMsg.h>
 
 #define MIN_RELAYFORW_LEN 34
 

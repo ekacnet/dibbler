@@ -11,7 +11,7 @@
 class TClntMsgRelease;
 #ifndef CLNTMSGRELEASE_H
 #define CLNTMSGRELEASE_H
-#include "ClntMsg.h"
+#include <ClntMessages/ClntMsg.h>
 
 class TClntMsgRelease : public TClntMsg {
 public:

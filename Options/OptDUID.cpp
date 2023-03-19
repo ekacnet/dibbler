@@ -8,9 +8,9 @@
  *
  */
 
-#include "OptDUID.h"
-#include "DHCPConst.h"
-#include "Portable.h"
+#include <Options/OptDUID.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Portable.h>
 #include <stdlib.h>
 
 TOptDUID::TOptDUID(int type, SPtr<TDUID> duid, TMsg *parent) : TOpt(type, parent) { DUID = duid; }

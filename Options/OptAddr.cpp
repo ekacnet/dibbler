@@ -8,11 +8,11 @@
  *
  */
 
-#include "OptAddr.h"
-#include "Logger.h"
-#include "OptGeneric.h"
-#include "OptRtPrefix.h"
-#include "Portable.h"
+#include <Options/OptAddr.h>
+#include <Misc/Logger.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptRtPrefix.h>
+#include <Misc/Portable.h>
 
 TOptAddr::TOptAddr(int type, const char *buf, unsigned short len, TMsg *parent)
     : TOpt(type, parent) {

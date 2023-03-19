@@ -7,8 +7,8 @@
  *
  */
 
-#include "RelOptRemoteID.h"
-#include "DHCPConst.h"
+#include <RelOptions/RelOptRemoteID.h>
+#include <Misc/DHCPConst.h>
 
 TRelOptRemoteID::TRelOptRemoteID(char *buf, int n, TMsg *parent)
     : TOptVendorData(OPTION_REMOTE_ID, buf, n, parent) {}

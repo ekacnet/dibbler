@@ -11,10 +11,10 @@
 #ifndef OPTIAPREFIX_H
 #define OPTIAPREFIX_H
 
-#include "Container.h"
-#include "IPv6Addr.h"
-#include "Opt.h"
-#include "SmartPtr.h"
+#include <Misc/Container.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/Opt.h>
+#include <Misc/SmartPtr.h>
 
 class TOptIAPrefix : public TOpt {
 public:

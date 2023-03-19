@@ -7,10 +7,10 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "SrvParsGlobalOpt.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <SrvCfgMgr/SrvParsGlobalOpt.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 
 using namespace std;
 

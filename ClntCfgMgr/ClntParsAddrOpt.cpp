@@ -11,7 +11,7 @@
  * $Log: not supported by cvs2svn $
  */
 
-#include "ClntParsAddrOpt.h"
+#include <ClntCfgMgr/ClntParsAddrOpt.h>
 #include <limits.h>
 
 TClntParsAddrOpt::TClntParsAddrOpt() {

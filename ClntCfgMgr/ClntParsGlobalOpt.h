@@ -12,8 +12,8 @@ class TClntParsGlobalOpt;
 #ifndef PARSGLOBALOPT_H
 #define PARSGLOBALOPT_H
 
-#include "ClntParsIfaceOpt.h"
-#include "DHCPConst.h"
+#include <ClntCfgMgr/ClntParsIfaceOpt.h>
+#include <Misc/DHCPConst.h>
 
 class TClntParsGlobalOpt : public TClntParsIfaceOpt {
 public:

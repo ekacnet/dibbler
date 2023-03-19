@@ -11,11 +11,11 @@
 #ifndef CLNTIFACEIFACE_H
 #define CLNTIFACEIFACE_H
 
-#include "ClntIfaceMgr.h"
-#include "DUID.h"
-#include "Iface.h"
-#include "OptFQDN.h"
-#include "SmartPtr.h"
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <Misc/DUID.h>
+#include <IfaceMgr/Iface.h>
+#include <Options/OptFQDN.h>
+#include <Misc/SmartPtr.h>
 
 class TClntIfaceIface : public TIfaceIface {
 public:

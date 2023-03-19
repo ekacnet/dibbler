@@ -9,10 +9,10 @@
  * $Id: SrvMsgRebind.cpp,v 1.6 2008-08-29 00:07:35 thomson Exp $
  *
  */
-#include "SrvMsgRebind.h"
-#include "AddrClient.h"
-#include "SmartPtr.h"
-#include "SrvMsg.h"
+#include <SrvMessages/SrvMsgRebind.h>
+#include <AddrMgr/AddrClient.h>
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsg.h>
 
 TSrvMsgRebind::TSrvMsgRebind(int iface, SPtr<TIPv6Addr> addr, char *buf, int bufSize)
     : TSrvMsg(iface, addr, buf, bufSize) {}

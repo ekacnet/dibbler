@@ -8,11 +8,11 @@
  *
  */
 
-#include "RelService.h"
-#include "DHCPConst.h"
-#include "DHCPRelay.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Port-win32/RelService.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/DHCPRelay.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <direct.h>
 #include <string>
 #include <winsock2.h>

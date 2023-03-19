@@ -8,12 +8,12 @@
  *
  */
 
-#include "DHCPServer.h"
-#include "AddrClient.h"
-#include "Logger.h"
-#include "SrvCfgMgr.h"
-#include "SrvIfaceMgr.h"
-#include "SrvTransMgr.h"
+#include <Misc/DHCPServer.h>
+#include <AddrMgr/AddrClient.h>
+#include <Misc/Logger.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
+#include <SrvTransMgr/SrvTransMgr.h>
 
 using namespace std;
 

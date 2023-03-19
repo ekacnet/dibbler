@@ -11,7 +11,7 @@
 class TClntMsgDecline;
 #ifndef CLNTMSGDECLINE_H
 #define CLNTMSGDECLINE_H
-#include "ClntMsg.h"
+#include <ClntMessages/ClntMsg.h>
 
 class TClntMsgDecline : public TClntMsg {
 public:

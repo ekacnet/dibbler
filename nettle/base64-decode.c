@@ -29,7 +29,7 @@
 #include <assert.h>
 #include <stdlib.h>
 
-#include "base64.h"
+#include <nettle/base64.h>
 
 #define TABLE_INVALID -1
 #define TABLE_SPACE -2

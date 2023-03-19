@@ -13,13 +13,13 @@ class TAddrIA;
 #ifndef ADDRIA_H
 #define ADDRIA_H
 
-#include "AddrAddr.h"
-#include "AddrPrefix.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "FQDN.h"
-#include "SmartPtr.h"
+#include <AddrMgr/AddrAddr.h>
+#include <AddrMgr/AddrPrefix.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <Misc/FQDN.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 #include <string>
 

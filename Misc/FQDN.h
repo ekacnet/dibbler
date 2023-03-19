@@ -10,9 +10,9 @@
 #ifndef FQDN_H
 #define FQDN_H
 
-#include "DUID.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
+#include <Misc/DUID.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
 #include <fstream>
 #include <iomanip>
 #include <iostream>

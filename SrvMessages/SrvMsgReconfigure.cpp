@@ -8,18 +8,18 @@
  *
  */
 
-#include "SrvMsgReconfigure.h"
-#include "Key.h"
-#include "Logger.h"
-#include "Opt.h"
-#include "OptAuthentication.h"
-#include "OptDUID.h"
-#include "OptReconfigureMsg.h"
-#include "OptStatusCode.h"
-#include "SrvOptIA_NA.h"
-#include "SrvOptIA_PD.h"
-#include "SrvOptTA.h"
-#include "hex.h"
+#include <SrvMessages/SrvMsgReconfigure.h>
+#include <Misc/Key.h>
+#include <Misc/Logger.h>
+#include <Options/Opt.h>
+#include <Options/OptAuthentication.h>
+#include <Options/OptDUID.h>
+#include <Options/OptReconfigureMsg.h>
+#include <Options/OptStatusCode.h>
+#include <SrvOptions/SrvOptIA_NA.h>
+#include <SrvOptions/SrvOptIA_PD.h>
+#include <SrvOptions/SrvOptTA.h>
+#include <Misc/hex.h>
 
 TSrvMsgReconfigure::TSrvMsgReconfigure(int iface, SPtr<TIPv6Addr> clientAddr, int msgType,
                                        SPtr<TDUID> clientDuid)

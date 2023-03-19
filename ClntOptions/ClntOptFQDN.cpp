@@ -7,9 +7,9 @@
  *
  */
 
-#include "ClntOptFQDN.h"
-#include "Logger.h"
-#include "OptDUID.h"
+#include <ClntOptions/ClntOptFQDN.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
 
 using namespace std;
 

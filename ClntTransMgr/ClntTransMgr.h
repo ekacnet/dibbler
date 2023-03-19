@@ -10,12 +10,12 @@
 
 #ifndef CLNTTRANSMGR_H
 #define CLNTTRANSMGR_H
-#include "AddrIA.h"
-#include "ClntCfgIface.h"
-#include "ClntMsg.h"
-#include "IPv6Addr.h"
-#include "Opt.h"
-#include "OptAddrLst.h"
+#include <AddrMgr/AddrIA.h>
+#include <ClntCfgMgr/ClntCfgIface.h>
+#include <ClntMessages/ClntMsg.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/Opt.h>
+#include <Options/OptAddrLst.h>
 #include <string>
 
 #define ClntTransMgr() (TClntTransMgr::instance())

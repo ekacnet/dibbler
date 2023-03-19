@@ -7,9 +7,9 @@
  *
  */
 
-#include "OptVendorClass.h"
-#include "DHCPConst.h"
-#include "Portable.h"
+#include <Options/OptVendorClass.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Portable.h>
 #include <string.h>
 
 TOptVendorClass::TOptVendorClass(uint16_t type, const char *buf, unsigned short buf_len,

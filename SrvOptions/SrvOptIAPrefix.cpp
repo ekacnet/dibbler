@@ -8,14 +8,14 @@
  *
  */
 
-#include "SrvOptIAPrefix.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Msg.h"
-#include "Opt.h"
-#include "OptIAPrefix.h"
-#include "OptStatusCode.h"
-#include "Portable.h"
+#include <SrvOptions/SrvOptIAPrefix.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Messages/Msg.h>
+#include <Options/Opt.h>
+#include <Options/OptIAPrefix.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/Portable.h>
 
 TSrvOptIAPrefix::TSrvOptIAPrefix(char *buf, int bufsize, TMsg *parent)
     : TOptIAPrefix(buf, bufsize, parent) {

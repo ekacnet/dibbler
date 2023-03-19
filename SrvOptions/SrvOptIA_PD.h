@@ -14,13 +14,13 @@ class TSrvOptIA_PD;
 #ifndef SRVOPTIA_PD_H
 #define SRVOPTIA_PD_H
 
-#include "Container.h"
-#include "DUID.h"
-#include "IPv6Addr.h"
-#include "OptIA_PD.h"
-#include "SmartPtr.h"
-#include "SrvCfgIface.h"
-#include "SrvOptIAPrefix.h"
+#include <Misc/Container.h>
+#include <Misc/DUID.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/OptIA_PD.h>
+#include <Misc/SmartPtr.h>
+#include <SrvCfgMgr/SrvCfgIface.h>
+#include <SrvOptions/SrvOptIAPrefix.h>
 
 class TSrvOptIA_PD : public TOptIA_PD {
 public:

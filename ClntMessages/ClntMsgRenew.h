@@ -12,8 +12,8 @@
 
 #ifndef CLNTMSGRENEW_H
 #define CLNTMSGRENEW_H
-#include "ClntMsg.h"
-#include "ClntOptIA_NA.h"
+#include <ClntMessages/ClntMsg.h>
+#include <ClntOptions/ClntOptIA_NA.h>
 
 class TClntMsgRenew : public TClntMsg {
 public:

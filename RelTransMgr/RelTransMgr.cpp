@@ -11,14 +11,14 @@
 #define MAX_PACKET_LEN 1452
 #define RELAY_FORW_MSG_LEN 36
 
-#include "RelTransMgr.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "RelCfgMgr.h"
-#include "RelIfaceMgr.h"
-#include "RelOptEcho.h"
-#include "RelOptGeneric.h"
-#include "RelOptInterfaceID.h"
+#include <RelTransMgr/RelTransMgr.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <RelCfgMgr/RelCfgMgr.h>
+#include <RelIfaceMgr/RelIfaceMgr.h>
+#include <RelOptions/RelOptEcho.h>
+#include <RelOptions/RelOptGeneric.h>
+#include <RelOptions/RelOptInterfaceID.h>
 #include <cstdlib>
 #include <fstream>
 #include <string.h>

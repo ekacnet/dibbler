@@ -8,12 +8,12 @@
  *
  */
 
-#include "NodeClientSpecific.h"
-#include "DHCPConst.h"
-#include "OptVendorClass.h"
-#include "OptVendorData.h"
-#include "SrvMsg.h"
-#include "hex.h"
+#include <SrvCfgMgr/NodeClientSpecific.h>
+#include <Misc/DHCPConst.h>
+#include <Options/OptVendorClass.h>
+#include <Options/OptVendorData.h>
+#include <SrvMessages/SrvMsg.h>
+#include <Misc/hex.h>
 #include <sstream>
 
 using namespace std;

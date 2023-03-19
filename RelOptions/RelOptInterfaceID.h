@@ -12,7 +12,7 @@
 
 #ifndef RELOPTIONINTERFACEID_H
 #define RELOPTIONINTERFACEID_H
-#include "OptInteger.h"
+#include <Options/OptInteger.h>
 
 class TRelOptInterfaceID : public TOptInteger {
 public:

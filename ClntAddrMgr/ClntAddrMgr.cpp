@@ -8,11 +8,11 @@
  *
  */
 
-#include "ClntAddrMgr.h"
-#include "AddrClient.h"
-#include "AddrIA.h"
-#include "Logger.h"
-#include "SmartPtr.h"
+#include <ClntAddrMgr/ClntAddrMgr.h>
+#include <AddrMgr/AddrClient.h>
+#include <AddrMgr/AddrIA.h>
+#include <Misc/Logger.h>
+#include <Misc/SmartPtr.h>
 
 using namespace std;
 

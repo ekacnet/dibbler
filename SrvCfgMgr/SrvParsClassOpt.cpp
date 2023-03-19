@@ -9,8 +9,8 @@
  *
  */
 
-#include "SrvParsClassOpt.h"
-#include "DHCPDefaults.h"
+#include <SrvCfgMgr/SrvParsClassOpt.h>
+#include <Misc/DHCPDefaults.h>
 #include <limits.h>
 
 using namespace std;

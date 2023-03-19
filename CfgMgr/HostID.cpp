@@ -7,7 +7,7 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "HostID.h"
+#include <CfgMgr/HostID.h>
 
 #include <iomanip>
 #include <iostream>

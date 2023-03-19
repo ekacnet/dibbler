@@ -13,24 +13,24 @@
 #include <iostream>
 #include <string>
 
-#include "ClntAddrMgr.h"
-#include "ClntCfgMgr.h"
-#include "ClntCfgPD.h"
-#include "ClntMsgAdvertise.h"
-#include "ClntMsgConfirm.h"
-#include "ClntMsgDecline.h"
-#include "ClntMsgInfRequest.h"
-#include "ClntMsgRebind.h"
-#include "ClntMsgReconfigure.h"
-#include "ClntMsgRelease.h"
-#include "ClntMsgRenew.h"
-#include "ClntMsgReply.h"
-#include "ClntMsgRequest.h"
-#include "ClntMsgSolicit.h"
-#include "ClntTransMgr.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "Logger.h"
+#include <ClntAddrMgr/ClntAddrMgr.h>
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <ClntCfgMgr/ClntCfgPD.h>
+#include <ClntMessages/ClntMsgAdvertise.h>
+#include <ClntMessages/ClntMsgConfirm.h>
+#include <ClntMessages/ClntMsgDecline.h>
+#include <ClntMessages/ClntMsgInfRequest.h>
+#include <ClntMessages/ClntMsgRebind.h>
+#include <ClntMessages/ClntMsgReconfigure.h>
+#include <ClntMessages/ClntMsgRelease.h>
+#include <ClntMessages/ClntMsgRenew.h>
+#include <ClntMessages/ClntMsgReply.h>
+#include <ClntMessages/ClntMsgRequest.h>
+#include <ClntMessages/ClntMsgSolicit.h>
+#include <ClntTransMgr/ClntTransMgr.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
 
 using namespace std;
 

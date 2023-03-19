@@ -11,7 +11,7 @@
 #ifndef SRVMSGADVERTISE_H
 #define SRVMSGADVERTISE_H
 
-#include "SrvMsg.h"
+#include <SrvMessages/SrvMsg.h>
 class TSrvMsgAdvertise : public TSrvMsg {
 public:
   // creates object based on a buffer

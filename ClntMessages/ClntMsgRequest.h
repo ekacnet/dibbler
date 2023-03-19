@@ -12,8 +12,8 @@ class TClntIfaceMgr;
 #ifndef CLNTMSGREQUEST_H
 #define CLNTMSGREQUEST_H
 
-#include "ClntMsg.h"
-#include "SmartPtr.h"
+#include <ClntMessages/ClntMsg.h>
+#include <Misc/SmartPtr.h>
 
 class TClntMsgRequest : public TClntMsg {
 public:

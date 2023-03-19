@@ -103,19 +103,19 @@ void *alloca();
 #line 88 "../bison++/bison.cc"
 #line 3 "RelParser.y"
 
-#include "Container.h"
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "OptVendorData.h"
-#include "Portable.h"
-#include "RelCfgIface.h"
-#include "RelCfgMgr.h"
-#include "RelParsGlobalOpt.h"
-#include "RelParsIfaceOpt.h"
-#include "RelParser.h"
-#include "SmartPtr.h"
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Options/OptVendorData.h>
+#include <Misc/Portable.h>
+#include <RelCfgMgr/RelCfgIface.h>
+#include <RelCfgMgr/RelCfgMgr.h>
+#include <RelCfgMgr/RelParsGlobalOpt.h>
+#include <RelCfgMgr/RelParsIfaceOpt.h>
+#include <RelCfgMgr/RelParser.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 #include <malloc.h>
 #include <string.h>
@@ -126,7 +126,7 @@ using namespace std;
 #define YY_USE_CLASS
 #line 27 "RelParser.y"
 
-#include "FlexLexer.h"
+#include <CfgMgr/FlexLexer.h>
 #define YY_RelParser_MEMBERS                                                        \
   FlexLexer *lex;                                                                   \
   List(TRelParsGlobalOpt) ParserOptStack; /* list of parsed interfaces/IAs/addrs */ \

@@ -12,9 +12,9 @@
 #ifndef RELOPTECHO_H
 #define RELOPTECHO_H
 
-#include "DHCPConst.h"
-#include "OptOptionRequest.h"
-#include "SmartPtr.h"
+#include <Misc/DHCPConst.h>
+#include <Options/OptOptionRequest.h>
+#include <Misc/SmartPtr.h>
 
 class TRelOptEcho;
 

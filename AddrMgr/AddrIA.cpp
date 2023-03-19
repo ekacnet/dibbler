@@ -9,13 +9,13 @@
  *
  */
 
-#include "AddrIA.h"
-#include "AddrAddr.h"
-#include "DHCPConst.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "SmartPtr.h"
+#include <AddrMgr/AddrIA.h>
+#include <AddrMgr/AddrAddr.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
 #include <limits.h>
 #include <string.h>
 

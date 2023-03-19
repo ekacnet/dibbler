@@ -12,7 +12,7 @@ class TRelMsgRelayRepl;
 #ifndef RELMSGRELAYREPL_H
 #define RELMSGRELAYREPL_H
 
-#include "RelMsg.h"
+#include <RelMessages/RelMsg.h>
 
 #define MIN_RELAYREPL_LEN 34
 

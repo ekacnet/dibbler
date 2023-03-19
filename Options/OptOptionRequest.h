@@ -11,9 +11,9 @@
 #ifndef OPTOPTIONREQUEST_H
 #define OPTOPTIONREQUEST_H
 
-#include "DHCPConst.h"
-#include "Opt.h"
-#include "SmartPtr.h"
+#include <Misc/DHCPConst.h>
+#include <Options/Opt.h>
+#include <Misc/SmartPtr.h>
 class TClntConfMgr;
 
 class TOptOptionRequest : public TOpt {

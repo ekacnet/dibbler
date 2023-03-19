@@ -13,8 +13,8 @@
 #ifndef RELPARSIFACEOPT_H_
 #define RELPARSIFACEOPT_H_
 
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
 
 class TRelParsIfaceOpt {
 public:

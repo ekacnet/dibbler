@@ -9,8 +9,8 @@
  *
  */
 
-#include "SrvCfgOptions.h"
-#include "Logger.h"
+#include <SrvCfgMgr/SrvCfgOptions.h>
+#include <Misc/Logger.h>
 
 using namespace std;
 

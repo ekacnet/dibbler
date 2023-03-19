@@ -13,8 +13,8 @@
 class TSrvMsgSolicit;
 #ifndef SRVMSGSOLICIT_H
 #define SRVMSGSOLICIT_H
-#include "SmartPtr.h"
-#include "SrvMsg.h"
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsg.h>
 
 class TSrvMsgSolicit : public TSrvMsg {
 public:

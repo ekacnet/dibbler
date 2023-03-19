@@ -7,8 +7,8 @@
  *
  */
 
-#include "FQDN.h"
-#include "SmartPtr.h"
+#include <Misc/FQDN.h>
+#include <Misc/SmartPtr.h>
 #include <string>
 
 using namespace std;

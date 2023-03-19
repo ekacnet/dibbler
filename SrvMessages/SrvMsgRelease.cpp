@@ -8,8 +8,8 @@
  *
  */
 
-#include "SrvMsgRelease.h"
-#include "AddrClient.h"
+#include <SrvMessages/SrvMsgRelease.h>
+#include <AddrMgr/AddrClient.h>
 
 TSrvMsgRelease::TSrvMsgRelease(int iface, SPtr<TIPv6Addr> addr, char *buf, int bufSize)
     : TSrvMsg(iface, addr, buf, bufSize) {}

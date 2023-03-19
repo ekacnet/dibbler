@@ -10,14 +10,14 @@
  *
  */
 
-#include "SrvOptIA_PD.h"
-#include "AddrClient.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
-#include "Msg.h"
-#include "OptStatusCode.h"
-#include "SrvCfgMgr.h"
-#include "SrvOptIAPrefix.h"
+#include <SrvOptions/SrvOptIA_PD.h>
+#include <AddrMgr/AddrClient.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
+#include <Messages/Msg.h>
+#include <Options/OptStatusCode.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvOptions/SrvOptIAPrefix.h>
 #include <sstream>
 
 using namespace std;

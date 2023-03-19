@@ -9,13 +9,13 @@
  *
  */
 
-#include "SrvCfgIface.h"
-#include "DNSUpdate.h"
-#include "Logger.h"
-#include "Opt.h"
-#include "SrvCfgAddrClass.h"
-#include "SrvCfgPD.h"
-#include "SrvMsg.h"
+#include <SrvCfgMgr/SrvCfgIface.h>
+#include <IfaceMgr/DNSUpdate.h>
+#include <Misc/Logger.h>
+#include <Options/Opt.h>
+#include <SrvCfgMgr/SrvCfgAddrClass.h>
+#include <SrvCfgMgr/SrvCfgPD.h>
+#include <SrvMessages/SrvMsg.h>
 #include <cstdlib>
 #include <sstream>
 

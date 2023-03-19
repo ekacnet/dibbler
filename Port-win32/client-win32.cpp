@@ -15,10 +15,10 @@
 #include <string>
 #include <winsock2.h>
 
-#include "ClntService.h"
-#include "DHCPClient.h"
-#include "Portable.h"
-#include "WinService.h"
+#include <Port-win32/ClntService.h>
+#include <Misc/DHCPClient.h>
+#include <Misc/Portable.h>
+#include <Port-win32/WinService.h>
 #include "logger.h"
 #include <iostream>
 

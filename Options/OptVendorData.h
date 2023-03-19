@@ -9,7 +9,7 @@
 #ifndef OPTVENDORDATA_H
 #define OPTVENDORDATA_H
 
-#include "Opt.h"
+#include <Options/Opt.h>
 //#include "DHCPConst.h"
 
 class TOptVendorData : public TOpt {

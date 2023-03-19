@@ -8,12 +8,12 @@
  *
  */
 
-#include "SrvCfgTA.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "SmartPtr.h"
-#include "SrvMsg.h"
-#include "SrvParsGlobalOpt.h"
+#include <SrvCfgMgr/SrvCfgTA.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsg.h>
+#include <SrvCfgMgr/SrvParsGlobalOpt.h>
 
 using namespace std;
 

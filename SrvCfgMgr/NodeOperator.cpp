@@ -8,9 +8,9 @@
  *
  */
 
-#include "NodeOperator.h"
-#include "Logger.h"
-#include "SrvMsg.h"
+#include <SrvCfgMgr/NodeOperator.h>
+#include <Misc/Logger.h>
+#include <SrvMessages/SrvMsg.h>
 
 using namespace std;
 

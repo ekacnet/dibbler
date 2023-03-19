@@ -10,7 +10,7 @@
 
 #ifndef NODECONSTANT_H_
 #define NODECONSTANT_H_
-#include "Node.h"
+#include <SrvCfgMgr/Node.h>
 #include <iostream>
 
 class NodeConstant : public Node {

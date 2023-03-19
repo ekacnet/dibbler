@@ -7,15 +7,15 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "ClntOptIA_PD.h"
-#include "AddrIA.h"
-#include "ClntCfgMgr.h"
-#include "ClntIfaceMgr.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptIAPrefix.h"
-#include "OptStatusCode.h"
-#include "Portable.h"
+#include <ClntOptions/ClntOptIA_PD.h>
+#include <AddrMgr/AddrIA.h>
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptIAPrefix.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/Portable.h>
 
 using namespace std;
 

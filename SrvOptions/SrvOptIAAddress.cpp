@@ -8,14 +8,14 @@
  *
  */
 
-#include "SrvOptIAAddress.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Msg.h"
-#include "Opt.h"
-#include "OptIAAddress.h"
-#include "OptStatusCode.h"
-#include "Portable.h"
+#include <SrvOptions/SrvOptIAAddress.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Messages/Msg.h>
+#include <Options/Opt.h>
+#include <Options/OptIAAddress.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/Portable.h>
 
 TSrvOptIAAddress::TSrvOptIAAddress(char *buf, int bufsize, TMsg *parent)
     : TOptIAAddress(buf, bufsize, parent) {

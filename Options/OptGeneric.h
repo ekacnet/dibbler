@@ -12,10 +12,10 @@
 #ifndef OPTGENERIC_H
 #define OPTGENERIC_H
 
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "Opt.h"
-#include "SmartPtr.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <Options/Opt.h>
+#include <Misc/SmartPtr.h>
 
 class TOptGeneric : public TOpt {
 public:

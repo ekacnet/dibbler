@@ -10,7 +10,7 @@
 
 #ifndef NODE_H_
 #define NODE_H_
-#include "SmartPtr.h"
+#include <Misc/SmartPtr.h>
 #include <iostream>
 
 class TSrvMsg;

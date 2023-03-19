@@ -11,10 +11,10 @@
 #ifndef NODECLIENTSPECIFIC_H_
 #define NODECLIENTSPECIFIC_H_
 
-#include "Container.h"
-#include "Node.h"
-#include "Opt.h"
-#include "SmartPtr.h"
+#include <Misc/Container.h>
+#include <SrvCfgMgr/Node.h>
+#include <Options/Opt.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 
 class NodeClientSpecific : public Node {

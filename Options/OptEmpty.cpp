@@ -7,8 +7,8 @@
  * released under GNU GPL v2 licence
  *
  */
-#include "OptEmpty.h"
-#include "Portable.h"
+#include <Options/OptEmpty.h>
+#include <Misc/Portable.h>
 #include <stdlib.h>
 
 TOptEmpty::TOptEmpty(int code, const char *buf, int n, TMsg *parent) : TOpt(code, parent) {

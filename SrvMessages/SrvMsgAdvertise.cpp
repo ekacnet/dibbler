@@ -9,16 +9,16 @@
  *
  */
 
-#include "SrvMsgAdvertise.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "OptOptionRequest.h"
-#include "OptStatusCode.h"
-#include "SrvOptFQDN.h"
-#include "SrvOptIA_NA.h"
-#include "SrvOptIA_PD.h"
-#include "SrvOptTA.h"
-#include "SrvTransMgr.h"
+#include <SrvMessages/SrvMsgAdvertise.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Options/OptOptionRequest.h>
+#include <Options/OptStatusCode.h>
+#include <SrvOptions/SrvOptFQDN.h>
+#include <SrvOptions/SrvOptIA_NA.h>
+#include <SrvOptions/SrvOptIA_PD.h>
+#include <SrvOptions/SrvOptTA.h>
+#include <SrvTransMgr/SrvTransMgr.h>
 
 using namespace std;
 

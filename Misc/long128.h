@@ -14,8 +14,8 @@
 
 #ifndef LONG128_H
 #define LONG128_H
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
 
 class ulong128 {
 public:

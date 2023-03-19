@@ -12,10 +12,10 @@ class TAddrMgr;
 #ifndef ADDRMGR_H
 #define ADDRMGR_H
 
-#include "AddrClient.h"
-#include "AddrIA.h"
-#include "Container.h"
-#include "SmartPtr.h"
+#include <AddrMgr/AddrClient.h>
+#include <AddrMgr/AddrIA.h>
+#include <Misc/Container.h>
+#include <Misc/SmartPtr.h>
 #include <map>
 #include <string>
 

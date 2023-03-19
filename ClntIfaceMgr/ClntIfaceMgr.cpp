@@ -9,21 +9,21 @@
  *
  */
 
-#include "ClntIfaceMgr.h"
-#include "ClntMsgAdvertise.h"
-#include "ClntMsgReconfigure.h"
-#include "ClntMsgRenew.h"
-#include "ClntMsgReply.h"
-#include "ClntTransMgr.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "SmartPtr.h"
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <ClntMessages/ClntMsgAdvertise.h>
+#include <ClntMessages/ClntMsgReconfigure.h>
+#include <ClntMessages/ClntMsgRenew.h>
+#include <ClntMessages/ClntMsgReply.h>
+#include <ClntTransMgr/ClntTransMgr.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
 #include <sstream>
 #include <stdlib.h>
 #include <unistd.h>
 
 #ifndef MOD_CLNT_DISABLE_DNSUPDATE
-#include "DNSUpdate.h"
+#include <IfaceMgr/DNSUpdate.h>
 #endif
 
 using namespace std;

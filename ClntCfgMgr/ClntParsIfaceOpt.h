@@ -12,12 +12,12 @@
 #ifndef CLNTPARSEIFACEOPT_H
 #define CLNTPARSEIFACEOPT_H
 
-#include "ClntParsIAOpt.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "HostID.h"
-#include "IPv6Addr.h"
-#include "OptVendorSpecInfo.h"
+#include <ClntCfgMgr/ClntParsIAOpt.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <CfgMgr/HostID.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/OptVendorSpecInfo.h>
 #include <iostream>
 #include <string>
 

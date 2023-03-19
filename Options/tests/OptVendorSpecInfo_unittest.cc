@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include "DHCPConst.h"
-#include "OptVendorSpecInfo.h"
+#include <Misc/DHCPConst.h>
+#include <Options/OptVendorSpecInfo.h>
 
 using namespace std;
 

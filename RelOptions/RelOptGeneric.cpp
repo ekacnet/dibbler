@@ -9,7 +9,7 @@
  *
  */
 
-#include "RelOptGeneric.h"
+#include <RelOptions/RelOptGeneric.h>
 
 TRelOptGeneric::TRelOptGeneric(int type, char *buf, int bufsize, TMsg *parent)
     : TOptGeneric(type, buf, bufsize, parent) {}

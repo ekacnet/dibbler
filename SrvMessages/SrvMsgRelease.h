@@ -12,7 +12,7 @@ class TSrvMsgRelease;
 #ifndef SRVMSGRELEASE_H
 #define SRVMSGRELEASE_H
 
-#include "SrvMsg.h"
+#include <SrvMessages/SrvMsg.h>
 
 class TSrvMsgRelease : public TSrvMsg {
 public:

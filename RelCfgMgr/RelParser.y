@@ -5,19 +5,19 @@
 #include <iostream>
 #include <string>
 #include <malloc.h>
-#include "DHCPConst.h"
-#include "SmartPtr.h"
-#include "Container.h"
-#include "RelParser.h"
-#include "RelParsGlobalOpt.h"
-#include "RelParsIfaceOpt.h"
-#include "RelCfgIface.h"
-#include "RelCfgMgr.h"
-#include "OptVendorData.h"
-#include "OptDUID.h"
-#include "DUID.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/SmartPtr.h>
+#include <Misc/Container.h>
+#include <RelCfgMgr/RelParser.h>
+#include <RelCfgMgr/RelParsGlobalOpt.h>
+#include <RelCfgMgr/RelParsIfaceOpt.h>
+#include <RelCfgMgr/RelCfgIface.h>
+#include <RelCfgMgr/RelCfgMgr.h>
+#include <Options/OptVendorData.h>
+#include <Options/OptDUID.h>
+#include <Misc/DUID.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 
 using namespace std;
 
@@ -25,7 +25,7 @@ using namespace std;
 %}
 
 %{
-#include "FlexLexer.h"
+#include <bison++/FlexLexer.h>
 %}
 
 // class definition

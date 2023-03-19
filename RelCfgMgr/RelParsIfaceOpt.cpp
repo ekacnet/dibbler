@@ -8,8 +8,8 @@
  *
  */
 
-#include "RelParsIfaceOpt.h"
-#include "DHCPDefaults.h"
+#include <RelCfgMgr/RelParsIfaceOpt.h>
+#include <Misc/DHCPDefaults.h>
 
 TRelParsIfaceOpt::TRelParsIfaceOpt(void)
     : ClientUnicast_(),

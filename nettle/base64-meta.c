@@ -24,9 +24,9 @@
 #include "dibbler-config.h"
 #endif
 
-#include "nettle-meta.h"
+#include <nettle/nettle-meta.h>
 
-#include "base64.h"
+#include <nettle/base64.h>
 
 /* Same as the macros with the same name */
 static unsigned base64_encode_length(unsigned length) { return BASE64_ENCODE_LENGTH(length); }

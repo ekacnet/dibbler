@@ -9,10 +9,10 @@
 #ifndef ADDRPREFIX_H
 #define ADDRPREFIX_H
 
-#include "AddrAddr.h"
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
+#include <AddrMgr/AddrAddr.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 
 class TAddrPrefix : public TAddrAddr {

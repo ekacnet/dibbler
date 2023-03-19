@@ -9,15 +9,15 @@
  *
  */
 
-#include "ClntMsgRebind.h"
-#include "AddrIA.h"
-#include "ClntMsg.h"
-#include "ClntOptIA_NA.h"
-#include "ClntOptIA_PD.h"
-#include "Logger.h"
-#include "OptAddr.h"
-#include "OptDUID.h"
-#include "SmartPtr.h"
+#include <ClntMessages/ClntMsgRebind.h>
+#include <AddrMgr/AddrIA.h>
+#include <ClntMessages/ClntMsg.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <ClntOptions/ClntOptIA_PD.h>
+#include <Misc/Logger.h>
+#include <Options/OptAddr.h>
+#include <Options/OptDUID.h>
+#include <Misc/SmartPtr.h>
 #include <cmath>
 #include <iostream>
 #include <sstream>

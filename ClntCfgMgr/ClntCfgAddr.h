@@ -12,10 +12,10 @@ class TClntCfgAddr;
 #ifndef CLNTCFGADDR_H
 #define CLNTCFGADDR_H
 
-#include "ClntParsGlobalOpt.h"
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
+#include <ClntCfgMgr/ClntParsGlobalOpt.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
 #include <iomanip>
 #include <iostream>
 

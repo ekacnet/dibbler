@@ -15,17 +15,17 @@
 #include <netinet/in.h>
 #endif
 
-#include "AddrClient.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Msg.h"
-#include "OptStatusCode.h"
-#include "OptVendorData.h"
-#include "SrvAddrMgr.h"
-#include "SrvCfgMgr.h"
-#include "SrvCfgOptions.h"
-#include "SrvOptIAAddress.h"
-#include "SrvOptIA_NA.h"
+#include <AddrMgr/AddrClient.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Messages/Msg.h>
+#include <Options/OptStatusCode.h>
+#include <Options/OptVendorData.h>
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvCfgMgr/SrvCfgOptions.h>
+#include <SrvOptions/SrvOptIAAddress.h>
+#include <SrvOptions/SrvOptIA_NA.h>
 #include <sstream>
 
 using namespace std;

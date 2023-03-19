@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
 
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "Opt.h"
-#include "OptAddr.h"
-#include "OptGeneric.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/Opt.h>
+#include <Options/OptAddr.h>
+#include <Options/OptGeneric.h>
 
 using namespace std;
 

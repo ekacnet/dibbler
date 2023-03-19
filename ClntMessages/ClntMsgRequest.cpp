@@ -12,20 +12,20 @@
  *
  */
 
-#include "ClntMsgRequest.h"
-#include "ClntIfaceMgr.h"
-#include "ClntMsgAdvertise.h"
-#include "ClntOptElapsed.h"
-#include "ClntOptIA_NA.h"
-#include "ClntOptIA_PD.h"
-#include "ClntOptTA.h"
-#include "ClntTransMgr.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptAddr.h"
-#include "OptDUID.h"
-#include "OptStatusCode.h"
-#include "SmartPtr.h"
+#include <ClntMessages/ClntMsgRequest.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <ClntMessages/ClntMsgAdvertise.h>
+#include <ClntOptions/ClntOptElapsed.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <ClntOptions/ClntOptIA_PD.h>
+#include <ClntOptions/ClntOptTA.h>
+#include <ClntTransMgr/ClntTransMgr.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptAddr.h>
+#include <Options/OptDUID.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/SmartPtr.h>
 #include <cmath>
 
 /*

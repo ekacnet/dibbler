@@ -16,13 +16,13 @@ class TSrvOptLQClientLink;
 #ifndef SRVOPTLQ_H
 #define SRVOPTLQ_H
 
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "IPv6Addr.h"
-#include "Opt.h"
-#include "OptGeneric.h"
-#include "OptInteger.h"
-#include "SmartPtr.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/Opt.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptInteger.h>
+#include <Misc/SmartPtr.h>
 
 class TSrvOptLQ : public TOpt {
 public:

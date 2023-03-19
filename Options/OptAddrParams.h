@@ -10,7 +10,7 @@
 #ifndef OPTADDRPARAMS_H
 #define OPTADDRPARAMS_H
 
-#include "OptInteger.h"
+#include <Options/OptInteger.h>
 
 class TOptAddrParams : public TOptInteger {
 public:

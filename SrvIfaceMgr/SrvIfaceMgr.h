@@ -12,10 +12,10 @@
 #ifndef SRVIFACEMGR_H
 #define SRVIFACEMGR_H
 
-#include "Iface.h"
-#include "IfaceMgr.h"
-#include "SmartPtr.h"
-#include "SrvMsg.h"
+#include <IfaceMgr/Iface.h>
+#include <IfaceMgr/IfaceMgr.h>
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsg.h>
 
 #define SrvIfaceMgr() (TSrvIfaceMgr::instance())
 

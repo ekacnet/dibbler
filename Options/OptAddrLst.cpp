@@ -8,9 +8,9 @@
  *
  */
 
-#include "OptAddrLst.h"
-#include "DHCPConst.h"
-#include "Portable.h"
+#include <Options/OptAddrLst.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Portable.h>
 #include <sstream>
 #include <stdlib.h>
 

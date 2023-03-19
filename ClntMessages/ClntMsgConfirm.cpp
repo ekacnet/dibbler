@@ -9,13 +9,13 @@
  *
  */
 
-#include "ClntMsgConfirm.h"
-#include "ClntOptIA_NA.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "OptStatusCode.h"
-#include "SmartPtr.h"
+#include <ClntMessages/ClntMsgConfirm.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/SmartPtr.h>
 
 //  iaLst - contain all IA's to  be checked (they have to be in the same link)
 TClntMsgConfirm::TClntMsgConfirm(unsigned int iface, List(TAddrIA) iaLst)

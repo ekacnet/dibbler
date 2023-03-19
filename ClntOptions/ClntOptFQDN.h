@@ -18,10 +18,10 @@
 #ifndef CLNTOPTFQDN_H
 #define CLNTOPTFQDN_H
 
-#include "ClntIfaceMgr.h"
-#include "DUID.h"
-#include "OptFQDN.h"
-#include "SmartPtr.h"
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <Misc/DUID.h>
+#include <Options/OptFQDN.h>
+#include <Misc/SmartPtr.h>
 
 // void *updateDNS(void *IfaceMgr);
 

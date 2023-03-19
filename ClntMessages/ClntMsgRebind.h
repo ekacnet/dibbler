@@ -14,10 +14,10 @@ class TClntMsgRebind;
 #ifndef CLNTMSGREBIND_H
 #define CLNTMSGREBIND_H
 
-#include "ClntMsg.h"
-#include "ClntOptIA_NA.h"
-#include "OptAddr.h"
-#include "OptDUID.h"
+#include <ClntMessages/ClntMsg.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <Options/OptAddr.h>
+#include <Options/OptDUID.h>
 
 class TClntMsgRebind : public TClntMsg {
 public:

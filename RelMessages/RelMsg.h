@@ -12,7 +12,7 @@ class TRelMsg;
 #ifndef RELMSG_H
 #define RELMSG_H
 
-#include "Msg.h"
+#include <Messages/Msg.h>
 
 class TRelMsg : public TMsg {
 public:

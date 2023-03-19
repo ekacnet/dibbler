@@ -9,10 +9,10 @@
  *
  */
 
-#include "ClntMsgDecline.h"
-#include "AddrIA.h"
-#include "ClntOptIA_NA.h"
-#include "OptDUID.h"
+#include <ClntMessages/ClntMsgDecline.h>
+#include <AddrMgr/AddrIA.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <Options/OptDUID.h>
 
 TClntMsgDecline::TClntMsgDecline(int iface, SPtr<TIPv6Addr> addr, List(TAddrIA) IALst)
     : TClntMsg(iface, addr, DECLINE_MSG) {

@@ -1,7 +1,7 @@
 #include <time.h>
-#include "DNSUpdate.h"
+#include <IfaceMgr/DNSUpdate.h>
 #include <gtest/gtest.h>
-#include "Key.h"
+#include <Misc/Key.h>
 #include "tests/utils/poslib_utils.h"
 
 

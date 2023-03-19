@@ -18,8 +18,8 @@
 #ifndef CLNTOPTTIMEZONE_H
 #define CLNTOPTTIMEZONE_H
 
-#include "DUID.h"
-#include "OptString.h"
+#include <Misc/DUID.h>
+#include <Options/OptString.h>
 
 class TClntOptTimeZone : public TOptString {
 public:

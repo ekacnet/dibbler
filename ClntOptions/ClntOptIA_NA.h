@@ -9,10 +9,10 @@
 #ifndef CLNTOPTIA_NA_H
 #define CLNTOPTIA_NA_H
 
-#include "ClntCfgIA.h"
-#include "IPv6Addr.h"
-#include "OptIAAddress.h"
-#include "OptIA_NA.h"
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/OptIAAddress.h>
+#include <Options/OptIA_NA.h>
 
 class TOptIA_NA;
 

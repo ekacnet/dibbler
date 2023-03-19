@@ -18,13 +18,13 @@
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-#include "dnssec-sign.h"
-#include "poslib.h"
+#include <poslib/dnssec-sign.h>
+#include <poslib/poslib.h>
 
 extern "C" {
-#include "nettle/base64.h"
-#include "nettle/hmac.h"
-#include "nettle/md5.h"
+#include <nettle/base64.h>
+#include <nettle/hmac.h>
+#include <nettle/md5.h>
 }
 
 /// @brief verifies TSIG of received response

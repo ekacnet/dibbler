@@ -11,9 +11,9 @@
 #ifndef RELIFACEMGR_H
 #define RELIFACEMGR_H
 
-#include "Iface.h"
-#include "IfaceMgr.h"
-#include "RelMsg.h"
+#include <IfaceMgr/Iface.h>
+#include <IfaceMgr/IfaceMgr.h>
+#include <RelMessages/RelMsg.h>
 
 #define RelIfaceMgr() (TRelIfaceMgr::instance())
 

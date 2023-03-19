@@ -9,38 +9,38 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "ClntCfgMgr.h"
-#include "Portable.h"
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <Misc/Portable.h>
 #include <cmath>
 #include <sstream>
 #include <stdlib.h>
 
-#include "ClntMsg.h"
-#include "ClntTransMgr.h"
+#include <ClntMessages/ClntMsg.h>
+#include <ClntTransMgr/ClntTransMgr.h>
 
-#include "ClntOptElapsed.h"
-#include "ClntOptFQDN.h"
-#include "ClntOptIA_NA.h"
-#include "ClntOptIA_PD.h"
-#include "ClntOptLifetime.h"
-#include "ClntOptPreference.h"
-#include "ClntOptTA.h"
-#include "ClntOptTimeZone.h"
-#include "OptAddr.h"
-#include "OptAddrLst.h"
-#include "OptAuthentication.h"
-#include "OptDUID.h"
-#include "OptDomainLst.h"
-#include "OptEmpty.h"
-#include "OptGeneric.h"
-#include "OptIAPrefix.h"
-#include "OptOptionRequest.h"
-#include "OptReconfigureMsg.h"
-#include "OptRtPrefix.h"
-#include "OptStatusCode.h"
-#include "hex.h"
+#include <ClntOptions/ClntOptElapsed.h>
+#include <ClntOptions/ClntOptFQDN.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <ClntOptions/ClntOptIA_PD.h>
+#include <ClntOptions/ClntOptLifetime.h>
+#include <ClntOptions/ClntOptPreference.h>
+#include <ClntOptions/ClntOptTA.h>
+#include <ClntOptions/ClntOptTimeZone.h>
+#include <Options/OptAddr.h>
+#include <Options/OptAddrLst.h>
+#include <Options/OptAuthentication.h>
+#include <Options/OptDUID.h>
+#include <Options/OptDomainLst.h>
+#include <Options/OptEmpty.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptIAPrefix.h>
+#include <Options/OptOptionRequest.h>
+#include <Options/OptReconfigureMsg.h>
+#include <Options/OptRtPrefix.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/hex.h>
 
-#include "Logger.h"
+#include <Misc/Logger.h>
 
 using namespace std;
 

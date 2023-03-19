@@ -10,8 +10,8 @@
  */
 
 #include "winservice.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <stdio.h>
 
 const char TWinService::ADMIN_REQUIRED_STR[] = "This action requires administrative privileges.";

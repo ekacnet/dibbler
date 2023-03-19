@@ -13,8 +13,8 @@
 #ifndef CLNTOPTLIFETIME_H
 #define CLNTOPTLIFETIME_H
 
-#include "DHCPConst.h"
-#include "OptInteger.h"
+#include <Misc/DHCPConst.h>
+#include <Options/OptInteger.h>
 
 class TClntOptLifetime : public TOptInteger {
 public:

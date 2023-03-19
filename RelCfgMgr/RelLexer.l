@@ -7,8 +7,8 @@
 #endif
 
 using namespace std;
-#include "RelParser.h"
-#include "Portable.h"
+#include <RelCfgMgr/RelParser.h>
+#include <Misc/Portable.h>
 #define YYABORT yyterminate();
 
 /* duplicate default definition from flex. This makes cppcheck

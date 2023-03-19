@@ -8,10 +8,10 @@
  *
  */
 
-#include "SrvService.h"
-#include "DHCPClient.h"
-#include "DHCPConst.h"
-#include "Logger.h"
+#include <Port-win32/SrvService.h>
+#include <Misc/DHCPClient.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
 #include <direct.h>
 #include <string>
 #include <winsock2.h>

@@ -13,19 +13,19 @@
 #ifndef SRVMSG_H
 #define SRVMSG_H
 
-#include "IPv6Addr.h"
-#include "Msg.h"
-#include "OptGeneric.h"
-#include "OptOptionRequest.h"
-#include "OptVendorData.h"
-#include "SmartPtr.h"
-#include "SrvAddrMgr.h"
-#include "SrvCfgIface.h"
-#include "SrvOptFQDN.h"
-#include "SrvOptIA_NA.h"
-#include "SrvOptIA_PD.h"
-#include "SrvOptInterfaceID.h"
-#include "SrvOptTA.h"
+#include <Misc/IPv6Addr.h>
+#include <Messages/Msg.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptOptionRequest.h>
+#include <Options/OptVendorData.h>
+#include <Misc/SmartPtr.h>
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <SrvCfgMgr/SrvCfgIface.h>
+#include <SrvOptions/SrvOptFQDN.h>
+#include <SrvOptions/SrvOptIA_NA.h>
+#include <SrvOptions/SrvOptIA_PD.h>
+#include <SrvOptions/SrvOptInterfaceID.h>
+#include <SrvOptions/SrvOptTA.h>
 #include <vector>
 
 class TSrvMsg : public TMsg {

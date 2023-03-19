@@ -12,11 +12,11 @@
 
 #ifndef SRVMSGCONFIRM_H
 #define SRVMSGCONFIRM_H
-#include "SrvAddrMgr.h"
-#include "SrvCfgMgr.h"
-#include "SrvIfaceMgr.h"
-#include "SrvMsg.h"
-#include "SrvTransMgr.h"
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
+#include <SrvMessages/SrvMsg.h>
+#include <SrvTransMgr/SrvTransMgr.h>
 
 // Client sends CONFIRM to a server to verify that his addresses
 // are still valid. It could happen when:

@@ -10,8 +10,8 @@
 #ifndef OPTRAPIDCOMMIT_H
 #define OPTRAPIDCOMMIT_H
 
-#include "DHCPConst.h"
-#include "Opt.h"
+#include <Misc/DHCPConst.h>
+#include <Options/Opt.h>
 
 class TOptEmpty : public TOpt {
 public:

@@ -10,8 +10,8 @@
 #include <string>
 using namespace std;
 
-#include "SrvCfgClientClass.h"
-#include "SrvMsg.h"
+#include <SrvCfgMgr/SrvCfgClientClass.h>
+#include <SrvMessages/SrvMsg.h>
 
 TSrvCfgClientClass::TSrvCfgClientClass() : classname("") {}
 

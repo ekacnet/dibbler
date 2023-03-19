@@ -10,10 +10,10 @@
  *
  */
 
-#include "SocketIPv6.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <IfaceMgr/SocketIPv6.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <ostream>
 #include <string.h>
 #include <string>

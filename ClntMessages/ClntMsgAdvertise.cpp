@@ -9,10 +9,10 @@
  *
  */
 
-#include "ClntMsgAdvertise.h"
-#include "ClntOptPreference.h"
-#include "OptDUID.h"
-#include "OptInteger.h"
+#include <ClntMessages/ClntMsgAdvertise.h>
+#include <ClntOptions/ClntOptPreference.h>
+#include <Options/OptDUID.h>
+#include <Options/OptInteger.h>
 #include <sstream>
 
 using namespace std;

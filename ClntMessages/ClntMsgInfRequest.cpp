@@ -11,19 +11,19 @@
  *
  */
 
-#include "ClntMsgInfRequest.h"
-#include "ClntCfgIface.h"
-#include "ClntIfaceMgr.h"
-#include "ClntMsgAdvertise.h"
-#include "ClntOptElapsed.h"
-#include "ClntOptIA_NA.h"
-#include "ClntOptTimeZone.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "OptOptionRequest.h"
-#include "SmartPtr.h"
+#include <ClntMessages/ClntMsgInfRequest.h>
+#include <ClntCfgMgr/ClntCfgIface.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <ClntMessages/ClntMsgAdvertise.h>
+#include <ClntOptions/ClntOptElapsed.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <ClntOptions/ClntOptTimeZone.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Options/OptOptionRequest.h>
+#include <Misc/SmartPtr.h>
 #include <cmath>
 
 TClntMsgInfRequest::TClntMsgInfRequest(SPtr<TClntCfgIface> iface)

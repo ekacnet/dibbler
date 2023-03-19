@@ -11,7 +11,7 @@
 #ifndef CLNTMSGRECONFIGURE_H
 #define CLNTMSGRECONFIGURE_H
 
-#include "ClntMsg.h"
+#include <ClntMessages/ClntMsg.h>
 
 class TClntMsgReconfigure : public TClntMsg {
 public:

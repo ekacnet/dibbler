@@ -8,8 +8,8 @@
  * $Id: ClntCfgTA.cpp,v 1.3 2007-01-07 20:18:44 thomson Exp $
  */
 
-#include "ClntCfgTA.h"
-#include "Logger.h"
+#include <ClntCfgMgr/ClntCfgTA.h>
+#include <Misc/Logger.h>
 #include <iomanip>
 #include <iostream>
 using namespace std;

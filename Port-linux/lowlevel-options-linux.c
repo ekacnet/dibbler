@@ -9,7 +9,7 @@
 
 #define _BSD_SOURCE
 #define _POSIX_SOURCE
-#include "Portable.h"
+#include <Misc/Portable.h>
 #include "dibbler-config.h"
 #include <ctype.h>
 #include <errno.h>

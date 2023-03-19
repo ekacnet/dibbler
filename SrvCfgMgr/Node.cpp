@@ -18,8 +18,8 @@
 #ifndef NODE_CPP_
 #define NODE_CPP_
 
-#include "Node.h"
-#include "SrvMsg.h"
+#include <SrvCfgMgr/Node.h>
+#include <SrvMessages/SrvMsg.h>
 
 Node::Node(NodeType type) { Type = type; }
 

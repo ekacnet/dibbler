@@ -8,26 +8,26 @@
  *
  * $Id: ClntMsgSolicit.cpp,v 1.27 2009-03-24 23:17:17 thomson Exp $
  */
-#include "Msg.h"
-#include "SmartPtr.h"
+#include <Messages/Msg.h>
+#include <Misc/SmartPtr.h>
 
-#include "ClntCfgIA.h"
-#include "ClntCfgIface.h"
-#include "ClntIfaceMgr.h"
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <ClntCfgMgr/ClntCfgIface.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
 
-#include "ClntMsg.h"
-#include "ClntMsgAdvertise.h"
-#include "ClntMsgSolicit.h"
+#include <ClntMessages/ClntMsg.h>
+#include <ClntMessages/ClntMsgAdvertise.h>
+#include <ClntMessages/ClntMsgSolicit.h>
 
-#include "ClntOptElapsed.h"
-#include "ClntOptIA_NA.h"
-#include "ClntOptIA_PD.h"
-#include "ClntOptPreference.h"
-#include "ClntOptTA.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "OptEmpty.h"
-#include "OptIAPrefix.h"
+#include <ClntOptions/ClntOptElapsed.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <ClntOptions/ClntOptIA_PD.h>
+#include <ClntOptions/ClntOptPreference.h>
+#include <ClntOptions/ClntOptTA.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Options/OptEmpty.h>
+#include <Options/OptIAPrefix.h>
 #include <cmath>
 
 TClntMsgSolicit::TClntMsgSolicit(int iface, SPtr<TIPv6Addr> addr, List(TClntCfgIA) iaLst,

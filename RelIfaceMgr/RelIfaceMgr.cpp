@@ -7,17 +7,17 @@
  *
  */
 
-#include "RelIfaceMgr.h"
-#include "IPv6Addr.h"
-#include "Iface.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "RelCfgMgr.h"
-#include "RelMsgGeneric.h"
-#include "RelMsgRelayForw.h"
-#include "RelMsgRelayRepl.h"
-#include "RelOptInterfaceID.h"
-#include "SocketIPv6.h"
+#include <RelIfaceMgr/RelIfaceMgr.h>
+#include <Misc/IPv6Addr.h>
+#include <IfaceMgr/Iface.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <RelCfgMgr/RelCfgMgr.h>
+#include <RelMessages/RelMsgGeneric.h>
+#include <RelMessages/RelMsgRelayForw.h>
+#include <RelMessages/RelMsgRelayRepl.h>
+#include <RelOptions/RelOptInterfaceID.h>
+#include <IfaceMgr/SocketIPv6.h>
 #include <cstdlib>
 #include <fstream>
 

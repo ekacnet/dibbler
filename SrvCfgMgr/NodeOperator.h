@@ -10,8 +10,8 @@
 
 #ifndef NODEOPERATOR_H_
 #define NODEOPERATOR_H_
-#include "Node.h"
-#include "SmartPtr.h"
+#include <SrvCfgMgr/Node.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 
 class NodeOperator : public Node {

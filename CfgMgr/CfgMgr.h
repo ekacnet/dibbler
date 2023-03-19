@@ -10,10 +10,10 @@
 
 #ifndef CFGMGR_H
 #define CFGMGR_H
-#include "DUID.h"
-#include "IfaceMgr.h"
-#include "Key.h"
-#include "SmartPtr.h"
+#include <Misc/DUID.h>
+#include <IfaceMgr/IfaceMgr.h>
+#include <Misc/Key.h>
+#include <Misc/SmartPtr.h>
 #include <string>
 
 /* shared by server and relay */

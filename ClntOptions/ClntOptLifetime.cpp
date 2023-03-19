@@ -7,11 +7,11 @@
  * released under GNU GPL v2 only licence
  *
  */
-#include "ClntOptLifetime.h"
-#include "ClntMsg.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptDUID.h"
+#include <ClntOptions/ClntOptLifetime.h>
+#include <ClntMessages/ClntMsg.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
 
 using namespace std;
 

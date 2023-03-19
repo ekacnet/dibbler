@@ -8,16 +8,16 @@
  *
  */
 
-#include "DHCPClient.h"
-#include "ClntTransMgr.h"
-#include "SmartPtr.h"
+#include <Misc/DHCPClient.h>
+#include <ClntTransMgr/ClntTransMgr.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 #include <stdlib.h>
 
-#include "ClntIfaceMgr.h"
-#include "IfaceMgr.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <IfaceMgr/IfaceMgr.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 
 using namespace std;
 

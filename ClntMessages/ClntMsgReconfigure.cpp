@@ -8,12 +8,12 @@
  *
  */
 
-#include "ClntMsgReconfigure.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "OptInteger.h"
-#include "OptReconfigureMsg.h"
+#include <ClntMessages/ClntMsgReconfigure.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Options/OptInteger.h>
+#include <Options/OptReconfigureMsg.h>
 #include <sstream>
 
 /*

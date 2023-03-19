@@ -6,9 +6,9 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "ClntCfgPD.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
+#include <ClntCfgMgr/ClntCfgPD.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
 #include <iomanip>
 #include <iostream>
 

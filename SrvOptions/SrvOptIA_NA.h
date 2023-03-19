@@ -12,13 +12,13 @@ class TSrvOptIA_NA;
 #ifndef SRVOPTIA_NA_H
 #define SRVOPTIA_NA_H
 
-#include "Container.h"
-#include "DUID.h"
-#include "IPv6Addr.h"
-#include "OptIA_NA.h"
-#include "SmartPtr.h"
-#include "SrvMsg.h"
-#include "SrvOptIAAddress.h"
+#include <Misc/Container.h>
+#include <Misc/DUID.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/OptIA_NA.h>
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsg.h>
+#include <SrvOptions/SrvOptIAAddress.h>
 
 class TSrvOptIA_NA : public TOptIA_NA {
 public:

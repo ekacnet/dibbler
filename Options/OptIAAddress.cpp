@@ -9,10 +9,10 @@
  */
 
 //#include <netinet/in.h>
-#include "OptIAAddress.h"
-#include "DHCPConst.h"
-#include "Opt.h"
-#include "Portable.h"
+#include <Options/OptIAAddress.h>
+#include <Misc/DHCPConst.h>
+#include <Options/Opt.h>
+#include <Misc/Portable.h>
 #include <string.h>
 
 TOptIAAddress::TOptIAAddress(const char *buf, size_t len, TMsg *parent)

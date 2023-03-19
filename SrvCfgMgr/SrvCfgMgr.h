@@ -14,15 +14,15 @@ class TSrvCfgMgr;
 
 #ifndef SRVCONFMGR_H
 #define SRVCONFMGR_H
-#include "CfgMgr.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "KeyList.h"
-#include "SmartPtr.h"
-#include "SrvCfgClientClass.h"
-#include "SrvCfgIface.h"
-#include "SrvIfaceMgr.h"
+#include <CfgMgr/CfgMgr.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <Misc/KeyList.h>
+#include <Misc/SmartPtr.h>
+#include <SrvCfgMgr/SrvCfgClientClass.h>
+#include <SrvCfgMgr/SrvCfgIface.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
 
 #define SrvCfgMgr() (TSrvCfgMgr::instance())
 

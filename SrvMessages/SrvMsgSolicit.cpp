@@ -10,11 +10,11 @@
  *
  */
 
-#include "SrvMsgSolicit.h"
-#include "AddrClient.h"
-#include "Msg.h"
-#include "SmartPtr.h"
-#include "SrvMsg.h"
+#include <SrvMessages/SrvMsgSolicit.h>
+#include <AddrMgr/AddrClient.h>
+#include <Messages/Msg.h>
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsg.h>
 #include <cmath>
 
 TSrvMsgSolicit::TSrvMsgSolicit(int iface, SPtr<TIPv6Addr> addr, char *buf, int bufSize)

@@ -14,9 +14,9 @@ class TClntIfaceMgr;
 
 #ifndef CLNTMSGSOLICIT_H
 #define CLNTMSGSOLICIT_H
-#include "ClntCfgIA.h"
-#include "ClntCfgMgr.h"
-#include "ClntMsg.h"
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <ClntMessages/ClntMsg.h>
 
 class TClntMsgSolicit : public TClntMsg {
 public:

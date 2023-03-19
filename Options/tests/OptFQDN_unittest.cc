@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 
-#include "DHCPConst.h"
-#include "OptFQDN.h"
+#include <Misc/DHCPConst.h>
+#include <Options/OptFQDN.h>
 
 using namespace std;
 

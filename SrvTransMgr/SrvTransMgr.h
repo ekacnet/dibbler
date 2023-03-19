@@ -12,13 +12,13 @@
 #ifndef SRVTRANSMGR_H
 #define SRVTRANSMGR_H
 
-#include "Container.h"
-#include "Opt.h"
-#include "SmartPtr.h"
-#include "SrvAddrMgr.h"
-#include "SrvCfgIface.h"
-#include "SrvIfaceMgr.h"
-#include "SrvMsg.h"
+#include <Misc/Container.h>
+#include <Options/Opt.h>
+#include <Misc/SmartPtr.h>
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <SrvCfgMgr/SrvCfgIface.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
+#include <SrvMessages/SrvMsg.h>
 #include <string>
 #include <vector>
 

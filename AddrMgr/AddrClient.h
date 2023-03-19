@@ -13,11 +13,11 @@ class TAddrClient;
 #ifndef ADDRCLIENT_H
 #define ADDRCLIENT_H
 
-#include "AddrIA.h"
-#include "Container.h"
-#include "DUID.h"
-#include "Portable.h"
-#include "SmartPtr.h"
+#include <AddrMgr/AddrIA.h>
+#include <Misc/Container.h>
+#include <Misc/DUID.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
 #include <vector>
 
 class TAddrClient {

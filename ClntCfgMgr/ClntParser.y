@@ -5,22 +5,22 @@
 #include <string>
 #include <vector>
 #include <malloc.h>
-#include "DHCPConst.h"
-#include "SmartPtr.h"
-#include "Container.h"
-#include "ClntParser.h"
-#include "ClntParsGlobalOpt.h"
-#include "ClntCfgIface.h"
-#include "ClntCfgAddr.h"
-#include "ClntCfgIA.h"
-#include "ClntCfgTA.h"
-#include "ClntCfgPD.h"
-#include "ClntCfgMgr.h"
-#include "Logger.h"
-#include "OptGeneric.h"
-#include "OptAddr.h"
-#include "OptAddrLst.h"
-#include "OptString.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/SmartPtr.h>
+#include <Misc/Container.h>
+#include <ClntCfgMgr/ClntParser.h>
+#include <ClntCfgMgr/ClntParsGlobalOpt.h>
+#include <ClntCfgMgr/ClntCfgIface.h>
+#include <ClntCfgMgr/ClntCfgAddr.h>
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <ClntCfgMgr/ClntCfgTA.h>
+#include <ClntCfgMgr/ClntCfgPD.h>
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <Misc/Logger.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptAddr.h>
+#include <Options/OptAddrLst.h>
+#include <Options/OptString.h>
 
 using namespace std;
 
@@ -28,7 +28,7 @@ using namespace std;
 %}
 
 %{
-#include "FlexLexer.h"
+#include <bison++/FlexLexer.h>
 %}
 // --- CLASS MEMBERS ---
 

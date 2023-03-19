@@ -8,10 +8,10 @@
  *
  */
 
-#include "OptOptionRequest.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Options/OptOptionRequest.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <string.h>
 
 TOptOptionRequest::TOptOptionRequest(uint16_t code, TMsg *parent) : TOpt(code, parent) {

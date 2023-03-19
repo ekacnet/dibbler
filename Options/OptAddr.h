@@ -18,9 +18,9 @@
 #ifndef OPTSERVERUNICAST_H
 #define OPTSERVERUNICAST_H
 
-#include "IPv6Addr.h"
-#include "Opt.h"
-#include "SmartPtr.h"
+#include <Misc/IPv6Addr.h>
+#include <Options/Opt.h>
+#include <Misc/SmartPtr.h>
 
 class TOptAddr : public TOpt {
 public:

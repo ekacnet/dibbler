@@ -8,7 +8,7 @@
  * $Id: ReqOpt.cpp,v 1.3 2008-08-29 00:07:33 thomson Exp $
  *
  */
-#include "ReqOpt.h"
+#include <Requestor/ReqOpt.h>
 
 TReqOptAddr::TReqOptAddr(int type, SPtr<TIPv6Addr> addr, TMsg *parent)
     : TOptIAAddress(addr, 0x33333333, 0x88888888, parent) {}

@@ -11,7 +11,7 @@
 
 #ifndef SRVOPTADDRPARAMS_H
 #define SRVOPTADDRPARAMS_H
-#include "OptInteger.h"
+#include <Options/OptInteger.h>
 
 class TSrvOptAddrParams : public TOptInteger {
 public:

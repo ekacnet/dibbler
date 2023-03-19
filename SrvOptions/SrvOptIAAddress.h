@@ -24,9 +24,9 @@
 #ifndef SRVOPTIAADDRESS_H
 #define SRVOPTIAADDRESS_H
 
-#include "Container.h"
-#include "OptIAAddress.h"
-#include "SmartPtr.h"
+#include <Misc/Container.h>
+#include <Options/OptIAAddress.h>
+#include <Misc/SmartPtr.h>
 
 class TSrvOptIAAddress : public TOptIAAddress {
 public:

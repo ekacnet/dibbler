@@ -1,8 +1,8 @@
 /*
  * Dibbler - a portable DHCPv6
  *
- * authors: Adrien CLERC, Bahattin DEMIRPLAK, Gaëtant ELEOUET
- *          Mickaël GUÉRIN, Lionel GUILMIN, Lauréline PROVOST
+ * authors: Adrien CLERC, Bahattin DEMIRPLAK, GaÃ«tant ELEOUET
+ *          MickaÃ«l GUÃ‰RIN, Lionel GUILMIN, LaurÃ©line PROVOST
  *          from ENSEEIHT, Toulouse, France
  *
  * released under GNU GPL v2 licence
@@ -20,8 +20,8 @@ class TOptFQDN;
 
 #include <string>
 
-#include "DHCPConst.h"
-#include "Opt.h"
+#include <Misc/DHCPConst.h>
+#include <Options/Opt.h>
 
 class TOptFQDN : public TOpt {
 public:

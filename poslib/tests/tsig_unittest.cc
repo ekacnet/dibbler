@@ -1,7 +1,7 @@
 
 #include <gtest/gtest.h>
-#include "poslib.h"
-#include "tests/utils/poslib_utils.h"
+#include <poslib/poslib.h>
+#include <tests/utils/poslib_utils.h>
 
 using namespace std;
 using namespace test;

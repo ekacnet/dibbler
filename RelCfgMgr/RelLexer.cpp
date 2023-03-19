@@ -715,8 +715,8 @@ static yyconst flex_int32_t yy_rule_can_match_eol[44] = {
 #endif
 
 using namespace std;
-#include "Portable.h"
-#include "RelParser.h"
+#include <Misc/Portable.h>
+#include <RelCfgMgr/RelParser.h>
 #define YYABORT yyterminate();
 
 /* duplicate default definition from flex. This makes cppcheck

@@ -13,7 +13,7 @@
 #include <iostream>
 #include <string>
 
-#include "Opt.h"
+#include <Options/Opt.h>
 
 class TOptString : public TOpt {
 public:

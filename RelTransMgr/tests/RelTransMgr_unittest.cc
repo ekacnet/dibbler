@@ -1,8 +1,8 @@
-#include "RelTransMgr.h"
-#include "RelIfaceMgr.h"
-#include "RelCfgMgr.h"
-#include "RelMsgGeneric.h"
-#include "hex.h"
+#include <RelTransMgr/RelTransMgr.h>
+#include <RelIfaceMgr/RelIfaceMgr.h>
+#include <RelCfgMgr/RelCfgMgr.h>
+#include <RelMessages/RelMsgGeneric.h>
+#include <Misc/hex.h>
 
 #include <gtest/gtest.h>
 

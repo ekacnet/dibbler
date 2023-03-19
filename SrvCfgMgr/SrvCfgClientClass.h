@@ -11,8 +11,8 @@
 #ifndef SRVCFGCLIENTCLASS_H_
 #define SRVCFGCLIENTCLASS_H_
 
-#include "Node.h"
-#include "SmartPtr.h"
+#include <SrvCfgMgr/Node.h>
+#include <Misc/SmartPtr.h>
 #include <string>
 
 class TSrvCfgClientClass {

@@ -7,9 +7,9 @@
  *
  */
 
-#include "IfaceMgr.h"
-#include "RelCfgIface.h"
-#include "RelIfaceMgr.h"
+#include <IfaceMgr/IfaceMgr.h>
+#include <RelCfgMgr/RelCfgIface.h>
+#include <RelIfaceMgr/RelIfaceMgr.h>
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
@@ -17,9 +17,9 @@
 #include <unistd.h>
 
 using namespace std;
-#include "FlexLexer.h"
-#include "RelCfgMgr.h"
-#include "RelParser.h"
+#include <bison++/FlexLexer.h>
+#include <RelCfgMgr/RelCfgMgr.h>
+#include <RelCfgMgr/RelParser.h>
 
 int TRelCfgMgr::NextRelayID = RELAY_MIN_IFINDEX;
 

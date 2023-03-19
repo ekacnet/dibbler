@@ -8,9 +8,9 @@
  *
  */
 
-#include "SrvMsgDecline.h"
-#include "AddrClient.h"
-#include "OptDUID.h"
+#include <SrvMessages/SrvMsgDecline.h>
+#include <AddrMgr/AddrClient.h>
+#include <Options/OptDUID.h>
 
 TSrvMsgDecline::TSrvMsgDecline(int iface, SPtr<TIPv6Addr> addr, char *buf, int bufSize)
     : TSrvMsg(iface, addr, buf, bufSize) {}

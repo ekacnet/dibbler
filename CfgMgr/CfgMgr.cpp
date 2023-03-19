@@ -8,10 +8,10 @@
  *
  */
 
-#include "CfgMgr.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <CfgMgr/CfgMgr.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <fstream>
 #include <iostream>
 #include <string.h>

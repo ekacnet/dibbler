@@ -22,7 +22,7 @@
 #ifndef SRVOPTFQDN_H
 #define SRVOPTFQDN_H
 
-#include "OptFQDN.h"
+#include <Options/OptFQDN.h>
 
 class TSrvOptFQDN : public TOptFQDN {
 public:

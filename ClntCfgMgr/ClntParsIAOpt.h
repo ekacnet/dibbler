@@ -10,13 +10,13 @@
 #ifndef PARSIAOPT_H_
 #define PARSIAOPT_H_
 
-#include "HostID.h"
+#include <CfgMgr/HostID.h>
 
-#include "ClntParsAddrOpt.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
+#include <ClntCfgMgr/ClntParsAddrOpt.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
 
 class TClntParsIAOpt : public TClntParsAddrOpt {
 public:

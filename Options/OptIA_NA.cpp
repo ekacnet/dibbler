@@ -8,11 +8,11 @@
  *
  */
 
-#include "OptIA_NA.h"
-#include "DHCPConst.h"
-#include "OptIAAddress.h"
-#include "OptStatusCode.h"
-#include "Portable.h"
+#include <Options/OptIA_NA.h>
+#include <Misc/DHCPConst.h>
+#include <Options/OptIAAddress.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/Portable.h>
 
 TOptIA_NA::TOptIA_NA(long iaid, long t1, long t2, TMsg *parent)
     : TOptIA(OPTION_IA_NA, iaid, t1, t2, parent) {

@@ -12,11 +12,11 @@ class TIfaceMgr;
 #ifndef IFACEMGR_H
 #define IFACEMGR_H
 
-#include "Container.h"
-#include "ScriptParams.h"
-#include "SmartPtr.h"
+#include <Misc/Container.h>
+#include <Misc/ScriptParams.h>
+#include <Misc/SmartPtr.h>
 
-#include "Iface.h"
+#include <IfaceMgr/Iface.h>
 
 class TMsg;
 class TOpt;

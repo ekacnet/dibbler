@@ -7,8 +7,8 @@
  *
  */
 
-#include "OptAddrParams.h"
-#include "DHCPConst.h"
+#include <Options/OptAddrParams.h>
+#include <Misc/DHCPConst.h>
 
 TOptAddrParams::TOptAddrParams(const char *buf, size_t len, TMsg *parent)
     : TOptInteger(OPTION_ADDRPARAMS, 2, buf, len, parent) {}

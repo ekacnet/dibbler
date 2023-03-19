@@ -10,14 +10,14 @@
  *
  */
 
-#include "SrvAddrMgr.h"
-#include "AddrAddr.h"
-#include "AddrClient.h"
-#include "AddrIA.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "SrvCfgAddrClass.h"
-#include "SrvCfgMgr.h"
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <AddrMgr/AddrAddr.h>
+#include <AddrMgr/AddrClient.h>
+#include <AddrMgr/AddrIA.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <SrvCfgMgr/SrvCfgAddrClass.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
 #include <cstdlib>
 
 using namespace std;

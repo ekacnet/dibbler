@@ -8,11 +8,11 @@
  *
  */
 
-#include "OptIA_PD.h"
-#include "DHCPConst.h"
-#include "OptIAPrefix.h"
-#include "OptStatusCode.h"
-#include "Portable.h"
+#include <Options/OptIA_PD.h>
+#include <Misc/DHCPConst.h>
+#include <Options/OptIAPrefix.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/Portable.h>
 
 TOptIA_PD::TOptIA_PD(uint32_t iaid, uint32_t t1, uint32_t t2, TMsg *parent)
     : TOpt(OPTION_IA_PD, parent), IAID_(iaid), T1_(t1), T2_(t2), Valid_(true) {}

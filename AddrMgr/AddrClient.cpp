@@ -8,9 +8,9 @@
  *
  */
 
-#include "AddrClient.h"
-#include "Logger.h"
-#include "hex.h"
+#include <AddrMgr/AddrClient.h>
+#include <Misc/Logger.h>
+#include <Misc/hex.h>
 #include <iostream>
 #include <limits.h>
 #include <stdlib.h>

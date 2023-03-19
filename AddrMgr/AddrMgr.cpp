@@ -11,12 +11,12 @@
  *
  */
 
-#include "AddrMgr.h"
-#include "AddrClient.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "hex.h"
+#include <AddrMgr/AddrMgr.h>
+#include <AddrMgr/AddrClient.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <Misc/hex.h>
 #include <fstream>
 #include <iostream>
 #include <limits.h>

@@ -8,7 +8,7 @@
  *
  */
 
-#include "SrvOptFQDN.h"
+#include <SrvOptions/SrvOptFQDN.h>
 
 TSrvOptFQDN::TSrvOptFQDN(const std::string &fqdn, TMsg *parent) : TOptFQDN(fqdn, parent) {
   this->setNFlag(false);

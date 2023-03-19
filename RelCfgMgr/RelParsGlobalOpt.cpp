@@ -8,8 +8,8 @@
  *
  */
 
-#include "RelParsGlobalOpt.h"
-#include "Portable.h"
+#include <RelCfgMgr/RelParsGlobalOpt.h>
+#include <Misc/Portable.h>
 
 using namespace std;
 

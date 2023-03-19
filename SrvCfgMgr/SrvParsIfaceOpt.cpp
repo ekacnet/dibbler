@@ -9,11 +9,11 @@
  *
  */
 
-#include "SrvParsIfaceOpt.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
-#include "OptAddr.h"
-#include "OptString.h"
+#include <SrvCfgMgr/SrvParsIfaceOpt.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
+#include <Options/OptAddr.h>
+#include <Options/OptString.h>
 #include <climits>
 
 using namespace std;

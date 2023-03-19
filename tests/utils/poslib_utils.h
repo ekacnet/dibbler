@@ -3,7 +3,7 @@
 #ifndef TEST_POSLIB_UTILS_H
 #define TEST_POSLIB_UTILS_H
 
-#include "poslib.h"
+#include <poslib/poslib.h>
 
 namespace test {
 void hexToBin(const std::string &hex, message_buff &dst);

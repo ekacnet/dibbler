@@ -12,7 +12,7 @@ class TOptIA_NA;
 #ifndef OPTIA_NA_H
 #define OPTIA_NA_H
 
-#include "OptIA.h"
+#include <Options/OptIA.h>
 
 class TOptIA_NA : public TOptIA {
 public:

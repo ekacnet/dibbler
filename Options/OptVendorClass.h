@@ -9,7 +9,7 @@
 #ifndef OPTVENDORCLASS_H
 #define OPTVENDORCLASS_H
 
-#include "OptUserClass.h"
+#include <Options/OptUserClass.h>
 #include <stdint.h>
 
 class TOptVendorClass : public TOptUserClass {

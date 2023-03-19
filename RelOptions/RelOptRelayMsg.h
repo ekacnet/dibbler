@@ -14,8 +14,8 @@
 #ifndef RELOPTRELAYMSG_H
 #define RELOPTRELAYMSG_H
 
-#include "DHCPConst.h"
-#include "OptGeneric.h"
+#include <Misc/DHCPConst.h>
+#include <Options/OptGeneric.h>
 
 class TRelOptRelayMsg : public TOptGeneric {
 public:

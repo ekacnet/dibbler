@@ -8,8 +8,8 @@
 
 using namespace std;
 
-#include "SrvParser.h"
-#include "Portable.h"
+#include <SrvCfgMgr/SrvParser.h>
+#include <Misc/Portable.h>
 #define YYABORT yyterminate();
 
 /* duplicate default definition from flex. This makes cppcheck

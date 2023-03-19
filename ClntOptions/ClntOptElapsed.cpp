@@ -10,10 +10,10 @@
  *
  */
 
-#include "ClntOptElapsed.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <ClntOptions/ClntOptElapsed.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 
 TClntOptElapsed::TClntOptElapsed(char *buf, int n, TMsg *parent)
     : TOptInteger(OPTION_ELAPSED_TIME, OPTION_ELAPSED_TIME_LEN, buf, n, parent) {

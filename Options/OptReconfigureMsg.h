@@ -10,8 +10,8 @@
 #ifndef OPTRECONFIGURE_H
 #define OPTRECONFIGURE_H
 
-#include "DHCPConst.h"
-#include "Opt.h"
+#include <Misc/DHCPConst.h>
+#include <Options/Opt.h>
 
 class TOptReconfigureMsg : public TOpt {
 public:

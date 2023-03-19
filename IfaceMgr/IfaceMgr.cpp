@@ -8,15 +8,15 @@
  *
  */
 
-#include "IfaceMgr.h"
-#include "Iface.h"
-#include "Logger.h"
-#include "Msg.h"
-#include "OptIAAddress.h"
-#include "OptIAPrefix.h"
-#include "Portable.h"
-#include "ScriptParams.h"
-#include "SocketIPv6.h"
+#include <IfaceMgr/IfaceMgr.h>
+#include <IfaceMgr/Iface.h>
+#include <Misc/Logger.h>
+#include <Messages/Msg.h>
+#include <Options/OptIAAddress.h>
+#include <Options/OptIAPrefix.h>
+#include <Misc/Portable.h>
+#include <Misc/ScriptParams.h>
+#include <IfaceMgr/SocketIPv6.h>
 #include <errno.h>
 #include <fstream>
 #include <iostream>

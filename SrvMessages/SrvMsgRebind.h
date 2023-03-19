@@ -10,7 +10,7 @@
 
 #ifndef SRVMSGREBIND_H
 #define SRVMSGREBIND_H
-#include "SrvMsg.h"
+#include <SrvMessages/SrvMsg.h>
 
 class TSrvMsgRebind : public TSrvMsg {
 public:

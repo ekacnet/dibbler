@@ -11,11 +11,11 @@
 #ifndef IFACEIFACE_H
 #define IFACEIFACE_H
 
-#include "Container.h"
-#include "IPv6Addr.h"
-#include "Portable.h"
-#include "SmartPtr.h"
-#include "SocketIPv6.h"
+#include <Misc/Container.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
+#include <IfaceMgr/SocketIPv6.h>
 #include <list>
 
 /*

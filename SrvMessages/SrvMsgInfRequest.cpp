@@ -8,10 +8,10 @@
  *
  */
 
-#include "SrvMsgInfRequest.h"
-#include "DHCPConst.h"
-#include "SmartPtr.h"
-#include "SrvMsgAdvertise.h"
+#include <SrvMessages/SrvMsgInfRequest.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsgAdvertise.h>
 
 TSrvMsgInfRequest::TSrvMsgInfRequest(int iface, SPtr<TIPv6Addr> addr, char *buf, int bufSize)
     : TSrvMsg(iface, addr, buf, bufSize) {}

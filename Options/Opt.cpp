@@ -8,14 +8,14 @@
  *
  */
 
-#include "Opt.h"
-#include "Logger.h"
-#include "OptGeneric.h"
-#include "OptIAAddress.h"
-#include "OptIAPrefix.h"
-#include "OptRtPrefix.h"
-#include "OptStatusCode.h"
-#include "Portable.h"
+#include <Options/Opt.h>
+#include <Misc/Logger.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptIAAddress.h>
+#include <Options/OptIAPrefix.h>
+#include <Options/OptRtPrefix.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/Portable.h>
 
 int TOpt::getOptType() { return OptType; }
 

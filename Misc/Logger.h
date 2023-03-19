@@ -11,7 +11,7 @@
 
 #ifndef LOGGER_H
 #define LOGGER_H
-#include "DHCPConst.h"
+#include <Misc/DHCPConst.h>
 #include <iostream>
 #include <stdint.h>
 #include <string>

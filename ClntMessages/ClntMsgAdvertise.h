@@ -13,7 +13,7 @@
 #ifndef SRVMSGADVERTISE_H
 #define SRVMSGADVERTISE_H
 
-#include "ClntMsg.h"
+#include <ClntMessages/ClntMsg.h>
 
 class TClntMsgAdvertise : public TClntMsg {
 public:

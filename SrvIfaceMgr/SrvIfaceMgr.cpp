@@ -18,31 +18,31 @@
 #include <net/if.h>
 #include <sys/socket.h>
 #endif
-#include "AddrClient.h"
-#include "DNSUpdate.h"
-#include "IPv6Addr.h"
-#include "Iface.h"
-#include "Logger.h"
-#include "Msg.h"
-#include "OptGeneric.h"
-#include "OptIAAddress.h"
-#include "OptIAPrefix.h"
-#include "OptOptionRequest.h"
-#include "OptVendorData.h"
-#include "Portable.h"
-#include "SmartPtr.h"
-#include "SrvIfaceMgr.h"
-#include "SrvMsg.h"
-#include "SrvMsgConfirm.h"
-#include "SrvMsgDecline.h"
-#include "SrvMsgInfRequest.h"
-#include "SrvMsgLeaseQuery.h"
-#include "SrvMsgRebind.h"
-#include "SrvMsgRelease.h"
-#include "SrvMsgRenew.h"
-#include "SrvMsgRequest.h"
-#include "SrvMsgSolicit.h"
-#include "SrvOptInterfaceID.h"
+#include <AddrMgr/AddrClient.h>
+#include <IfaceMgr/DNSUpdate.h>
+#include <Misc/IPv6Addr.h>
+#include <IfaceMgr/Iface.h>
+#include <Misc/Logger.h>
+#include <Messages/Msg.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptIAAddress.h>
+#include <Options/OptIAPrefix.h>
+#include <Options/OptOptionRequest.h>
+#include <Options/OptVendorData.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
+#include <SrvMessages/SrvMsg.h>
+#include <SrvMessages/SrvMsgConfirm.h>
+#include <SrvMessages/SrvMsgDecline.h>
+#include <SrvMessages/SrvMsgInfRequest.h>
+#include <SrvMessages/SrvMsgLeaseQuery.h>
+#include <SrvMessages/SrvMsgRebind.h>
+#include <SrvMessages/SrvMsgRelease.h>
+#include <SrvMessages/SrvMsgRenew.h>
+#include <SrvMessages/SrvMsgRequest.h>
+#include <SrvMessages/SrvMsgSolicit.h>
+#include <SrvOptions/SrvOptInterfaceID.h>
 
 using namespace std;
 

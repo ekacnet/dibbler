@@ -11,7 +11,7 @@ class TRelOptRemoteID;
 #ifndef RELOPTREMOTEID_H
 #define RELOPTREMOTEID_H
 
-#include "OptVendorData.h"
+#include <Options/OptVendorData.h>
 
 class TRelOptRemoteID : public TOptVendorData {
 public:

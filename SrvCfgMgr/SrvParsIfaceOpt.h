@@ -11,10 +11,10 @@
 #ifndef TSRCPARSIFACEOPT_H_
 #define TSRCPARSIFACEOPT_H_
 
-#include "FQDN.h"
-#include "OptVendorSpecInfo.h"
-#include "SrvOptInterfaceID.h"
-#include "SrvParsClassOpt.h"
+#include <Misc/FQDN.h>
+#include <Options/OptVendorSpecInfo.h>
+#include <SrvOptions/SrvOptInterfaceID.h>
+#include <SrvCfgMgr/SrvParsClassOpt.h>
 
 class TSrvParsIfaceOpt : public TSrvParsClassOpt {
 public:

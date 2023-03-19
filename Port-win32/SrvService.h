@@ -10,7 +10,7 @@
 #ifndef SRVSERVICE_H
 #define SRVSERVICE_H
 
-#include "DHCPServer.h"
+#include <Misc/DHCPServer.h>
 #include "winservice.h"
 #include <stdio.h>
 #include <windows.h>

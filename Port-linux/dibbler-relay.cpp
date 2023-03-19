@@ -7,9 +7,9 @@
  *
  */
 
-#include "DHCPRelay.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Misc/DHCPRelay.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include "daemon.h"
 #include <signal.h>
 #include <stdlib.h>

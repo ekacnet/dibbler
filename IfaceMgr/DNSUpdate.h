@@ -1,8 +1,8 @@
 /*
  * Dibbler - a portable DHCPv6
  *
- * authors: Adrien CLERC, Bahattin DEMIRPLAK, Gaëtant ELEOUET
- *          Mickaël GUÉRIN, Lionel GUILMIN, Lauréline PROVOST
+ * authors: Adrien CLERC, Bahattin DEMIRPLAK, GaÃ«tant ELEOUET
+ *          MickaÃ«l GUÃ‰RIN, Lionel GUILMIN, LaurÃ©line PROVOST
  *          from ENSEEIHT, Toulouse, France
  *
  * released under GNU GPL v2 licence
@@ -17,7 +17,7 @@
 #include <string>
 
 /// @todo: remove poslib.h inclusion from here
-#include "poslib.h"
+#include <poslib/poslib.h>
 
 /* used in config. file */
 enum DnsUpdateModeCfg {

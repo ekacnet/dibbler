@@ -1,6 +1,6 @@
 #include <iostream>
 #include <gtest/gtest.h>
-#include "poslib.h"
+#include <poslib/poslib.h>
 
 using namespace std;
 

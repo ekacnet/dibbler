@@ -13,19 +13,19 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "SmartPtr.h"
-#include "Portable.h"
-#include "ClntCfgMgr.h"
-#include "ClntCfgIface.h"
-#include "Logger.h"
+#include <Misc/SmartPtr.h>
+#include <Misc/Portable.h>
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <ClntCfgMgr/ClntCfgIface.h>
+#include <Misc/Logger.h>
 
 using namespace std;
 
-#include "FlexLexer.h"
-#include "ClntIfaceMgr.h"
-#include "ClntParsGlobalOpt.h"
-#include "ClntParser.h"
-#include "hex.h"
+#include <bison++/FlexLexer.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <ClntCfgMgr/ClntParsGlobalOpt.h>
+#include <ClntCfgMgr/ClntParser.h>
+#include <Misc/hex.h>
 
 TClntCfgMgr *TClntCfgMgr::Instance = 0;
 

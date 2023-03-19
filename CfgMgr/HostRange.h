@@ -11,9 +11,9 @@
 #ifndef STATIONRANGE_H
 #define STATIONRANGE_H
 
-#include "DUID.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
+#include <Misc/DUID.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
 
 #include <iomanip>
 #include <iostream>

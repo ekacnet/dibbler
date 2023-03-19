@@ -11,7 +11,7 @@
 #ifndef OPTSTATUSCODE_H
 #define OPTSTATUSCODE_H
 
-#include "Opt.h"
+#include <Options/Opt.h>
 #include <string>
 
 class TOptStatusCode : public TOpt {

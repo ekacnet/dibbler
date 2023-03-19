@@ -8,9 +8,9 @@
  *
  */
 
-#include "OptUserClass.h"
-#include "DHCPConst.h"
-#include "Portable.h"
+#include <Options/OptUserClass.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Portable.h>
 #include <string.h>
 
 TOptUserClass::TOptUserClass(uint16_t type, const char *buf, unsigned short buf_len, TMsg *parent)

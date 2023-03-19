@@ -9,30 +9,30 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "SrvMsg.h"
-#include "OptAddr.h"
-#include "OptAddrLst.h"
-#include "OptAuthentication.h"
-#include "OptDUID.h"
-#include "OptDomainLst.h"
-#include "OptEmpty.h"
-#include "OptGeneric.h"
-#include "OptStatusCode.h"
-#include "OptString.h"
-#include "OptUserClass.h"
-#include "OptVendorClass.h"
-#include "Portable.h"
-#include "SrvCfgOptions.h"
-#include "SrvOptFQDN.h"
-#include "SrvOptIA_NA.h"
-#include "SrvOptIA_PD.h"
-#include "SrvOptLQ.h"
-#include "SrvOptTA.h"
+#include <SrvMessages/SrvMsg.h>
+#include <Options/OptAddr.h>
+#include <Options/OptAddrLst.h>
+#include <Options/OptAuthentication.h>
+#include <Options/OptDUID.h>
+#include <Options/OptDomainLst.h>
+#include <Options/OptEmpty.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptStatusCode.h>
+#include <Options/OptString.h>
+#include <Options/OptUserClass.h>
+#include <Options/OptVendorClass.h>
+#include <Misc/Portable.h>
+#include <SrvCfgMgr/SrvCfgOptions.h>
+#include <SrvOptions/SrvOptFQDN.h>
+#include <SrvOptions/SrvOptIA_NA.h>
+#include <SrvOptions/SrvOptIA_PD.h>
+#include <SrvOptions/SrvOptLQ.h>
+#include <SrvOptions/SrvOptTA.h>
 #include <sstream>
 
-#include "AddrClient.h"
-#include "Logger.h"
-#include "SrvIfaceMgr.h"
+#include <AddrMgr/AddrClient.h>
+#include <Misc/Logger.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
 
 using namespace std;
 

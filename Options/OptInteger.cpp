@@ -8,9 +8,9 @@
  *
  */
 
-#include "OptInteger.h"
-#include "DHCPConst.h"
-#include "Portable.h"
+#include <Options/OptInteger.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Portable.h>
 #include <iostream>
 #include <sstream>
 #include <stdlib.h>

@@ -7,9 +7,9 @@
  *
  */
 
-#include "OptIA.h"
-#include "DHCPConst.h"
-#include "OptStatusCode.h"
+#include <Options/OptIA.h>
+#include <Misc/DHCPConst.h>
+#include <Options/OptStatusCode.h>
 
 TOptIA::TOptIA(uint16_t code, uint32_t iaid, uint32_t t1, uint32_t t2, TMsg *parent)
     : TOpt(code, parent), IAID_(iaid), T1_(t1), T2_(t2) {}

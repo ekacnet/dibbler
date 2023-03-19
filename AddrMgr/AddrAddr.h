@@ -10,9 +10,9 @@
 #ifndef ADDRADDR_H
 #define ADDRADDR_H
 
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 #include <list>
 

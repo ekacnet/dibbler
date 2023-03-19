@@ -10,9 +10,9 @@
 #ifndef OPTAUTHENTICATION_H
 #define OPTAUTHENTICATION_H
 
-#include "DHCPConst.h"
-#include "Opt.h"
-#include "Portable.h"
+#include <Misc/DHCPConst.h>
+#include <Options/Opt.h>
+#include <Misc/Portable.h>
 #include <vector>
 
 class TOptAuthentication : public TOpt {

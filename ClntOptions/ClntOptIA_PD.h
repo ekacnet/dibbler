@@ -10,10 +10,10 @@
 #ifndef CLNTOPTIA_PD_H
 #define CLNTOPTIA_PD_H
 
-#include "ClntIfaceMgr.h"
-#include "IPv6Addr.h"
-#include "OptIAPrefix.h"
-#include "OptIA_PD.h"
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/OptIAPrefix.h>
+#include <Options/OptIA_PD.h>
 
 class TOptIA_PD;
 

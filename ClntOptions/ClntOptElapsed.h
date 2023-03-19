@@ -10,7 +10,7 @@
 #ifndef CLNTOPTELAPSED_H
 #define CLNTOPTELAPSED_H
 
-#include "OptInteger.h"
+#include <Options/OptInteger.h>
 
 class TClntOptElapsed : public TOptInteger {
 public:

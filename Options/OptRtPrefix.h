@@ -8,9 +8,9 @@
  *
  */
 
-#include "IPv6Addr.h"
-#include "Opt.h"
-#include "SmartPtr.h"
+#include <Misc/IPv6Addr.h>
+#include <Options/Opt.h>
+#include <Misc/SmartPtr.h>
 
 class TOptRtPrefix : public TOpt {
 public:

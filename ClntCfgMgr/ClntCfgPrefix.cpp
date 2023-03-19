@@ -9,9 +9,9 @@
  *
  */
 
-#include "ClntCfgPrefix.h"
-#include "DHCPConst.h"
-#include "Logger.h"
+#include <ClntCfgMgr/ClntCfgPrefix.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
 #include <iomanip>
 #include <iostream>
 #include <limits.h>

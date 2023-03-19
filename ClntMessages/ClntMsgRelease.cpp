@@ -10,20 +10,20 @@
  *
  */
 
-#include "ClntMsgRelease.h"
-#include "AddrAddr.h"
-#include "AddrIA.h"
-#include "AddrMgr.h"
-#include "ClntAddrMgr.h"
-#include "ClntCfgMgr.h"
-#include "ClntOptIA_NA.h"
-#include "ClntOptIA_PD.h"
-#include "ClntOptTA.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "SmartPtr.h"
+#include <ClntMessages/ClntMsgRelease.h>
+#include <AddrMgr/AddrAddr.h>
+#include <AddrMgr/AddrIA.h>
+#include <AddrMgr/AddrMgr.h>
+#include <ClntAddrMgr/ClntAddrMgr.h>
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <ClntOptions/ClntOptIA_PD.h>
+#include <ClntOptions/ClntOptTA.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Misc/SmartPtr.h>
 #include <cmath>
 
 using namespace std;

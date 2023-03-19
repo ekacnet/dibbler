@@ -13,7 +13,7 @@
 #include <iostream>
 #include <string>
 
-#include "Opt.h"
+#include <Options/Opt.h>
 
 class TOptInteger : public TOpt {
 public:

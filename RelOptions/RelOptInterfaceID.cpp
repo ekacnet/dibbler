@@ -10,8 +10,8 @@
  *
  */
 
-#include "RelOptInterfaceID.h"
-#include "DHCPConst.h"
+#include <RelOptions/RelOptInterfaceID.h>
+#include <Misc/DHCPConst.h>
 
 TRelOptInterfaceID::TRelOptInterfaceID(char *data, int dataLen, TMsg *parent)
     : TOptInteger(OPTION_INTERFACE_ID, 4 /** @todo: Support length other than 4 */, data, dataLen,

@@ -8,8 +8,8 @@
 
 using namespace std;
 
-#include "ClntParser.h"
-#include "Portable.h"
+#include <ClntCfgMgr/ClntParser.h>
+#include <Misc/Portable.h>
 #define YYABORT yyterminate();
 
 /* duplicate default definition from flex. This makes cppcheck

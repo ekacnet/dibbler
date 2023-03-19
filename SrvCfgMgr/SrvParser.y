@@ -5,36 +5,36 @@
 #include <string>
 #include <stdint.h>
 #include <sstream>
-#include "Portable.h"
-#include "DHCPConst.h"
-#include "SmartPtr.h"
-#include "Container.h"
-#include "SrvParser.h"
-#include "SrvParsGlobalOpt.h"
-#include "SrvParsClassOpt.h"
-#include "SrvParsIfaceOpt.h"
-#include "OptAddr.h"
-#include "OptAddrLst.h"
-#include "OptDomainLst.h"
-#include "OptString.h"
-#include "OptVendorSpecInfo.h"
-#include "OptRtPrefix.h"
-#include "SrvOptAddrParams.h"
-#include "SrvCfgMgr.h"
-#include "SrvCfgTA.h"
-#include "SrvCfgPD.h"
-#include "SrvCfgClientClass.h"
-#include "SrvCfgAddrClass.h"
-#include "SrvCfgIface.h"
-#include "SrvCfgOptions.h"
-#include "DUID.h"
-#include "Logger.h"
-#include "FQDN.h"
-#include "Key.h"
-#include "Node.h"
-#include "NodeConstant.h"
-#include "NodeClientSpecific.h"
-#include "NodeOperator.h"
+#include <Misc/Portable.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/SmartPtr.h>
+#include <Misc/Container.h>
+#include <SrvCfgMgr/SrvParser.h>
+#include <SrvCfgMgr/SrvParsGlobalOpt.h>
+#include <SrvCfgMgr/SrvParsClassOpt.h>
+#include <SrvCfgMgr/SrvParsIfaceOpt.h>
+#include <Options/OptAddr.h>
+#include <Options/OptAddrLst.h>
+#include <Options/OptDomainLst.h>
+#include <Options/OptString.h>
+#include <Options/OptVendorSpecInfo.h>
+#include <Options/OptRtPrefix.h>
+#include <SrvOptions/SrvOptAddrParams.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvCfgMgr/SrvCfgTA.h>
+#include <SrvCfgMgr/SrvCfgPD.h>
+#include <SrvCfgMgr/SrvCfgClientClass.h>
+#include <SrvCfgMgr/SrvCfgAddrClass.h>
+#include <SrvCfgMgr/SrvCfgIface.h>
+#include <SrvCfgMgr/SrvCfgOptions.h>
+#include <Misc/DUID.h>
+#include <Misc/Logger.h>
+#include <Misc/FQDN.h>
+#include <Misc/Key.h>
+#include <SrvCfgMgr/Node.h>
+#include <SrvCfgMgr/NodeConstant.h>
+#include <SrvCfgMgr/NodeClientSpecific.h>
+#include <SrvCfgMgr/NodeOperator.h>
 
 using namespace std;
 
@@ -42,7 +42,7 @@ using namespace std;
 %}
 
 %{
-#include "FlexLexer.h"
+#include <bison++/FlexLexer.h>
 %}
 
 // class definition

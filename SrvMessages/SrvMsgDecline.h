@@ -10,7 +10,7 @@
 
 #ifndef SRVMSGDECLINE_H
 #define SRVMSGDECLINE_H
-#include "SrvMsg.h"
+#include <SrvMessages/SrvMsg.h>
 
 class TSrvMsgDecline : public TSrvMsg {
 public:

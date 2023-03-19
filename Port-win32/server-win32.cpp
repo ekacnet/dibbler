@@ -14,12 +14,12 @@
 #include <string>
 #include <winsock2.h>
 
-#include "DHCPServer.h"
-#include "Portable.h"
+#include <Misc/DHCPServer.h>
+#include <Misc/Portable.h>
 
-#include "Logger.h"
-#include "SrvService.h"
-#include "WinService.h"
+#include <Misc/Logger.h>
+#include <Port-win32/SrvService.h>
+#include <Port-win32/WinService.h>
 
 extern "C" int lowlevelInit();
 extern TDHCPServer *srvPtr;

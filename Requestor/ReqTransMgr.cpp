@@ -7,16 +7,16 @@
  *
  */
 
-#include "ReqTransMgr.h"
-#include "Logger.h"
-#include "OptAddr.h"
-#include "OptDUID.h"
-#include "OptGeneric.h"
-#include "Portable.h"
-#include "ReqMsg.h"
-#include "ReqOpt.h"
-#include "SocketIPv6.h"
-#include "hex.h"
+#include <Requestor/ReqTransMgr.h>
+#include <Misc/Logger.h>
+#include <Options/OptAddr.h>
+#include <Options/OptDUID.h>
+#include <Options/OptGeneric.h>
+#include <Misc/Portable.h>
+#include <Requestor/ReqMsg.h>
+#include <Requestor/ReqOpt.h>
+#include <IfaceMgr/SocketIPv6.h>
+#include <Misc/hex.h>
 #include <sstream>
 #include <stdio.h>
 #include <string.h>

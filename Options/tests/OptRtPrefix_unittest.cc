@@ -1,9 +1,9 @@
 #include <gtest/gtest.h>
 
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "OptAddr.h"
-#include "OptRtPrefix.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/OptAddr.h>
+#include <Options/OptRtPrefix.h>
 
 namespace test {
 

@@ -8,8 +8,8 @@
  *
  */
 
-#include "ClntOptPreference.h"
-#include "DHCPConst.h"
+#include <ClntOptions/ClntOptPreference.h>
+#include <Misc/DHCPConst.h>
 
 TClntOptPreference::TClntOptPreference(char *buf, int n, TMsg *parent)
     : TOptInteger(OPTION_PREFERENCE, 1, buf, n, parent) {}

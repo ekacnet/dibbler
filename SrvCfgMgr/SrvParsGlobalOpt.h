@@ -11,8 +11,8 @@
 #ifndef TSRVPARSGLOBALOPT_H_
 #define TSRVPARSGLOBALOPT_H_
 
-#include "DHCPConst.h"
-#include "SrvParsIfaceOpt.h"
+#include <Misc/DHCPConst.h>
+#include <SrvCfgMgr/SrvParsIfaceOpt.h>
 
 typedef enum {
   SRV_IFACE_ID_ORDER_BEFORE,

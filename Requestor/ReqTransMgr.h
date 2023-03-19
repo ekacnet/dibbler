@@ -11,8 +11,8 @@
 #ifndef REQIFACEMGR_H
 #define REQIFACEMGR_H
 
-#include "IfaceMgr.h"
-#include "ReqCfgMgr.h"
+#include <IfaceMgr/IfaceMgr.h>
+#include <Requestor/ReqCfgMgr.h>
 
 class ReqTransMgr {
 public:

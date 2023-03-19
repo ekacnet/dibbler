@@ -8,8 +8,8 @@
  *
  */
 
-#include "KeyList.h"
-#include "Logger.h"
+#include <Misc/KeyList.h>
+#include <Misc/Logger.h>
 #include <stdio.h>
 
 KeyList::~KeyList() {

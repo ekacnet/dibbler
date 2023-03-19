@@ -11,10 +11,10 @@
 #include <iostream>
 #include <time.h>
 
-#include "AddrAddr.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <AddrMgr/AddrAddr.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 
 using namespace std;
 

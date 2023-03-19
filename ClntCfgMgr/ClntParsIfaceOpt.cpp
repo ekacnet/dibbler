@@ -9,9 +9,9 @@
  *
  */
 
-#include "ClntParsIfaceOpt.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
+#include <ClntCfgMgr/ClntParsIfaceOpt.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
 #include <iomanip>
 #include <iostream>
 

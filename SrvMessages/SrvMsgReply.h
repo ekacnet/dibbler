@@ -11,19 +11,19 @@
 class TSrvMsgReply;
 #ifndef SRVMSGREPLY_H
 #define SRVMSGREPLY_H
-#include "SrvMsg.h"
-#include "SrvMsgConfirm.h"
-#include "SrvMsgDecline.h"
-#include "SrvMsgInfRequest.h"
-#include "SrvMsgRebind.h"
-#include "SrvMsgRelease.h"
-#include "SrvMsgRenew.h"
-#include "SrvMsgReply.h"
-#include "SrvMsgRequest.h"
-#include "SrvMsgSolicit.h"
-#include "SrvOptIAAddress.h"
+#include <SrvMessages/SrvMsg.h>
+#include <SrvMessages/SrvMsgConfirm.h>
+#include <SrvMessages/SrvMsgDecline.h>
+#include <SrvMessages/SrvMsgInfRequest.h>
+#include <SrvMessages/SrvMsgRebind.h>
+#include <SrvMessages/SrvMsgRelease.h>
+#include <SrvMessages/SrvMsgRenew.h>
+#include <SrvMessages/SrvMsgReply.h>
+#include <SrvMessages/SrvMsgRequest.h>
+#include <SrvMessages/SrvMsgSolicit.h>
+#include <SrvOptions/SrvOptIAAddress.h>
 
-#include "OptDUID.h"
+#include <Options/OptDUID.h>
 
 class TSrvMsgReply : public TSrvMsg {
 public:

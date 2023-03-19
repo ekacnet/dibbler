@@ -12,8 +12,8 @@ class TRelCfgIface;
 
 #ifndef RELCFGIFACE_H
 #define RELCFGIFACE_H
-#include "DHCPConst.h"
-#include "RelParsGlobalOpt.h"
+#include <Misc/DHCPConst.h>
+#include <RelCfgMgr/RelParsGlobalOpt.h>
 #include <iostream>
 #include <string>
 

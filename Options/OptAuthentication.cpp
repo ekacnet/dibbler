@@ -7,11 +7,11 @@
  * released under GNU GPL v2 licence
  */
 
-#include "OptAuthentication.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Msg.h"
-#include "Portable.h"
+#include <Options/OptAuthentication.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Messages/Msg.h>
+#include <Misc/Portable.h>
 #include <stdlib.h>
 #include <string.h>
 

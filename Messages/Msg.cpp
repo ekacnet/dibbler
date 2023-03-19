@@ -8,18 +8,18 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "Msg.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Opt.h"
-#include "OptAuthentication.h"
-#include "OptDUID.h"
-#include "OptOptionRequest.h"
-#include "OptStatusCode.h"
-#include "Portable.h"
-#include "SmartPtr.h"
-#include "hmac-sha-md5.h"
+#include <Messages/Msg.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/Opt.h>
+#include <Options/OptAuthentication.h>
+#include <Options/OptDUID.h>
+#include <Options/OptOptionRequest.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
+#include <Misc/hmac-sha-md5.h>
 #include <cmath>
 #include <stdlib.h>
 #include <string.h>

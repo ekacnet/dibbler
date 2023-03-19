@@ -9,9 +9,9 @@
 #ifndef KEY_H
 #define KEY_H
 
-#include "DHCPConst.h"
-#include "Portable.h"
-#include "SmartPtr.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
 #include <vector>
 
 typedef std::vector<uint8_t> TKey;

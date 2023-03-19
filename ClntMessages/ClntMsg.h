@@ -11,14 +11,14 @@
 #ifndef CLNTMSG_H
 #define CLNTMSG_H
 
-#include "ClntAddrMgr.h"
-#include "ClntCfgMgr.h"
-#include "ClntIfaceMgr.h"
-#include "ClntTransMgr.h"
-#include "Msg.h"
-#include "Opt.h"
-#include "OptStatusCode.h"
-#include "SmartPtr.h"
+#include <ClntAddrMgr/ClntAddrMgr.h>
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <ClntTransMgr/ClntTransMgr.h>
+#include <Messages/Msg.h>
+#include <Options/Opt.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/SmartPtr.h>
 
 class TClntMsg : public TMsg {
 public:

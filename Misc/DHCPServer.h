@@ -10,7 +10,7 @@
 #ifndef DHCPSERVER_H
 #define DHCPSERVER_H
 
-#include "SmartPtr.h"
+#include <Misc/SmartPtr.h>
 #include <iostream>
 #include <string>
 

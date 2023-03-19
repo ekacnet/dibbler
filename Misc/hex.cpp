@@ -7,8 +7,8 @@
  *
  */
 
-#include "hex.h"
-#include "Logger.h"
+#include <Misc/hex.h>
+#include <Misc/Logger.h>
 #include <iomanip>
 #include <sstream>
 #include <vector>

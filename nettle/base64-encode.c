@@ -29,7 +29,7 @@
 #include <assert.h>
 #include <stdlib.h>
 
-#include "base64.h"
+#include <nettle/base64.h>
 
 static const uint8_t encode_table[64] =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"

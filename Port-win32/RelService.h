@@ -10,7 +10,7 @@
 #ifndef RELSERVICE_H
 #define RELSERVICE_H
 
-#include "DHCPRelay.h"
+#include <Misc/DHCPRelay.h>
 #include "winservice.h"
 #include <stdio.h>
 #include <windows.h>

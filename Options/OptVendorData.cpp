@@ -7,11 +7,11 @@
  *
  */
 
-#include "OptVendorData.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "hex.h"
+#include <Options/OptVendorData.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <Misc/hex.h>
 #include <iostream>
 #include <sstream>
 #include <string.h>

@@ -9,11 +9,11 @@
  * $Id: OptTA.cpp,v 1.2 2006-03-05 21:37:46 thomson Exp $
  */
 
-#include "OptTA.h"
-#include "Logger.h"
-#include "OptIAAddress.h"
-#include "OptStatusCode.h"
-#include "Portable.h"
+#include <Options/OptTA.h>
+#include <Misc/Logger.h>
+#include <Options/OptIAAddress.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/Portable.h>
 
 TOptTA::TOptTA(uint32_t iaid, TMsg *parent)
     : TOpt(OPTION_IA_TA, parent), IAID_(iaid), Valid_(true) {}

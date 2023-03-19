@@ -8,9 +8,9 @@
  *
  */
 
-#include "DHCPServer.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Misc/DHCPServer.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include "daemon.h"
 #include <signal.h>
 #include <stdio.h>

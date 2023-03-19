@@ -7,7 +7,7 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "ClntParsIAOpt.h"
+#include <ClntCfgMgr/ClntParsIAOpt.h>
 #include <limits.h>
 
 TClntParsIAOpt::TClntParsIAOpt() : TClntParsAddrOpt() {

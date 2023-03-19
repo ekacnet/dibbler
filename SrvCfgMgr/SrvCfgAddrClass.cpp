@@ -9,14 +9,14 @@
  *
  */
 
-#include "SrvCfgAddrClass.h"
-#include "DHCPConst.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
-#include "SmartPtr.h"
-#include "SrvMsg.h"
-#include "SrvOptAddrParams.h"
-#include "SrvParsGlobalOpt.h"
+#include <SrvCfgMgr/SrvCfgAddrClass.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsg.h>
+#include <SrvOptions/SrvOptAddrParams.h>
+#include <SrvCfgMgr/SrvParsGlobalOpt.h>
 
 using namespace std;
 

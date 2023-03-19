@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
 #include <vector>
 
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "OptAddr.h"
-#include "OptAuthentication.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/OptAddr.h>
+#include <Options/OptAuthentication.h>
 
 namespace test {
 

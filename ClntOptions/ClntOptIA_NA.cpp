@@ -8,15 +8,15 @@
  *
  */
 
-#include "AddrIA.h"
-#include "ClntAddrMgr.h"
-#include "ClntCfgIA.h"
-#include "ClntIfaceMgr.h"
-#include "ClntOptIA_NA.h"
-#include "Logger.h"
-#include "Msg.h"
-#include "OptAddrParams.h"
-#include "OptStatusCode.h"
+#include <AddrMgr/AddrIA.h>
+#include <ClntAddrMgr/ClntAddrMgr.h>
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <ClntOptions/ClntOptIA_NA.h>
+#include <Misc/Logger.h>
+#include <Messages/Msg.h>
+#include <Options/OptAddrParams.h>
+#include <Options/OptStatusCode.h>
 
 /**
  * Used in CONFIRM constructor

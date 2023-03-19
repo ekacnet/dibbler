@@ -8,8 +8,8 @@
  * $Id: ReqMsg.cpp,v 1.2 2007-12-03 16:59:17 thomson Exp $
  */
 
-#include "ReqMsg.h"
-#include "DHCPConst.h"
+#include <Requestor/ReqMsg.h>
+#include <Misc/DHCPConst.h>
 #include <string>
 
 using namespace std;

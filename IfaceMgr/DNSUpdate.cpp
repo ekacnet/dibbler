@@ -1,8 +1,8 @@
 /*
  * Dibbler - a portable DHCPv6
  *
- * authors: Adrien CLERC, Bahattin DEMIRPLAK, Gaëtant ELEOUET
- *          Mickaël GUÉRIN, Lionel GUILMIN, Lauréline PROVOST
+ * authors: Adrien CLERC, Bahattin DEMIRPLAK, GaÃ«tant ELEOUET
+ *          MickaÃ«l GUÃ‰RIN, Lionel GUILMIN, LaurÃ©line PROVOST
  *          from ENSEEIHT, Toulouse, France
  * changes: Krzysztof Wnuk <keczi@poczta.onet.pl>
  *          Michal Kowalczuk <michal@kowalczuk.eu>
@@ -11,10 +11,10 @@
  *
  */
 
-#include "DNSUpdate.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "sha256.h"
+#include <IfaceMgr/DNSUpdate.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <Misc/sha256.h>
 #include <stdio.h>
 
 using namespace std;

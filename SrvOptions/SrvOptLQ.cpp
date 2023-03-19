@@ -7,12 +7,12 @@
  *
  */
 
-#include "SrvOptLQ.h"
-#include "Logger.h"
-#include "Msg.h"
-#include "OptDUID.h"
-#include "Portable.h"
-#include "SrvOptIAAddress.h"
+#include <SrvOptions/SrvOptLQ.h>
+#include <Misc/Logger.h>
+#include <Messages/Msg.h>
+#include <Options/OptDUID.h>
+#include <Misc/Portable.h>
+#include <SrvOptions/SrvOptIAAddress.h>
 
 // --- TSrvOptLQ ---
 TSrvOptLQ::TSrvOptLQ(char *buf, int bufsize, TMsg *parent) : TOpt(OPTION_LQ_QUERY, parent) {

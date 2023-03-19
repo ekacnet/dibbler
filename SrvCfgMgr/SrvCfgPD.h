@@ -34,14 +34,14 @@ class TSrvCfgPD;
 #include <iostream>
 #include <string>
 
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "IPv6Addr.h"
-#include "Node.h"
-#include "SmartPtr.h"
-#include "SrvAddrMgr.h"
-#include "SrvCfgPD.h"
-#include "SrvParsGlobalOpt.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <Misc/IPv6Addr.h>
+#include <SrvCfgMgr/Node.h>
+#include <Misc/SmartPtr.h>
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <SrvCfgMgr/SrvCfgPD.h>
+#include <SrvCfgMgr/SrvParsGlobalOpt.h>
 
 class TSrvCfgClientClass;
 

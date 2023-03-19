@@ -16,12 +16,12 @@ class TSrcCfgTA;
 #include <iostream>
 #include <string>
 
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
-#include "SrvAddrMgr.h"
-#include "SrvParsGlobalOpt.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <SrvCfgMgr/SrvParsGlobalOpt.h>
 
 class TSrvCfgTA {
   friend std::ostream &operator<<(std::ostream &out, TSrvCfgTA &iface);

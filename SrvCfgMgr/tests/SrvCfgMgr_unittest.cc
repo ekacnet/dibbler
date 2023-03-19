@@ -1,7 +1,7 @@
-#include "IPv6Addr.h"
-#include "SrvIfaceMgr.h"
-#include "SrvCfgMgr.h"
-#include "OptAddrLst.h"
+#include <Misc/IPv6Addr.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <Options/OptAddrLst.h>
 
 #include <gtest/gtest.h>
 

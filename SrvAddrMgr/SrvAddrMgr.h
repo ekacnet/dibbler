@@ -12,9 +12,9 @@
 #ifndef SRVADDRMGR_H
 #define SRVADDRMGR_H
 
-#include "AddrMgr.h"
-#include "SrvCfgAddrClass.h"
-#include "SrvCfgPD.h"
+#include <AddrMgr/AddrMgr.h>
+#include <SrvCfgMgr/SrvCfgAddrClass.h>
+#include <SrvCfgMgr/SrvCfgPD.h>
 #include <vector>
 
 #define SrvAddrMgr() (TSrvAddrMgr::instance())

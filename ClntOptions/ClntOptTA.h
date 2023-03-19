@@ -14,10 +14,10 @@ class TMsg;
 #ifndef CLNTIA_TA_H
 #define CLNTIA_TA_H
 
-#include "IPv6Addr.h"
-#include "Msg.h"
-#include "OptIAAddress.h"
-#include "OptTA.h"
+#include <Misc/IPv6Addr.h>
+#include <Messages/Msg.h>
+#include <Options/OptIAAddress.h>
+#include <Options/OptTA.h>
 
 class TClntOptTA : public TOptTA {
 public:

@@ -8,11 +8,11 @@
  *
  */
 
-#include "OptVendorSpecInfo.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptGeneric.h"
-#include "Portable.h"
+#include <Options/OptVendorSpecInfo.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptGeneric.h>
+#include <Misc/Portable.h>
 #include <iostream>
 #include <sstream>
 #include <string.h>

@@ -4,7 +4,7 @@
  * authors: Tomasz Mrugalski <thomson@klub.com.pl>
  *          Marek Senderski <msend@o2.pl>
  * changes: Krzysztof Wnuk <keczi@poczta.onet.pl>
- *          Micha³ Kowalczuk <michal@kowalczuk.eu>
+ *          MichaÂ³ Kowalczuk <michal@kowalczuk.eu>
  *
  * released under GNU GPL v2 only licence
  *
@@ -19,10 +19,10 @@ class TIfaceSocket;
 #include <iostream>
 #include <string>
 
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "Portable.h"
-#include "SmartPtr.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
 
 /*
  * repesents network socket

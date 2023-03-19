@@ -12,9 +12,9 @@ class TClntIfaceMgr;
 #ifndef CLNTMSGINFREQUEST_H
 #define CLNTMSGINFREQUEST_H
 
-#include "ClntCfgMgr.h"
-#include "ClntMsg.h"
-#include "SmartPtr.h"
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <ClntMessages/ClntMsg.h>
+#include <Misc/SmartPtr.h>
 
 class TClntMsgInfRequest : public TClntMsg {
 public:

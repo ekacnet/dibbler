@@ -8,9 +8,9 @@
  *
  */
 
-#include "OptStatusCode.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Options/OptStatusCode.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <string.h>
 #include <string>
 

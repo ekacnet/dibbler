@@ -10,14 +10,14 @@ class TSrvOptTA;
 #ifndef SRVOPTTA_H
 #define SRVOPTTA_H
 
-#include "Container.h"
-#include "DUID.h"
-#include "IPv6Addr.h"
-#include "OptTA.h"
-#include "SmartPtr.h"
-#include "SrvAddrMgr.h"
-#include "SrvCfgMgr.h"
-#include "SrvOptIAAddress.h"
+#include <Misc/Container.h>
+#include <Misc/DUID.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/OptTA.h>
+#include <Misc/SmartPtr.h>
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvOptions/SrvOptIAAddress.h>
 
 class TSrvOptTA : public TOptTA {
 public:

@@ -10,7 +10,7 @@
 
 #ifndef SRVMSGRENEW_H
 #define SRVMSGRENEW_H
-#include "SrvMsg.h"
+#include <SrvMessages/SrvMsg.h>
 
 class TSrvMsgRenew : public TSrvMsg {
 public:

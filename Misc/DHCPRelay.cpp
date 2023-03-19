@@ -8,13 +8,13 @@
  *
  */
 
-#include "DHCPRelay.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "RelCfgMgr.h"
-#include "RelIfaceMgr.h"
-#include "RelMsg.h"
-#include "RelTransMgr.h"
+#include <Misc/DHCPRelay.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <RelCfgMgr/RelCfgMgr.h>
+#include <RelIfaceMgr/RelIfaceMgr.h>
+#include <RelMessages/RelMsg.h>
+#include <RelTransMgr/RelTransMgr.h>
 #include <stdlib.h>
 
 using namespace std;

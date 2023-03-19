@@ -10,7 +10,7 @@
 
 #ifndef SRVOPTIONINTERFACEID_H
 #define SRVOPTIONINTERFACEID_H
-#include "OptGeneric.h"
+#include <Options/OptGeneric.h>
 
 class TSrvOptInterfaceID : public TOptGeneric {
 

@@ -11,7 +11,7 @@
 #ifndef RELMSGGENERIC_H
 #define RELMSGGENERIC_H
 
-#include "RelMsg.h"
+#include <RelMessages/RelMsg.h>
 
 class TRelMsgGeneric : public TRelMsg {
 

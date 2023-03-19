@@ -6,11 +6,11 @@
  * released under GNU GPL v2 licence
  */
 
-#include "Key.h"
-#include "Logger.h"
+#include <Misc/Key.h>
+#include <Misc/Logger.h>
 #include <string.h>
 extern "C" {
-#include "base64.h"
+#include <Misc/base64.h>
 }
 
 TSIGKey::TSIGKey(const std::string &name) : Digest_(DIGEST_NONE), Name_(name), Fudge_(300) {}

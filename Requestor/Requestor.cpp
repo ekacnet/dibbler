@@ -7,11 +7,11 @@
  *
  */
 
-#include "IfaceMgr.h"
-#include "Logger.h"
-#include "Portable.h"
-#include "ReqCfgMgr.h"
-#include "ReqTransMgr.h"
+#include <IfaceMgr/IfaceMgr.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
+#include <Requestor/ReqCfgMgr.h>
+#include <Requestor/ReqTransMgr.h>
 #include <stdlib.h>
 #include <string.h>
 

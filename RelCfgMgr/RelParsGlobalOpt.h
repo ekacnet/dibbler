@@ -10,10 +10,10 @@
 
 #ifndef TRELPARSGLOBALOPT_H_
 #define TRELPARSGLOBALOPT_H_
-#include "OptVendorData.h"
-#include "RelOptEcho.h"
-#include "RelParsIfaceOpt.h"
-#include "SmartPtr.h"
+#include <Options/OptVendorData.h>
+#include <RelOptions/RelOptEcho.h>
+#include <RelCfgMgr/RelParsIfaceOpt.h>
+#include <Misc/SmartPtr.h>
 #include <string>
 
 typedef enum {

@@ -8,10 +8,10 @@
  *
  */
 
-#include "ClntParsGlobalOpt.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <ClntCfgMgr/ClntParsGlobalOpt.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 
 using namespace std;
 

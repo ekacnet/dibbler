@@ -12,15 +12,15 @@ class TMsg;
 #ifndef MSG_H
 #define MSG_H
 
-#include "Container.h"
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "Key.h"
-#include "Opt.h"
-#include "OptDUID.h"
-#include "OptOptionRequest.h"
-#include "ScriptParams.h"
-#include "SmartPtr.h"
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/Key.h>
+#include <Options/Opt.h>
+#include <Options/OptDUID.h>
+#include <Options/OptOptionRequest.h>
+#include <Misc/ScriptParams.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 #include <list>
 #include <string>

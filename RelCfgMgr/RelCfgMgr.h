@@ -11,12 +11,12 @@
 #ifndef RELCFGMGR_H
 #define RELCFGMGR_H
 
-#include "RelCfgIface.h"
+#include <RelCfgMgr/RelCfgIface.h>
 
-#include "CfgMgr.h"
-#include "DHCPConst.h"
-#include "OptVendorData.h"
-#include "RelOptEcho.h"
+#include <CfgMgr/CfgMgr.h>
+#include <Misc/DHCPConst.h>
+#include <Options/OptVendorData.h>
+#include <RelOptions/RelOptEcho.h>
 
 #define RelCfgMgr() (TRelCfgMgr::instance())
 

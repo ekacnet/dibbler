@@ -7,10 +7,10 @@
  *
  */
 
-#include "ClntCfgMgr.h"
-#include "DHCPClient.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <Misc/DHCPClient.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include "daemon.h"
 #include <errno.h>
 #include <map>

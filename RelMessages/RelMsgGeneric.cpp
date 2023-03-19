@@ -8,7 +8,7 @@
  *
  */
 
-#include "RelMsgGeneric.h"
+#include <RelMessages/RelMsgGeneric.h>
 #include <iostream>
 
 using namespace std;

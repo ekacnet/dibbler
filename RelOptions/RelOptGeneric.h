@@ -12,8 +12,8 @@
 #ifndef RELOPTGENERIC_H
 #define RELOPTGENERIC_H
 
-#include "DHCPConst.h"
-#include "OptGeneric.h"
+#include <Misc/DHCPConst.h>
+#include <Options/OptGeneric.h>
 
 class TRelOptGeneric : public TOptGeneric {
 public:

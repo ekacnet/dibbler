@@ -7,10 +7,10 @@
  * released under GNU GPL v2 licence
  */
 
-#include "ClntOptTimeZone.h"
-#include "ClntMsg.h"
-#include "Logger.h"
-#include "OptDUID.h"
+#include <ClntOptions/ClntOptTimeZone.h>
+#include <ClntMessages/ClntMsg.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
 
 TClntOptTimeZone::TClntOptTimeZone(const std::string &domain, TMsg *parent)
     : TOptString(OPTION_NEW_TZDB_TIMEZONE, domain, parent) {}

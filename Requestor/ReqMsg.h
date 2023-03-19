@@ -10,8 +10,8 @@
 #ifndef REQMSG_H
 #define REQMSG_H
 
-#include "Msg.h"
-#include "SmartPtr.h"
+#include <Messages/Msg.h>
+#include <Misc/SmartPtr.h>
 #include <string>
 
 class TReqMsg : public TMsg {

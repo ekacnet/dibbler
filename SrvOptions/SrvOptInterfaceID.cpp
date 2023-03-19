@@ -10,8 +10,8 @@
  *
  */
 
-#include "SrvOptInterfaceID.h"
-#include "DHCPConst.h"
+#include <SrvOptions/SrvOptInterfaceID.h>
+#include <Misc/DHCPConst.h>
 #include <string.h>
 
 #ifdef WIN32

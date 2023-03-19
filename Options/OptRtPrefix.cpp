@@ -8,10 +8,10 @@
  *
  */
 
-#include "OptRtPrefix.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Options/OptRtPrefix.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <sstream>
 
 using namespace std;

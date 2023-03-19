@@ -8,10 +8,10 @@
  *
  */
 
-#include "ClntIfaceIface.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <ClntIfaceMgr/ClntIfaceIface.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <iostream>
 #include <unistd.h>
 #ifdef MINGWBUILD

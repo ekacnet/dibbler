@@ -1,5 +1,5 @@
-#include "DUID.h"
-#include "SmartPtr.h"
+#include <Misc/DUID.h>
+#include <Misc/SmartPtr.h>
 
 #include <string>
 #include <gtest/gtest.h>

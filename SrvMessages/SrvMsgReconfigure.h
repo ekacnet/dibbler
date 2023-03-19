@@ -11,8 +11,8 @@
 #ifndef SRVMSGRECONFIGURE_H
 #define SRVMSGRECONFIGURE_H
 
-#include "SrvMsg.h"
-#include "SrvMsgSolicit.h"
+#include <SrvMessages/SrvMsg.h>
+#include <SrvMessages/SrvMsgSolicit.h>
 class TSrvMsgReconfigure : public TSrvMsg {
 public:
   // creates object based on a buffer

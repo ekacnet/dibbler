@@ -14,12 +14,12 @@ class TSrvMsgRequest;
 #ifndef SRVMSGREQUEST_H
 #define SRVMSGREQUEST_H
 
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
-#include "SrvAddrMgr.h"
-#include "SrvCfgMgr.h"
-#include "SrvIfaceMgr.h"
-#include "SrvMsg.h"
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
+#include <SrvAddrMgr/SrvAddrMgr.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
+#include <SrvMessages/SrvMsg.h>
 
 class TSrvMsgRequest : public TSrvMsg {
 public:

@@ -8,14 +8,14 @@
  *
  */
 
-#include "AddrIA.h"
-#include "ClntAddrMgr.h"
-#include "ClntIfaceMgr.h"
-#include "ClntOptTA.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "OptIAAddress.h"
-#include "OptStatusCode.h"
+#include <AddrMgr/AddrIA.h>
+#include <ClntAddrMgr/ClntAddrMgr.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <ClntOptions/ClntOptTA.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Options/OptIAAddress.h>
+#include <Options/OptStatusCode.h>
 
 /**
  * Constructor used during

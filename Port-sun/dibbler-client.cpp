@@ -7,9 +7,9 @@
  *
  */
 
-#include "DHCPClient.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Misc/DHCPClient.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include "daemon.h"
 #include <csignal>
 #include <cstdlib>

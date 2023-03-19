@@ -10,9 +10,9 @@
 #ifndef CLNTCFGPD_H
 #define CLNTCFGPD_H
 
-#include "ClntCfgPrefix.h"
-#include "ClntParsGlobalOpt.h"
-#include "DHCPConst.h"
+#include <ClntCfgMgr/ClntCfgPrefix.h>
+#include <ClntCfgMgr/ClntParsGlobalOpt.h>
+#include <Misc/DHCPConst.h>
 #include <iomanip>
 #include <iostream>
 

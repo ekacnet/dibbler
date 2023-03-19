@@ -1,6 +1,6 @@
-#include "IPv6Addr.h"
-#include "DUID.h"
-#include "HostID.h"
+#include <Misc/IPv6Addr.h>
+#include <Misc/DUID.h>
+#include <CfgMgr/HostID.h>
 
 #include <gtest/gtest.h>
 

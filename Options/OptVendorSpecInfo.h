@@ -10,9 +10,9 @@
 #ifndef OPTVENDORSPECINFO_H
 #define OPTVENDORSPECINFO_H
 
-#include "IPv6Addr.h"
-#include "Opt.h"
-#include "SmartPtr.h"
+#include <Misc/IPv6Addr.h>
+#include <Options/Opt.h>
+#include <Misc/SmartPtr.h>
 #include <stdint.h>
 
 class TOptVendorSpecInfo : public TOpt {

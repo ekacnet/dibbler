@@ -12,11 +12,11 @@
 #ifndef SRVMSGLEASEQUERYREPLY_H
 #define SRVMSGLEASEQUERYREPLY_H
 
-#include "AddrClient.h"
-#include "Logger.h"
-#include "SrvMsg.h"
-#include "SrvMsgLeaseQuery.h"
-#include "SrvOptLQ.h"
+#include <AddrMgr/AddrClient.h>
+#include <Misc/Logger.h>
+#include <SrvMessages/SrvMsg.h>
+#include <SrvMessages/SrvMsgLeaseQuery.h>
+#include <SrvOptions/SrvOptLQ.h>
 
 class TSrvMsgLeaseQueryReply : public TSrvMsg {
 public:

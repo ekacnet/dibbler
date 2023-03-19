@@ -10,7 +10,7 @@
 #ifndef NOTIFYSCRIPTPARAMS
 #define NOTIFYSCRIPTPARAMS
 
-#include "IPv6Addr.h"
+#include <Misc/IPv6Addr.h>
 #include <iostream>
 
 class TNotifyScriptParams {

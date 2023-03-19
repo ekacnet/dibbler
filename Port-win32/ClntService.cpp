@@ -10,9 +10,9 @@
  *
  */
 
-#include "ClntService.h"
-#include "DHCPClient.h"
-#include "DHCPConst.h"
+#include <Port-win32/ClntService.h>
+#include <Misc/DHCPClient.h>
+#include <Misc/DHCPConst.h>
 #include "logger.h"
 #include "portable.h"
 #include <direct.h>

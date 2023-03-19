@@ -8,9 +8,9 @@
  *
  */
 
-#include "DUID.h"
-#include "Logger.h"
-#include "hex.h"
+#include <Misc/DUID.h>
+#include <Misc/Logger.h>
+#include <Misc/hex.h>
 #include <string.h>
 
 using namespace std;

@@ -11,8 +11,8 @@
 #ifndef NODECONSTANT_CPP_
 #define NODECONSTANT_CPP_
 
-#include "NodeConstant.h"
-#include "SrvMsg.h"
+#include <SrvCfgMgr/NodeConstant.h>
+#include <SrvMessages/SrvMsg.h>
 
 using namespace std;
 

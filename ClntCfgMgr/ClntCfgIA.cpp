@@ -7,9 +7,9 @@
  * released under GNU GPL v2 only licence
  */
 
-#include "ClntCfgIA.h"
-#include "DHCPDefaults.h"
-#include "Logger.h"
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <Misc/DHCPDefaults.h>
+#include <Misc/Logger.h>
 #include <iomanip>
 #include <iostream>
 using namespace std;

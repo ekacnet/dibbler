@@ -155,7 +155,7 @@ diff -uNr dibbler.orig/port-linux/lowlevel-options-linux.c dibbler/port-linux/lo
 -#include "sys/stat.h"
 +#include <sys/stat.h>
 +#include <fcntl.h>
- #include "Portable.h"
+ #include <Misc/Portable.h>
  
  #define CR 0x0a
 @@ -50,6 +51,7 @@

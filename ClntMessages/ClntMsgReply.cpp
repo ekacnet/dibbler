@@ -8,9 +8,9 @@
  *
  */
 
-#include "ClntMsgReply.h"
-#include "OptIAAddress.h"
-#include "SmartPtr.h"
+#include <ClntMessages/ClntMsgReply.h>
+#include <Options/OptIAAddress.h>
+#include <Misc/SmartPtr.h>
 
 TClntMsgReply::TClntMsgReply(int iface, SPtr<TIPv6Addr> addr, char *buf, int bufSize)
     : TClntMsg(iface, addr, buf, bufSize) {}

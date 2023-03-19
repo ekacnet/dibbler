@@ -7,8 +7,8 @@
  *
  */
 
-#include "RelOptEcho.h"
-#include "SmartPtr.h"
+#include <RelOptions/RelOptEcho.h>
+#include <Misc/SmartPtr.h>
 
 TRelOptEcho::TRelOptEcho(char *buf, int n, TMsg *parent)
     : TOptOptionRequest(OPTION_ERO, buf, n, parent) {}

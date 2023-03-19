@@ -8,10 +8,10 @@
  * released under GNU GPL v2 only licence
  *
  */
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "SmartPtr.h"
-#include "hex.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/SmartPtr.h>
+#include <Misc/hex.h>
 
 // standard options specified in RFC3315, pg. 99
 bool OptInMsg[13][20] = {

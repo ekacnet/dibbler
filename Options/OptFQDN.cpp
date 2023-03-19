@@ -1,17 +1,17 @@
 /*
  * Dibbler - a portable DHCPv6
  *
- * authors: Adrien CLERC, Bahattin DEMIRPLAK, Gaëtant ELEOUET
- *          Mickaël GUÉRIN, Lionel GUILMIN, Lauréline PROVOST
+ * authors: Adrien CLERC, Bahattin DEMIRPLAK, GaÃ«tant ELEOUET
+ *          MickaÃ«l GUÃ‰RIN, Lionel GUILMIN, LaurÃ©line PROVOST
  *          from ENSEEIHT, Toulouse, France
  *
  * released under GNU GPL v2 licence
  *
  */
 
-#include "OptFQDN.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Options/OptFQDN.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <sstream>
 #include <string.h>
 #include <string>

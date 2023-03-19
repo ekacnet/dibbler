@@ -19,9 +19,9 @@
 #include <net/if.h>
 #include <sys/socket.h>
 #endif
-#include "Iface.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <IfaceMgr/Iface.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 
 using namespace std;
 /*

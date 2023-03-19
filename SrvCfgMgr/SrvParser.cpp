@@ -103,36 +103,36 @@ void *alloca();
 #line 88 "../bison++/bison.cc"
 #line 3 "SrvParser.y"
 
-#include "Container.h"
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "FQDN.h"
-#include "Key.h"
-#include "Logger.h"
-#include "Node.h"
-#include "NodeClientSpecific.h"
-#include "NodeConstant.h"
-#include "NodeOperator.h"
-#include "OptAddr.h"
-#include "OptAddrLst.h"
-#include "OptDomainLst.h"
-#include "OptRtPrefix.h"
-#include "OptString.h"
-#include "OptVendorSpecInfo.h"
-#include "Portable.h"
-#include "SmartPtr.h"
-#include "SrvCfgAddrClass.h"
-#include "SrvCfgClientClass.h"
-#include "SrvCfgIface.h"
-#include "SrvCfgMgr.h"
-#include "SrvCfgOptions.h"
-#include "SrvCfgPD.h"
-#include "SrvCfgTA.h"
-#include "SrvOptAddrParams.h"
-#include "SrvParsClassOpt.h"
-#include "SrvParsGlobalOpt.h"
-#include "SrvParsIfaceOpt.h"
-#include "SrvParser.h"
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <Misc/FQDN.h>
+#include <Misc/Key.h>
+#include <Misc/Logger.h>
+#include <SrvCfgMgr/Node.h>
+#include <SrvCfgMgr/NodeClientSpecific.h>
+#include <SrvCfgMgr/NodeConstant.h>
+#include <SrvCfgMgr/NodeOperator.h>
+#include <Options/OptAddr.h>
+#include <Options/OptAddrLst.h>
+#include <Options/OptDomainLst.h>
+#include <Options/OptRtPrefix.h>
+#include <Options/OptString.h>
+#include <Options/OptVendorSpecInfo.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
+#include <SrvCfgMgr/SrvCfgAddrClass.h>
+#include <SrvCfgMgr/SrvCfgClientClass.h>
+#include <SrvCfgMgr/SrvCfgIface.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvCfgMgr/SrvCfgOptions.h>
+#include <SrvCfgMgr/SrvCfgPD.h>
+#include <SrvCfgMgr/SrvCfgTA.h>
+#include <SrvOptions/SrvOptAddrParams.h>
+#include <SrvCfgMgr/SrvParsClassOpt.h>
+#include <SrvCfgMgr/SrvParsGlobalOpt.h>
+#include <SrvCfgMgr/SrvParsIfaceOpt.h>
+#include <SrvCfgMgr/SrvParser.h>
 #include <iostream>
 #include <sstream>
 #include <stdint.h>
@@ -143,7 +143,7 @@ using namespace std;
 #define YY_USE_CLASS
 #line 44 "SrvParser.y"
 
-#include "FlexLexer.h"
+#include <CfgMgr/FlexLexer.h>
 #define YY_SrvParser_MEMBERS                                                               \
   FlexLexer *lex;                                                                          \
   List(TSrvParsGlobalOpt) ParserOptStack;        /* list of parsed interfaces/IAs/addrs */ \

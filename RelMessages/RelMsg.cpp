@@ -8,13 +8,13 @@
  *
  */
 
-#include "RelMsg.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "Portable.h"
-#include "RelOptGeneric.h"
-#include "RelOptInterfaceID.h"
-#include "RelOptRelayMsg.h"
+#include <RelMessages/RelMsg.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Misc/Portable.h>
+#include <RelOptions/RelOptGeneric.h>
+#include <RelOptions/RelOptInterfaceID.h>
+#include <RelOptions/RelOptRelayMsg.h>
 
 // Constructor builds message on the basis of received message
 TRelMsg::TRelMsg(int iface, SPtr<TIPv6Addr> addr, char *data, int dataLen)

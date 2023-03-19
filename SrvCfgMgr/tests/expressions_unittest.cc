@@ -1,14 +1,14 @@
 #include <gtest/gtest.h>
 
-#include "SrvCfgMgr.h"
-#include "SrvIfaceMgr.h"
-#include "NodeClientSpecific.h"
-#include "SrvMsg.h"
-#include "SrvMsgSolicit.h"
-#include "OptGeneric.h"
-#include "OptUserClass.h"
-#include "OptVendorClass.h"
-#include "OptVendorSpecInfo.h"
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
+#include <SrvCfgMgr/NodeClientSpecific.h>
+#include <SrvMessages/SrvMsg.h>
+#include <SrvMessages/SrvMsgSolicit.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptUserClass.h>
+#include <Options/OptVendorClass.h>
+#include <Options/OptVendorSpecInfo.h>
 #include <fstream>
 
 using namespace std;

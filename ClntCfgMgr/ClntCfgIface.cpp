@@ -11,10 +11,10 @@
  *
  */
 
-#include "ClntCfgIface.h"
-#include "Logger.h"
-#include "OptVendorSpecInfo.h"
-#include "Portable.h"
+#include <ClntCfgMgr/ClntCfgIface.h>
+#include <Misc/Logger.h>
+#include <Options/OptVendorSpecInfo.h>
+#include <Misc/Portable.h>
 #include <iomanip>
 #include <iostream>
 #include <sstream>

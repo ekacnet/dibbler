@@ -1,8 +1,8 @@
 #include <gtest/gtest.h>
 
-#include "DHCPConst.h"
-#include "IPv6Addr.h"
-#include "OptUserClass.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/OptUserClass.h>
 
 using namespace std;
 

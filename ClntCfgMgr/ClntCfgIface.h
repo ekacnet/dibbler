@@ -14,18 +14,18 @@
 #define CLNTCFGIFACE_H
 #include <list>
 
-#include "ClntCfgIA.h"
-#include "ClntCfgPD.h"
-#include "ClntCfgTA.h"
-#include "ClntParsGlobalOpt.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "HostID.h"
-#include "IPv6Addr.h"
-#include "Opt.h"
-#include "OptVendorSpecInfo.h"
-#include "SmartPtr.h"
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <ClntCfgMgr/ClntCfgPD.h>
+#include <ClntCfgMgr/ClntCfgTA.h>
+#include <ClntCfgMgr/ClntParsGlobalOpt.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <CfgMgr/HostID.h>
+#include <Misc/IPv6Addr.h>
+#include <Options/Opt.h>
+#include <Options/OptVendorSpecInfo.h>
+#include <Misc/SmartPtr.h>
 
 class TClntCfgIface {
   friend std::ostream &operator<<(std::ostream &, TClntCfgIface &);

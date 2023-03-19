@@ -8,10 +8,10 @@
  *
  */
 
-#include "OptGeneric.h"
-#include "DHCPConst.h"
-#include "Portable.h"
-#include "hex.h"
+#include <Options/OptGeneric.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Portable.h>
+#include <Misc/hex.h>
 #include <sstream>
 #include <stdlib.h>
 #include <string.h>

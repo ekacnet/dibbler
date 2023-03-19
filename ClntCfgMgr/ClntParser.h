@@ -13,22 +13,22 @@
 #line 8 "../bison++/bison.h"
 #line 3 "ClntParser.y"
 
-#include "ClntCfgAddr.h"
-#include "ClntCfgIA.h"
-#include "ClntCfgIface.h"
-#include "ClntCfgMgr.h"
-#include "ClntCfgPD.h"
-#include "ClntCfgTA.h"
-#include "ClntParsGlobalOpt.h"
-#include "ClntParser.h"
-#include "Container.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptAddr.h"
-#include "OptAddrLst.h"
-#include "OptGeneric.h"
-#include "OptString.h"
-#include "SmartPtr.h"
+#include <ClntCfgMgr/ClntCfgAddr.h>
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <ClntCfgMgr/ClntCfgIface.h>
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <ClntCfgMgr/ClntCfgPD.h>
+#include <ClntCfgMgr/ClntCfgTA.h>
+#include <ClntCfgMgr/ClntParsGlobalOpt.h>
+#include <ClntCfgMgr/ClntParser.h>
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptAddr.h>
+#include <Options/OptAddrLst.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptString.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 #include <malloc.h>
 #include <string>

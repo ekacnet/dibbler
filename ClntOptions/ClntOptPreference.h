@@ -18,8 +18,8 @@
 #ifndef CLNTPREFERENCE_H
 #define CLNTPREFERENCE_H
 
-#include "DHCPConst.h"
-#include "OptInteger.h"
+#include <Misc/DHCPConst.h>
+#include <Options/OptInteger.h>
 
 class TClntOptPreference : public TOptInteger {
 public:

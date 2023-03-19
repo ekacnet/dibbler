@@ -14,12 +14,12 @@
 #include <string>
 #include <winsock2.h>
 
-#include "DHCPRelay.h"
-#include "Portable.h"
+#include <Misc/DHCPRelay.h>
+#include <Misc/Portable.h>
 
-#include "Logger.h"
-#include "RelService.h"
-#include "WinService.h"
+#include <Misc/Logger.h>
+#include <Port-win32/RelService.h>
+#include <Port-win32/WinService.h>
 
 extern "C" int lowlevelInit();
 extern TDHCPRelay *relPtr;

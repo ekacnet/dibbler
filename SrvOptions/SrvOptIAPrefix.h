@@ -9,9 +9,9 @@
 #ifndef SRVOPTIAPREFIX_H
 #define SRVOPTIAPREFIX_H
 
-#include "Container.h"
-#include "OptIAPrefix.h"
-#include "SmartPtr.h"
+#include <Misc/Container.h>
+#include <Options/OptIAPrefix.h>
+#include <Misc/SmartPtr.h>
 
 class TSrvOptIAPrefix : public TOptIAPrefix {
 public:

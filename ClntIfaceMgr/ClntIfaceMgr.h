@@ -16,15 +16,15 @@ class TClntIfaceIface;
 #ifndef CLNTIFACEMGR_H
 #define CLNTIFACEMGR_H
 
-#include "ClntAddrMgr.h"
-#include "ClntCfgMgr.h"
-#include "ClntIfaceIface.h"
-#include "ClntMsg.h"
-#include "ClntTransMgr.h"
-#include "IPv6Addr.h"
-#include "IfaceMgr.h"
-#include "ScriptParams.h"
-#include "SmartPtr.h"
+#include <ClntAddrMgr/ClntAddrMgr.h>
+#include <ClntCfgMgr/ClntCfgMgr.h>
+#include <ClntIfaceMgr/ClntIfaceIface.h>
+#include <ClntMessages/ClntMsg.h>
+#include <ClntTransMgr/ClntTransMgr.h>
+#include <Misc/IPv6Addr.h>
+#include <IfaceMgr/IfaceMgr.h>
+#include <Misc/ScriptParams.h>
+#include <Misc/SmartPtr.h>
 
 #define ClntIfaceMgr() (TClntIfaceMgr::instance())
 

@@ -12,10 +12,10 @@ class TClntMsgConfirm;
 
 #ifndef CLNTMSGCONFIRM_H
 #define CLNTMSGCONFIRM_H
-#include "ClntCfgIA.h"
-#include "ClntCfgIface.h"
-#include "ClntIfaceMgr.h"
-#include "ClntMsg.h"
+#include <ClntCfgMgr/ClntCfgIA.h>
+#include <ClntCfgMgr/ClntCfgIface.h>
+#include <ClntIfaceMgr/ClntIfaceMgr.h>
+#include <ClntMessages/ClntMsg.h>
 
 class TClntMsgConfirm : public TClntMsg {
 public:

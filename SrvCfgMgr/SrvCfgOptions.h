@@ -16,14 +16,14 @@
 #include <list>
 #include <string>
 
-#include "Container.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
-#include "SrvParsGlobalOpt.h"
+#include <Misc/Container.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
+#include <SrvCfgMgr/SrvParsGlobalOpt.h>
 
-#include "OptGeneric.h"
-#include "OptVendorData.h"
-#include "OptVendorSpecInfo.h"
+#include <Options/OptGeneric.h>
+#include <Options/OptVendorData.h>
+#include <Options/OptVendorSpecInfo.h>
 
 class TSrvCfgIface;
 

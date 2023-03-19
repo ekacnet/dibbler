@@ -12,9 +12,9 @@ class TClntCfgIA;
 #ifndef CLNTCFGIA_H
 #define CLNTCFGIA_H
 
-#include "ClntCfgAddr.h"
-#include "ClntParsGlobalOpt.h"
-#include "DHCPConst.h"
+#include <ClntCfgMgr/ClntCfgAddr.h>
+#include <ClntCfgMgr/ClntParsGlobalOpt.h>
+#include <Misc/DHCPConst.h>
 #include <iomanip>
 #include <iostream>
 

@@ -13,8 +13,8 @@
 #ifndef DHCPCLIENT_H
 #define DHCPCLIENT_H
 
-#include "Portable.h"
-#include "SmartPtr.h"
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 #include <string>
 

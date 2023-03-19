@@ -11,9 +11,9 @@
 #ifndef OPT_H
 #define OPT_H
 
-#include "Container.h"
-#include "DUID.h"
-#include "SmartPtr.h"
+#include <Misc/Container.h>
+#include <Misc/DUID.h>
+#include <Misc/SmartPtr.h>
 #include <list>
 #include <stdint.h>
 

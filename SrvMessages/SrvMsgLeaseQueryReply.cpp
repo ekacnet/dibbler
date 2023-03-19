@@ -9,15 +9,15 @@
  *
  */
 
-#include "SrvMsgLeaseQueryReply.h"
-#include "AddrClient.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "OptStatusCode.h"
-#include "SrvCfgMgr.h"
-#include "SrvOptIAAddress.h"
-#include "SrvOptIAPrefix.h"
-#include "SrvOptLQ.h"
+#include <SrvMessages/SrvMsgLeaseQueryReply.h>
+#include <AddrMgr/AddrClient.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Options/OptStatusCode.h>
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <SrvOptions/SrvOptIAAddress.h>
+#include <SrvOptions/SrvOptIAPrefix.h>
+#include <SrvOptions/SrvOptLQ.h>
 
 using namespace std;
 

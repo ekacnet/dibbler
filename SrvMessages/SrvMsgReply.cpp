@@ -9,22 +9,22 @@
  *
  */
 
-#include "SrvMsgReply.h"
-#include "AddrAddr.h"
-#include "AddrClient.h"
-#include "AddrIA.h"
-#include "IfaceMgr.h"
-#include "Logger.h"
-#include "OptEmpty.h"  // rapid-commit option
-#include "OptOptionRequest.h"
-#include "OptStatusCode.h"
-#include "SmartPtr.h"
-#include "SrvMsg.h"
-#include "SrvOptFQDN.h"
-#include "SrvOptIAAddress.h"
-#include "SrvOptIA_NA.h"
-#include "SrvOptIA_PD.h"
-#include "SrvOptTA.h"
+#include <SrvMessages/SrvMsgReply.h>
+#include <AddrMgr/AddrAddr.h>
+#include <AddrMgr/AddrClient.h>
+#include <AddrMgr/AddrIA.h>
+#include <IfaceMgr/IfaceMgr.h>
+#include <Misc/Logger.h>
+#include <Options/OptEmpty.h>
+#include <Options/OptOptionRequest.h>
+#include <Options/OptStatusCode.h>
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsg.h>
+#include <SrvOptions/SrvOptFQDN.h>
+#include <SrvOptions/SrvOptIAAddress.h>
+#include <SrvOptions/SrvOptIA_NA.h>
+#include <SrvOptions/SrvOptIA_PD.h>
+#include <SrvOptions/SrvOptTA.h>
 #include <cmath>
 #include <sstream>
 

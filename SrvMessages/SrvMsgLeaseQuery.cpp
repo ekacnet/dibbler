@@ -9,14 +9,14 @@
  *
  */
 
-#include "SrvMsgLeaseQuery.h"
-#include "AddrClient.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "SmartPtr.h"
-#include "SrvIfaceMgr.h"
-#include "SrvMsgAdvertise.h"
-#include "SrvOptIA_NA.h"
+#include <SrvMessages/SrvMsgLeaseQuery.h>
+#include <AddrMgr/AddrClient.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/SmartPtr.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
+#include <SrvMessages/SrvMsgAdvertise.h>
+#include <SrvOptions/SrvOptIA_NA.h>
 
 TSrvMsgLeaseQuery::TSrvMsgLeaseQuery(int iface, SPtr<TIPv6Addr> addr, char *buf, int bufSize)
     : TSrvMsg(iface, addr, buf, bufSize) {}

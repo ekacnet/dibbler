@@ -8,10 +8,10 @@
  *
  */
 
-#include "OptDomainLst.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Options/OptDomainLst.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <string.h>
 
 using namespace std;

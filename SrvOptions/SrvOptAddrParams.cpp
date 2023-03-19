@@ -9,8 +9,8 @@
  *
  */
 
-#include "SrvOptAddrParams.h"
-#include "DHCPConst.h"
+#include <SrvOptions/SrvOptAddrParams.h>
+#include <Misc/DHCPConst.h>
 
 TSrvOptAddrParams::TSrvOptAddrParams(int prefix, int bitfield, TMsg *parent)
     : TOptInteger(OPTION_ADDRPARAMS, 2, 0, parent) {

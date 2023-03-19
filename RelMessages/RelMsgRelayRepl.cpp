@@ -8,10 +8,10 @@
  *
  */
 
-#include "RelMsgRelayRepl.h"
-#include "Logger.h"
-#include "RelMsg.h"
-#include "SmartPtr.h"
+#include <RelMessages/RelMsgRelayRepl.h>
+#include <Misc/Logger.h>
+#include <RelMessages/RelMsg.h>
+#include <Misc/SmartPtr.h>
 
 int TRelMsgRelayRepl::getSize() {
   int pktsize = 0;

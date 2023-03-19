@@ -10,10 +10,10 @@
 #ifndef OPTDUID_H
 #define OPTDUID_H
 
-#include "DHCPConst.h"
-#include "DUID.h"
-#include "Opt.h"
-#include "SmartPtr.h"
+#include <Misc/DHCPConst.h>
+#include <Misc/DUID.h>
+#include <Options/Opt.h>
+#include <Misc/SmartPtr.h>
 
 class TOptDUID : public TOpt {
 public:

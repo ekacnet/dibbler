@@ -13,13 +13,13 @@ class TSrvParsClassOpt;
 #ifndef TSRVPARSCLASS_H
 #define TSRVPARSCLASS_H
 
-#include "Container.h"
-#include "DHCPConst.h"
-#include "HostID.h"
-#include "HostRange.h"
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
-#include "SrvOptAddrParams.h"
+#include <Misc/Container.h>
+#include <Misc/DHCPConst.h>
+#include <CfgMgr/HostID.h>
+#include <CfgMgr/HostRange.h>
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
+#include <SrvOptions/SrvOptAddrParams.h>
 #include <string>
 
 class TSrvParsClassOpt {

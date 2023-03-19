@@ -12,7 +12,7 @@
 class TClntMsgReply;
 #ifndef CLNTMSGREPLY_H
 #define CLNTMSGREPLY_H
-#include "ClntMsg.h"
+#include <ClntMessages/ClntMsg.h>
 
 class TClntMsgReply : public TClntMsg {
 public:

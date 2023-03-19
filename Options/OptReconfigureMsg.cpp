@@ -8,10 +8,10 @@
  *
  */
 
-#include "OptReconfigureMsg.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "Portable.h"
+#include <Options/OptReconfigureMsg.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Misc/Portable.h>
 #include <iostream>
 #include <stdlib.h>
 #include <string>

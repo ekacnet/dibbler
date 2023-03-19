@@ -12,9 +12,9 @@ class TRelTransMgr;
 #ifndef RELTRANSMGR_H
 #define RELTRANSMGR_H
 
-#include "RelCfgIface.h"
-#include "RelMsg.h"
-#include "SmartPtr.h"
+#include <RelCfgMgr/RelCfgIface.h>
+#include <RelMessages/RelMsg.h>
+#include <Misc/SmartPtr.h>
 #include <iostream>
 
 #define RelTransMgr() (TRelTransMgr::instance())

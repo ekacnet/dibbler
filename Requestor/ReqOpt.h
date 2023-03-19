@@ -12,10 +12,10 @@
 #ifndef REQOPT_H
 #define REQOPT_H
 
-#include "Opt.h"
-#include "OptDUID.h"
-#include "OptGeneric.h"
-#include "OptIAAddress.h"
+#include <Options/Opt.h>
+#include <Options/OptDUID.h>
+#include <Options/OptGeneric.h>
+#include <Options/OptIAAddress.h>
 
 class TReqOptAddr : public TOptIAAddress {
 public:

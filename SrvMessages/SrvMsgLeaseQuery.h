@@ -11,9 +11,9 @@ class TSrvMsgLeaseQuery;
 #ifndef SRVMSGLEASEQUERY_H
 #define SRVMSGLEASEQUERY_H
 
-#include "IPv6Addr.h"
-#include "SmartPtr.h"
-#include "SrvMsg.h"
+#include <Misc/IPv6Addr.h>
+#include <Misc/SmartPtr.h>
+#include <SrvMessages/SrvMsg.h>
 
 class TSrvMsgLeaseQuery : public TSrvMsg {
 public:

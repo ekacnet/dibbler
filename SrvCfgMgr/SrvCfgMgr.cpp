@@ -12,17 +12,17 @@
  *
  */
 
-#include "SrvCfgMgr.h"
-#include "AddrMgr.h"
-#include "FlexLexer.h"
-#include "IfaceMgr.h"
-#include "Logger.h"
-#include "OptDUID.h"
-#include "Portable.h"
-#include "SmartPtr.h"
-#include "SrvCfgIface.h"
-#include "SrvIfaceMgr.h"
-#include "SrvParser.h"
+#include <SrvCfgMgr/SrvCfgMgr.h>
+#include <AddrMgr/AddrMgr.h>
+#include <bison++/FlexLexer.h>
+#include <IfaceMgr/IfaceMgr.h>
+#include <Misc/Logger.h>
+#include <Options/OptDUID.h>
+#include <Misc/Portable.h>
+#include <Misc/SmartPtr.h>
+#include <SrvCfgMgr/SrvCfgIface.h>
+#include <SrvIfaceMgr/SrvIfaceMgr.h>
+#include <SrvCfgMgr/SrvParser.h>
 #include <cstdlib>
 #include <fstream>
 #include <iostream>

@@ -7,12 +7,12 @@
  *
  */
 
-#include "SrvOptTA.h"
-#include "AddrClient.h"
-#include "DHCPConst.h"
-#include "Logger.h"
-#include "OptStatusCode.h"
-#include "SrvOptIAAddress.h"
+#include <SrvOptions/SrvOptTA.h>
+#include <AddrMgr/AddrClient.h>
+#include <Misc/DHCPConst.h>
+#include <Misc/Logger.h>
+#include <Options/OptStatusCode.h>
+#include <SrvOptions/SrvOptIAAddress.h>
 
 using namespace std;
 
