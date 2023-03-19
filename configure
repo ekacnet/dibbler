@@ -690,6 +690,14 @@ RESOLVCONF_FALSE
 RESOLVCONF_TRUE
 MOD_SRV_DST_ADDR_CHECK_FALSE
 MOD_SRV_DST_ADDR_CHECK_TRUE
+WIN32_FALSE
+WIN32_TRUE
+SUNOS_FALSE
+SUNOS_TRUE
+BSD_FALSE
+BSD_TRUE
+LINUX_FALSE
+LINUX_TRUE
 ALLOCA
 CXXCPP
 LT_SYS_LIBRARY_PATH
@@ -751,6 +759,9 @@ AM_BACKSLASH
 AM_DEFAULT_VERBOSITY
 AM_DEFAULT_V
 AM_V
+CSCOPE
+ETAGS
+CTAGS
 am__untar
 am__tar
 AMTAR
@@ -3492,12 +3503,7 @@ am_aux_dir=`cd "$ac_aux_dir" && pwd`
 
 
   if test x"${MISSING+set}" != xset; then
-  case $am_aux_dir in
-  *\ * | *\	*)
-    MISSING="\${SHELL} \"$am_aux_dir/missing\"" ;;
-  *)
-    MISSING="\${SHELL} $am_aux_dir/missing" ;;
-  esac
+  MISSING="\${SHELL} '$am_aux_dir/missing'"
 fi
 # Use eval to expand $SHELL
 if eval "$MISSING --is-lightweight"; then
@@ -3870,6 +3876,20 @@ am__tar='$${TAR-tar} chof - "$$tardir"' am__untar='$${TAR-tar} xf -'
 
 
 
+
+
+# Variables for tags utilities; see am/tags.am
+if test -z "$CTAGS"; then
+  CTAGS=ctags
+fi
+
+if test -z "$ETAGS"; then
+  ETAGS=etags
+fi
+
+if test -z "$CSCOPE"; then
+  CSCOPE=cscope
+fi
 
 
 
@@ -18895,6 +18915,7 @@ rm -rf conftest*
 
   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking which port is appropriate for this system" >&5
 printf %s "checking which port is appropriate for this system... " >&6; }
+
 # system=`uname -s`
   case $system in
     Linux)
@@ -18939,6 +18960,38 @@ printf %s "checking which port is appropriate for this system... " >&6; }
       as_fn_error $? "\"Unsupported OS: uname returned $system\"" "$LINENO" 5
       ;;
   esac
+   if test x$ARCH = "xLINUX"; then
+  LINUX_TRUE=
+  LINUX_FALSE='#'
+else
+  LINUX_TRUE='#'
+  LINUX_FALSE=
+fi
+
+   if test x$ARCH = "xBSD"; then
+  BSD_TRUE=
+  BSD_FALSE='#'
+else
+  BSD_TRUE='#'
+  BSD_FALSE=
+fi
+
+   if test x$ARCH = "xSUNOS"; then
+  SUNOS_TRUE=
+  SUNOS_FALSE='#'
+else
+  SUNOS_TRUE='#'
+  SUNOS_FALSE=
+fi
+
+   if test x$ARCH = "xWIN2K"; then
+  WIN32_TRUE=
+  WIN32_FALSE='#'
+else
+  WIN32_TRUE='#'
+  WIN32_FALSE=
+fi
+
   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $PORT_SUBDIR" >&5
 printf "%s\n" "$PORT_SUBDIR" >&6; }
 
@@ -19596,7 +19649,7 @@ subdirs="$subdirs bison++"
 #AC_CONFIG_SUBDIRS([poslib])
 
 
-ac_config_files="$ac_config_files Makefile AddrMgr/Makefile CfgMgr/Makefile ClntAddrMgr/Makefile ClntCfgMgr/Makefile ClntIfaceMgr/Makefile ClntMessages/Makefile ClntOptions/Makefile ClntTransMgr/Makefile IfaceMgr/Makefile Messages/Makefile Misc/Makefile Options/Makefile RelCfgMgr/Makefile RelIfaceMgr/Makefile RelMessages/Makefile RelOptions/Makefile RelTransMgr/Makefile Requestor/Makefile SrvAddrMgr/Makefile SrvCfgMgr/Makefile SrvIfaceMgr/Makefile SrvMessages/Makefile SrvOptions/Makefile SrvTransMgr/Makefile poslib/Makefile nettle/Makefile $PORT_SUBDIR/Makefile Port-linux/Makefile Port-bsd/Makefile Port-sun/Makefile Port-win32/Makefile doc/Makefile Misc/Portable.h doc/doxygen.cfg doc/version.tex AddrMgr/tests/Makefile IfaceMgr/tests/Makefile Options/tests/Makefile SrvCfgMgr/tests/Makefile CfgMgr/tests/Makefile poslib/tests/Makefile Misc/tests/Makefile RelTransMgr/tests/Makefile tests/Makefile tests/Srv/Makefile tests/Clnt/Makefile tests/utils/Makefile"
+ac_config_files="$ac_config_files Makefile doc/Makefile Misc/Portable.h doc/doxygen.cfg doc/version.tex"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -19737,6 +19790,22 @@ Usually this means the macro was only invoked conditionally." "$LINENO" 5
 fi
 if test -z "${am__fastdepCC_TRUE}" && test -z "${am__fastdepCC_FALSE}"; then
   as_fn_error $? "conditional \"am__fastdepCC\" was never defined.
+Usually this means the macro was only invoked conditionally." "$LINENO" 5
+fi
+if test -z "${LINUX_TRUE}" && test -z "${LINUX_FALSE}"; then
+  as_fn_error $? "conditional \"LINUX\" was never defined.
+Usually this means the macro was only invoked conditionally." "$LINENO" 5
+fi
+if test -z "${BSD_TRUE}" && test -z "${BSD_FALSE}"; then
+  as_fn_error $? "conditional \"BSD\" was never defined.
+Usually this means the macro was only invoked conditionally." "$LINENO" 5
+fi
+if test -z "${SUNOS_TRUE}" && test -z "${SUNOS_FALSE}"; then
+  as_fn_error $? "conditional \"SUNOS\" was never defined.
+Usually this means the macro was only invoked conditionally." "$LINENO" 5
+fi
+if test -z "${WIN32_TRUE}" && test -z "${WIN32_FALSE}"; then
+  as_fn_error $? "conditional \"WIN32\" was never defined.
 Usually this means the macro was only invoked conditionally." "$LINENO" 5
 fi
 if test -z "${MOD_SRV_DST_ADDR_CHECK_TRUE}" && test -z "${MOD_SRV_DST_ADDR_CHECK_FALSE}"; then
@@ -20727,53 +20796,10 @@ do
     "depfiles") CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
     "libtool") CONFIG_COMMANDS="$CONFIG_COMMANDS libtool" ;;
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
-    "AddrMgr/Makefile") CONFIG_FILES="$CONFIG_FILES AddrMgr/Makefile" ;;
-    "CfgMgr/Makefile") CONFIG_FILES="$CONFIG_FILES CfgMgr/Makefile" ;;
-    "ClntAddrMgr/Makefile") CONFIG_FILES="$CONFIG_FILES ClntAddrMgr/Makefile" ;;
-    "ClntCfgMgr/Makefile") CONFIG_FILES="$CONFIG_FILES ClntCfgMgr/Makefile" ;;
-    "ClntIfaceMgr/Makefile") CONFIG_FILES="$CONFIG_FILES ClntIfaceMgr/Makefile" ;;
-    "ClntMessages/Makefile") CONFIG_FILES="$CONFIG_FILES ClntMessages/Makefile" ;;
-    "ClntOptions/Makefile") CONFIG_FILES="$CONFIG_FILES ClntOptions/Makefile" ;;
-    "ClntTransMgr/Makefile") CONFIG_FILES="$CONFIG_FILES ClntTransMgr/Makefile" ;;
-    "IfaceMgr/Makefile") CONFIG_FILES="$CONFIG_FILES IfaceMgr/Makefile" ;;
-    "Messages/Makefile") CONFIG_FILES="$CONFIG_FILES Messages/Makefile" ;;
-    "Misc/Makefile") CONFIG_FILES="$CONFIG_FILES Misc/Makefile" ;;
-    "Options/Makefile") CONFIG_FILES="$CONFIG_FILES Options/Makefile" ;;
-    "RelCfgMgr/Makefile") CONFIG_FILES="$CONFIG_FILES RelCfgMgr/Makefile" ;;
-    "RelIfaceMgr/Makefile") CONFIG_FILES="$CONFIG_FILES RelIfaceMgr/Makefile" ;;
-    "RelMessages/Makefile") CONFIG_FILES="$CONFIG_FILES RelMessages/Makefile" ;;
-    "RelOptions/Makefile") CONFIG_FILES="$CONFIG_FILES RelOptions/Makefile" ;;
-    "RelTransMgr/Makefile") CONFIG_FILES="$CONFIG_FILES RelTransMgr/Makefile" ;;
-    "Requestor/Makefile") CONFIG_FILES="$CONFIG_FILES Requestor/Makefile" ;;
-    "SrvAddrMgr/Makefile") CONFIG_FILES="$CONFIG_FILES SrvAddrMgr/Makefile" ;;
-    "SrvCfgMgr/Makefile") CONFIG_FILES="$CONFIG_FILES SrvCfgMgr/Makefile" ;;
-    "SrvIfaceMgr/Makefile") CONFIG_FILES="$CONFIG_FILES SrvIfaceMgr/Makefile" ;;
-    "SrvMessages/Makefile") CONFIG_FILES="$CONFIG_FILES SrvMessages/Makefile" ;;
-    "SrvOptions/Makefile") CONFIG_FILES="$CONFIG_FILES SrvOptions/Makefile" ;;
-    "SrvTransMgr/Makefile") CONFIG_FILES="$CONFIG_FILES SrvTransMgr/Makefile" ;;
-    "poslib/Makefile") CONFIG_FILES="$CONFIG_FILES poslib/Makefile" ;;
-    "nettle/Makefile") CONFIG_FILES="$CONFIG_FILES nettle/Makefile" ;;
-    "$PORT_SUBDIR/Makefile") CONFIG_FILES="$CONFIG_FILES $PORT_SUBDIR/Makefile" ;;
-    "Port-linux/Makefile") CONFIG_FILES="$CONFIG_FILES Port-linux/Makefile" ;;
-    "Port-bsd/Makefile") CONFIG_FILES="$CONFIG_FILES Port-bsd/Makefile" ;;
-    "Port-sun/Makefile") CONFIG_FILES="$CONFIG_FILES Port-sun/Makefile" ;;
-    "Port-win32/Makefile") CONFIG_FILES="$CONFIG_FILES Port-win32/Makefile" ;;
     "doc/Makefile") CONFIG_FILES="$CONFIG_FILES doc/Makefile" ;;
     "Misc/Portable.h") CONFIG_FILES="$CONFIG_FILES Misc/Portable.h" ;;
     "doc/doxygen.cfg") CONFIG_FILES="$CONFIG_FILES doc/doxygen.cfg" ;;
     "doc/version.tex") CONFIG_FILES="$CONFIG_FILES doc/version.tex" ;;
-    "AddrMgr/tests/Makefile") CONFIG_FILES="$CONFIG_FILES AddrMgr/tests/Makefile" ;;
-    "IfaceMgr/tests/Makefile") CONFIG_FILES="$CONFIG_FILES IfaceMgr/tests/Makefile" ;;
-    "Options/tests/Makefile") CONFIG_FILES="$CONFIG_FILES Options/tests/Makefile" ;;
-    "SrvCfgMgr/tests/Makefile") CONFIG_FILES="$CONFIG_FILES SrvCfgMgr/tests/Makefile" ;;
-    "CfgMgr/tests/Makefile") CONFIG_FILES="$CONFIG_FILES CfgMgr/tests/Makefile" ;;
-    "poslib/tests/Makefile") CONFIG_FILES="$CONFIG_FILES poslib/tests/Makefile" ;;
-    "Misc/tests/Makefile") CONFIG_FILES="$CONFIG_FILES Misc/tests/Makefile" ;;
-    "RelTransMgr/tests/Makefile") CONFIG_FILES="$CONFIG_FILES RelTransMgr/tests/Makefile" ;;
-    "tests/Makefile") CONFIG_FILES="$CONFIG_FILES tests/Makefile" ;;
-    "tests/Srv/Makefile") CONFIG_FILES="$CONFIG_FILES tests/Srv/Makefile" ;;
-    "tests/Clnt/Makefile") CONFIG_FILES="$CONFIG_FILES tests/Clnt/Makefile" ;;
-    "tests/utils/Makefile") CONFIG_FILES="$CONFIG_FILES tests/utils/Makefile" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
   esac
@@ -21451,7 +21477,9 @@ printf "%s\n" X/"$am_mf" |
     { { printf "%s\n" "$as_me:${as_lineno-$LINENO}: error: in \`$ac_pwd':" >&5
 printf "%s\n" "$as_me: error: in \`$ac_pwd':" >&2;}
 as_fn_error $? "Something went wrong bootstrapping makefile fragments
-    for automatic dependency tracking.  Try re-running configure with the
+    for automatic dependency tracking.  If GNU make was not used, consider
+    re-running the configure script with MAKE=\"gmake\" (or whatever is
+    necessary).  You can also try re-running configure with the
     '--disable-dependency-tracking' option to at least be able to build
     the package (albeit without support for automatic dependency tracking).
 See \`config.log' for more details" "$LINENO" 5; }
