@@ -1,9 +1,10 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
+
 AC_PREREQ([2.67])
 AC_INIT([dibbler], [1.0.2RC1], [dibbler@klub.com.pl])
-AM_INIT_AUTOMAKE([foreign serial-tests])
+AM_INIT_AUTOMAKE([foreign serial-tests subdir-objects])
 AC_CONFIG_SRCDIR([IfaceMgr/SocketIPv6.cpp])
 AC_CONFIG_HEADERS([include/dibbler-config.h])
 AC_CONFIG_MACRO_DIR([m4])
@@ -210,6 +211,7 @@ dnl ---------------------------------------------
 dnl Detect OS (will be used to select proper port
 dnl ---------------------------------------------
   AC_MSG_CHECKING(which port is appropriate for this system)
+
 # system=`uname -s`
   case $system in
     Linux)
@@ -254,6 +256,10 @@ dnl ---------------------------------------------
       AC_MSG_ERROR("Unsupported OS: uname returned $system")
       ;;
   esac
+  AM_CONDITIONAL([LINUX], [test x$ARCH = "xLINUX"])
+  AM_CONDITIONAL([BSD], [test x$ARCH = "xBSD"])
+  AM_CONDITIONAL([SUNOS], [test x$ARCH = "xSUNOS"])
+  AM_CONDITIONAL([WIN32], [test x$ARCH = "xWIN2K"])
   AC_MSG_RESULT($PORT_SUBDIR)
 
 CFLAGS="${CFLAGS} ${PORT_CFLAGS}"
@@ -505,53 +511,11 @@ dnl and use autoreconf to generate Makefile.in in Port directories.
 
 AC_OUTPUT(
 Makefile
-AddrMgr/Makefile
-CfgMgr/Makefile
-ClntAddrMgr/Makefile
-ClntCfgMgr/Makefile
-ClntIfaceMgr/Makefile
-ClntMessages/Makefile
-ClntOptions/Makefile
-ClntTransMgr/Makefile
-IfaceMgr/Makefile
-Messages/Makefile
-Misc/Makefile
-Options/Makefile
-RelCfgMgr/Makefile
-RelIfaceMgr/Makefile
-RelMessages/Makefile
-RelOptions/Makefile
-RelTransMgr/Makefile
-Requestor/Makefile
-SrvAddrMgr/Makefile
-SrvCfgMgr/Makefile
-SrvIfaceMgr/Makefile
-SrvMessages/Makefile
-SrvOptions/Makefile
-SrvTransMgr/Makefile
-poslib/Makefile
-nettle/Makefile
-$PORT_SUBDIR/Makefile
-Port-linux/Makefile
-Port-bsd/Makefile
-Port-sun/Makefile
-Port-win32/Makefile
 doc/Makefile
 Misc/Portable.h
 doc/doxygen.cfg
 doc/version.tex
-AddrMgr/tests/Makefile
-IfaceMgr/tests/Makefile
-Options/tests/Makefile
-SrvCfgMgr/tests/Makefile
-CfgMgr/tests/Makefile
-poslib/tests/Makefile
-Misc/tests/Makefile
-RelTransMgr/tests/Makefile
-tests/Makefile
-tests/Srv/Makefile
-tests/Clnt/Makefile
-tests/utils/Makefile)
+)
 
 dnl ----------------------------------------
 dnl Print out configured parameters
