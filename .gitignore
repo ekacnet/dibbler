@@ -76,4 +76,13 @@ dibbler-*-win32.exe
 doc/version.tex
 include/stamp-h1
 libtool
+ClntCfgMgr/ClntLexer.cpp
+ClntCfgMgr/ClntParser.cpp
+ClntCfgMgr/ClntParser.h
+RelCfgMgr/RelLexer.cpp
+RelCfgMgr/RelParser.cpp
+RelCfgMgr/RelParser.h
+SrvCfgMgr/SrvLexer.cpp
+SrvCfgMgr/SrvParser.cpp
+SrvCfgMgr/SrvParser.h
 
