@@ -152,7 +152,7 @@ SPtr<TAddrAddr> TAddrIA::getAddr(SPtr<TIPv6Addr> addr) {
   }
   AddrLst.first();
   SPtr<TAddrAddr> ptrAddr;
-  while (ptrAddr = AddrLst.get()) {
+  while ((ptrAddr = AddrLst.get())) {
     if ((*addr) == (*(ptrAddr->get()))) return ptrAddr;
   }
 
@@ -164,7 +164,7 @@ int TAddrIA::countAddr() { return AddrLst.count(); }
 int TAddrIA::delAddr(SPtr<TIPv6Addr> addr) {
   SPtr<TAddrAddr> ptr;
   AddrLst.first();
-  while (ptr = AddrLst.get()) {
+  while ((ptr = AddrLst.get())) {
     if (*(ptr->get()) == (*addr)) {
       AddrLst.del();
       return 0;
@@ -192,7 +192,7 @@ bool TAddrIA::delPrefix(SPtr<TAddrPrefix> x) {
   SPtr<TAddrPrefix> ptr;
   PrefixLst.first();
 
-  while (ptr = PrefixLst.get()) {
+  while ((ptr = PrefixLst.get())) {
     /// @todo: should we compare prefix length, too?
     if (*(ptr->get()) == (*x->get())) {
       PrefixLst.del();
@@ -206,7 +206,7 @@ bool TAddrIA::delPrefix(SPtr<TIPv6Addr> x) {
   SPtr<TAddrPrefix> ptr;
   PrefixLst.first();
 
-  while (ptr = PrefixLst.get()) {
+  while ((ptr = PrefixLst.get())) {
     /// @todo: should we compare prefix length, too?
     if (*(ptr->get()) == (*x)) {
       PrefixLst.del();
@@ -267,7 +267,7 @@ unsigned long TAddrIA::getPrefTimeout() {
   SPtr<TAddrAddr> ptr;
   this->AddrLst.first();
 
-  while (ptr = this->AddrLst.get()) {
+  while ((ptr = this->AddrLst.get())) {
     if (ts > ptr->getPrefTimeout()) ts = ptr->getPrefTimeout();
   }
   return ts;
@@ -278,13 +278,13 @@ unsigned long TAddrIA::getMaxValidTimeout() {
 
   SPtr<TAddrAddr> ptr;
   this->AddrLst.first();
-  while (ptr = this->AddrLst.get()) {
+  while ((ptr = this->AddrLst.get())) {
     if (ts < ptr->getValidTimeout()) ts = ptr->getValidTimeout();
   }
 
   SPtr<TAddrPrefix> prefix;
   firstPrefix();
-  while (prefix = getPrefix()) {
+  while ((prefix = getPrefix())) {
     if (ts < prefix->getValidTimeout()) ts = prefix->getValidTimeout();
   }
 
@@ -297,13 +297,13 @@ unsigned long TAddrIA::getValidTimeout() {
   SPtr<TAddrAddr> ptr;
   this->AddrLst.first();
 
-  while (ptr = this->AddrLst.get()) {
+  while ((ptr = this->AddrLst.get())) {
     if (ts > ptr->getValidTimeout()) ts = ptr->getValidTimeout();
   }
 
   SPtr<TAddrPrefix> prefix;
   firstPrefix();
-  while (prefix = getPrefix()) {
+  while ((prefix = getPrefix())) {
     if (ts > prefix->getValidTimeout()) ts = prefix->getValidTimeout();
   }
 
@@ -315,7 +315,7 @@ void TAddrIA::setTimestamp(unsigned long ts) {
   this->Timestamp = ts;
   SPtr<TAddrAddr> ptr;
   AddrLst.first();
-  while (ptr = AddrLst.get()) {
+  while ((ptr = AddrLst.get())) {
     ptr->setTimestamp(ts);
   }
 }
@@ -350,7 +350,7 @@ unsigned long TAddrIA::getTentativeTimeout() {
     case ADDRSTATUS_UNKNOWN:
       SPtr<TAddrAddr> ptrAddr;
       AddrLst.first();
-      while (ptrAddr = AddrLst.get()) {
+      while ((ptrAddr = AddrLst.get())) {
         unsigned long x = (unsigned long)time(NULL);
         struct timespec clockts;
         if (clock_gettime(CLOCK_MONOTONIC_RAW, &clockts) == 0) {
@@ -389,7 +389,7 @@ enum EAddrStatus TAddrIA::getTentative() {
 
   bool allChecked = true;
 
-  while (ptrAddr = AddrLst.get()) {
+  while ((ptrAddr = AddrLst.get())) {
     switch (ptrAddr->getTentative()) {
       case ADDRSTATUS_YES:
         Log(Warning) << "DAD failed. Address " << ptrAddr->get()->getPlain()
@@ -441,7 +441,7 @@ void TAddrIA::setTentative() {
   AddrLst.first();
   Tentative = ADDRSTATUS_NO;
 
-  while (ptrAddr = AddrLst.get()) {
+  while ((ptrAddr = AddrLst.get())) {
     switch (ptrAddr->getTentative()) {
       case ADDRSTATUS_YES:
         Tentative = ADDRSTATUS_YES;
@@ -517,13 +517,13 @@ std::ostream &operator<<(std::ostream &strum, TAddrIA &x) {
 
   // Address list
   x.AddrLst.first();
-  while (ptr = x.AddrLst.get()) {
+  while ((ptr = x.AddrLst.get())) {
     if (ptr) strum << "      " << *ptr;
   }
 
   // Prefix list
   x.PrefixLst.first();
-  while (prefix = x.PrefixLst.get()) {
+  while ((prefix = x.PrefixLst.get())) {
     strum << "      " << *prefix;
   }
 

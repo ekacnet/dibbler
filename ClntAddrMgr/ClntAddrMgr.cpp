@@ -62,12 +62,12 @@ TClntAddrMgr::TClntAddrMgr(SPtr<TDUID> clientDUID, bool useConfirm, const std::s
 void TClntAddrMgr::processLoadedDB() {
   SPtr<TAddrIA> ia;
   Client->firstIA();
-  while (ia = Client->getIA()) {
+  while ((ia = Client->getIA())) {
     ia->setState(STATE_CONFIRMME);
   }
 
   Client->firstPD();
-  while (ia = Client->getPD()) {
+  while ((ia = Client->getPD())) {
     ia->setState(STATE_CONFIRMME);
   }
 }
@@ -96,7 +96,7 @@ unsigned long TClntAddrMgr::getTentativeTimeout() {
   Client->firstIA();
   uint32_t min = DHCPV6_INFINITY;
 
-  while (ptrIA = Client->getIA()) {
+  while ((ptrIA = Client->getIA())) {
     uint32_t tmp = ptrIA->getTentativeTimeout();
     if (min > tmp) min = tmp;
   }
@@ -116,10 +116,10 @@ void TClntAddrMgr::doDuties() {
   SPtr<TAddrAddr> ptrAddr;
 
   firstIA();
-  while (ptrIA = this->getIA()) {
+  while ((ptrIA = this->getIA())) {
 
     ptrIA->firstAddr();
-    while (ptrAddr = ptrIA->getAddr()) {
+    while ((ptrAddr = ptrIA->getAddr())) {
       // Removing outdated addresses
       if (!ptrAddr->getValidTimeout()) {
         ptrIA->delAddr(ptrAddr->get());
@@ -153,7 +153,7 @@ TClntAddrMgr::~TClntAddrMgr() {
 SPtr<TAddrIA> TClntAddrMgr::getIA(unsigned long IAID) {
   SPtr<TAddrIA> ptrIA;
   Client->firstIA();
-  while (ptrIA = Client->getIA()) {
+  while ((ptrIA = Client->getIA())) {
     if (ptrIA->getIAID() == IAID) return ptrIA;
   }
   return SPtr<TAddrIA>();
@@ -169,7 +169,7 @@ SPtr<TAddrIA> TClntAddrMgr::getIA(unsigned long IAID) {
 void TClntAddrMgr::setIA2Confirm(volatile link_state_notify_t *changedLinks) {
   SPtr<TAddrIA> ptrIA;
   this->firstIA();
-  while (ptrIA = this->getIA()) {
+  while ((ptrIA = this->getIA())) {
 
     bool found = false;
     int ifindex = ptrIA->getIfindex();  // interface index of this IA
@@ -202,7 +202,7 @@ int TClntAddrMgr::countPD() { return Client->countPD(); }
 SPtr<TAddrIA> TClntAddrMgr::getPD(unsigned long IAID) {
   SPtr<TAddrIA> ptrPD;
   this->Client->firstPD();
-  while (ptrPD = this->Client->getPD()) {
+  while ((ptrPD = this->Client->getPD())) {
     if (ptrPD->getIAID() == IAID) return ptrPD;
   }
   return SPtr<TAddrIA>();  // NULL
@@ -215,7 +215,7 @@ SPtr<TAddrIA> TClntAddrMgr::getTA() { return Client->getTA(); }
 SPtr<TAddrIA> TClntAddrMgr::getTA(unsigned long iaid) {
   SPtr<TAddrIA> ta;
   this->Client->firstTA();
-  while (ta = this->Client->getTA()) {
+  while ((ta = this->Client->getTA())) {
     if (ta->getIAID() == iaid) return ta;
   }
   return SPtr<TAddrIA>();  // NULL
@@ -287,11 +287,11 @@ SPtr<TIPv6Addr> TClntAddrMgr::getPreferredAddr() {
   SPtr<TAddrAddr> addr;
 
   firstIA();
-  while (ia = getIA()) {
+  while ((ia = getIA())) {
     if (ia->getTentative() != ADDRSTATUS_NO) continue;
 
     ia->firstAddr();
-    while (addr = ia->getAddr()) {
+    while ((addr = ia->getAddr())) {
       if (addr->getTentative() == ADDRSTATUS_NO)
         return addr->get();  // return the first address from first non-tentative
       // if (is_addr_tentative(NULL, ia->getIface(), addr->get()->getPlain()) ==
