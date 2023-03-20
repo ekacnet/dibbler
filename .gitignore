@@ -85,4 +85,7 @@ RelCfgMgr/RelParser.h
 SrvCfgMgr/SrvLexer.cpp
 SrvCfgMgr/SrvParser.cpp
 SrvCfgMgr/SrvParser.h
+Misc/Portable.h
+.Tpo
+.ccls-cache
 
